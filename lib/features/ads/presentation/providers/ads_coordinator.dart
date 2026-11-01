@@ -3,8 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/dev_flags.dart';
 import '../../../../core/di/providers.dart';
 import '../../domain/entities/rewarded_ad_result.dart';
-import '../../domain/repositories/interstitial_ads.dart';
-import '../../domain/repositories/rewarded_ads.dart';
 import '../../domain/usecases/ad_break_policy.dart';
 
 /// Oyundaki tüm reklamların tek giriş kapısı. Ne zaman reklam gösterileceğini
