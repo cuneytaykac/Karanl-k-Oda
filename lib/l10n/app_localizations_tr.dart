@@ -466,6 +466,15 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialOpenCabinet => 'Dolabı aç';
 
   @override
+  String get sectionPrivacy => 'GİZLİLİK';
+
+  @override
+  String get privacyOptions => 'Gizlilik seçenekleri';
+
+  @override
+  String get privacyOptionsSubtitle => 'Reklam izinlerini değiştir';
+
+  @override
   String get sectionHelp => 'YARDIM';
 
   @override

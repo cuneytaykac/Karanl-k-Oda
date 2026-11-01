@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/di/providers.dart';
 import '../../../../core/onboarding/onboarding.dart';
 import '../../../../core/router/routes.dart';
 import '../../../../core/settings/settings.dart';
 import '../../../../core/theme/theme.dart';
 import '../../../../core/widgets/ko_icon_button.dart';
 import '../../../../l10n/l10n.dart';
+import '../../../ads/presentation/providers/ads_coordinator.dart';
 
 /// 46 · Ayarlar. Değişiklikler anında cihaza kaydedilir.
 class SettingsScreen extends ConsumerWidget {
@@ -17,6 +19,9 @@ class SettingsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(settingsProvider);
     final controller = ref.read(settingsProvider.notifier);
+    // Avrupa'daki oyuncular reklam onayını buradan değiştirebilmeli (GDPR).
+    final privacyRequired =
+        ref.watch(privacyOptionsRequiredProvider).value ?? false;
 
     return Scaffold(
       body: SafeArea(
@@ -60,6 +65,23 @@ class SettingsScreen extends ConsumerWidget {
                   controller.setNewCaseNotification,
                   subtitle: context.l10n.newCaseNotificationSubtitle),
             ]),
+            if (privacyRequired) ...[
+              _SectionHeader(context.l10n.sectionPrivacy),
+              _Group(children: [
+                ListTile(
+                  key: const Key('privacy-options'),
+                  title: Text(context.l10n.privacyOptions,
+                      style: KoText.body
+                          .copyWith(color: KoColor.text, fontSize: 14.5)),
+                  subtitle: Text(context.l10n.privacyOptionsSubtitle,
+                      style: KoText.bodySmall.copyWith(fontSize: 12)),
+                  trailing:
+                      const Icon(Icons.chevron_right, color: KoColor.textDim),
+                  onTap: () =>
+                      ref.read(adsPlatformProvider).showPrivacyOptions(),
+                ),
+              ]),
+            ],
             _SectionHeader(context.l10n.sectionHelp),
             _Group(children: [
               ListTile(

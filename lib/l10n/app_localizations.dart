@@ -890,6 +890,24 @@ abstract class AppLocalizations {
   /// **'Dolabı aç'**
   String get tutorialOpenCabinet;
 
+  /// No description provided for @sectionPrivacy.
+  ///
+  /// In tr, this message translates to:
+  /// **'GİZLİLİK'**
+  String get sectionPrivacy;
+
+  /// No description provided for @privacyOptions.
+  ///
+  /// In tr, this message translates to:
+  /// **'Gizlilik seçenekleri'**
+  String get privacyOptions;
+
+  /// No description provided for @privacyOptionsSubtitle.
+  ///
+  /// In tr, this message translates to:
+  /// **'Reklam izinlerini değiştir'**
+  String get privacyOptionsSubtitle;
+
   /// No description provided for @sectionHelp.
   ///
   /// In tr, this message translates to:

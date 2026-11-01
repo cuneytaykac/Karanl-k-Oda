@@ -473,6 +473,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialOpenCabinet => 'Open the cabinet';
 
   @override
+  String get sectionPrivacy => 'PRIVACY';
+
+  @override
+  String get privacyOptions => 'Privacy options';
+
+  @override
+  String get privacyOptionsSubtitle => 'Change your ad consent';
+
+  @override
   String get sectionHelp => 'HELP';
 
   @override

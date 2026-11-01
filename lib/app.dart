@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/audio/audio_binding.dart';
 import 'core/router/router.dart';
 import 'core/theme/theme.dart';
+import 'features/ads/presentation/providers/ads_coordinator.dart';
 import 'features/splash/presentation/screen/splash_overlay.dart';
 import 'features/splash/presentation/view_model/splash_view_model.dart';
 import 'l10n/l10n.dart';
@@ -40,7 +41,11 @@ class _SplashLayer extends ConsumerWidget {
     final reduceMotion = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
     final done =
         ref.watch(splashViewModelProvider(reduceMotion).select((s) => s.done));
-    if (done) return const SizedBox.shrink();
+    if (done) {
+      // Sahne bitti: gerekiyorsa onay formu, sonra reklamlar.
+      ref.watch(adsStartupProvider);
+      return const SizedBox.shrink();
+    }
     return const Material(
       type: MaterialType.transparency,
       child: SplashOverlay(),

@@ -25,8 +25,21 @@ class AdsCoordinator {
   DateTime? _lastInterstitial;
   DateTime? _lastRewarded;
 
+  /// Onay alınıp reklam ağı başlayana kadar hiçbir reklam istenmez.
+  bool _enabled = false;
+
+  /// Reklam ağı hazır ve oyuncu reklama izin veriyor: ilk reklamlar yüklensin.
+  void enable() {
+    _enabled = true;
+    _rewarded.preload();
+    _interstitial.preload();
+  }
+
   /// İpucu için ödüllü reklam.
+  /// Reklam yoksa (onay yok, ağ başlamadı) sonuç "reklam yok" olur: oyuncu
+  /// cezalandırılmaz, ipucu yine verilir.
   Future<RewardedAdResult> showRewarded() async {
+    if (!_enabled) return RewardedAdResult.unavailable;
     final result = await _rewarded.show();
     if (result != RewardedAdResult.unavailable) _lastRewarded = _now();
     return result;
@@ -34,6 +47,7 @@ class AdsCoordinator {
 
   /// Rulo arası: kurallar izin veriyorsa geçiş reklamı gösterir; kapanınca döner.
   Future<void> reelBreak({required int nextReel}) async {
+    if (!_enabled) return;
     final allowed = policy.shouldShow(
       nextReel: nextReel,
       now: _now(),
@@ -54,3 +68,16 @@ final adsCoordinatorProvider = Provider<AdsCoordinator>((ref) => AdsCoordinator(
               minGap: Duration.zero, rewardedCooldown: Duration.zero)
           : const AdBreakPolicy(),
     ));
+
+/// Uygulama açılınca bir kez: onay (gerekiyorsa) → reklam ağı → ilk reklamlar.
+/// Açılış sahnesi bittikten sonra başlatılır; form sahnenin üstüne çıkmasın.
+final adsStartupProvider = FutureProvider<void>((ref) async {
+  final allowed = await ref.read(adsPlatformProvider).start();
+  if (allowed) ref.read(adsCoordinatorProvider).enable();
+  // Onay değişmiş olabilir: Ayarlar'daki satır yeniden sorsun.
+  ref.invalidate(privacyOptionsRequiredProvider);
+});
+
+/// Ayarlar'da "Gizlilik seçenekleri" satırı gösterilsin mi (Avrupa'da zorunlu).
+final privacyOptionsRequiredProvider = FutureProvider<bool>(
+    (ref) => ref.read(adsPlatformProvider).privacyOptionsRequired());

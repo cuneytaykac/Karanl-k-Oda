@@ -10,3 +10,7 @@ const bool kDevSkipButton = kDebugMode;
 /// Geçiş reklamı her rulo arasında çıkar (10 dakika bekleme ve ipucu reklamından
 /// sonraki ara yok sayılır). İlk rulo yine reklamsız.
 const bool kDevFrequentAdBreaks = kDebugMode;
+
+/// Avrupa onay formunu (GDPR) Türkiye'den de görmek için: geliştirirken oyuncu
+/// Avrupa'daymış gibi davranılır.
+const bool kDevConsentAsEurope = kDebugMode;

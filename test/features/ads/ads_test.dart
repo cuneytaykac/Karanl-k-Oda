@@ -70,11 +70,22 @@ void main() {
   });
 
   group('Reklam koordinatörü', () {
+    test('onay alınıp ağ başlamadan hiçbir reklam istenmez', () async {
+      final rewarded = _FakeRewarded();
+      final interstitial = _FakeInterstitial();
+      final ads = AdsCoordinator(rewarded, interstitial);
+      expect(await ads.showRewarded(), RewardedAdResult.unavailable);
+      await ads.reelBreak(nextReel: 5);
+      expect(rewarded.shown, 0);
+      expect(interstitial.shown, 0);
+    });
+
     test('ödüllü reklamdan hemen sonra geçiş reklamı gösterilmez', () async {
       var now = DateTime(2026, 1, 1, 12);
       final rewarded = _FakeRewarded();
       final interstitial = _FakeInterstitial();
-      final ads = AdsCoordinator(rewarded, interstitial, now: () => now);
+      final ads = AdsCoordinator(rewarded, interstitial, now: () => now)
+        ..enable();
       await ads.reelBreak(nextReel: 2);
       expect(interstitial.shown, 1);
       now = now.add(const Duration(minutes: 11));
@@ -98,6 +109,7 @@ void main() {
         settingsProvider.overrideWith(_FixedSettings.new),
         rewardedAdsProvider.overrideWithValue(rewarded),
       ]);
+      c.read(adsCoordinatorProvider).enable();
       c.listen(puzzleViewModelProvider(key), (_, __) {});
     });
     tearDown(() => c.dispose());
