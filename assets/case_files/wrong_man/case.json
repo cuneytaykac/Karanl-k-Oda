@@ -1,0 +1,3317 @@
+{
+ "id": "wrong_man",
+ "number": 1,
+ "title": "Yanlış Adam",
+ "summary": "Saatçi Necati Aydın, 1989'da bir kuyumcu soygunundan hapse girdi. Ölene kadar \"Yapmadım\" dedi. Onu aklayacak filmler 37 yıldır senin dükkânında duruyor.",
+ "reelCount": 7,
+ "tags": [
+  "7 rulo",
+  "70 kare",
+  "Gizem · 12+"
+ ],
+ "timeline": {
+  "title": "3 Mart 1989 · Cumartesi",
+  "date": "3 Mart 1989",
+  "events": [
+   {
+    "tag": "12:30",
+    "title": "Soygun",
+    "body": "Rıza Kuyumculuk soyuldu. Kaçan kişi topallıyordu."
+   }
+  ]
+ },
+ "intro": [
+  {
+   "speaker": null,
+   "text": "\"Teslim edilmeyenler\" dolabında bir torba: yedi film rulosu. Üstünde Nermin Hanım'ın el yazısı: \"N. Aydın, 4 Mart 1989.\"",
+   "sfx": "bag"
+  },
+  {
+   "speaker": null,
+   "text": "Eski bir gazetede adı çıkıyor: saatçi Necati Aydın, 5 Mart 1989'da kuyumcu soygunundan tutuklanmış.",
+   "sfx": "newspaper"
+  },
+  {
+   "speaker": "ayse",
+   "text": "Babam ölene kadar \"yapmadım\" dedi. Kimse inanmadı. Ben de hiç emin olamadım."
+  },
+  {
+   "speaker": "ayse",
+   "text": "Soygun 3 Mart cumartesi, saat 12:30'da olmuş. Kaçan kişi topallıyormuş; babamın da eski bir bacak sakatlığı vardı. İki gün sonra polis, babamın dükkânında arka çekmecede çalıntı bir kolye kutusu buldu."
+  },
+  {
+   "speaker": "ayse",
+   "text": "Babam \"O saatte göldeydim, Haluk da yanımdaydı\" dedi. Ama Haluk amca mahkemede \"O gün onu görmedim\" dedi."
+  }
+ ],
+ "people": [
+  {
+   "id": "ayse",
+   "name": "Ayşe Aydın",
+   "initial": "A",
+   "role": "Necati'nin kızı · 38 · öğretmen",
+   "known": true
+  },
+  {
+   "id": "necati",
+   "name": "Necati Aydın",
+   "initial": "N",
+   "role": "Saatçi · 1989'da hapse girdi",
+   "known": true
+  },
+  {
+   "id": "cem",
+   "name": "Cem Demir",
+   "initial": "C",
+   "role": "Necati'nin çırağı · 1989'da 17 yaşında",
+   "known": false
+  },
+  {
+   "id": "haluk",
+   "name": "Haluk Demir",
+   "initial": "H",
+   "role": "Polis memuru · Necati'nin çocukluk arkadaşı",
+   "known": false
+  },
+  {
+   "id": "riza",
+   "name": "Rıza Usta",
+   "initial": "R",
+   "role": "Karşıdaki kuyumcu · soyulan dükkân",
+   "known": false
+  }
+ ],
+ "reels": [
+  {
+   "number": 1,
+   "title": "Saatçi dükkânı",
+   "intro": "Torbadaki ilk film. Etikette Necati'nin el yazısı: \"Dükkân, Şubat.\"",
+   "question": {
+    "text": "Soygun saatinde, 12:30'da, Necati neredeydi?",
+    "options": [
+     {
+      "id": "lake",
+      "text": "Haluk'la göle gitti",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Babamın yıllarca söylediği de buydu. Ama Haluk amca mahkemede tersini söyledi. İkisinden biri yalan söylüyor."
+      }
+     },
+     {
+      "id": "shop",
+      "text": "Dükkânındaydı, yalnızdı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Ama 11:05'te kapıya \"Kapalı\" asmış. İnsan yalnız oturmak için dükkânını kapatır mı? Bilmiyorum… belki."
+      }
+     },
+     {
+      "id": "jeweller",
+      "text": "Kuyumcunun arka sokağındaydı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Bunu düşünmek bile istemiyorum. Ama fotoğraflara sen bakıyorsun, ben değil. Belki de herkes haklıydı."
+      }
+     }
+    ],
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Torbada ikinci bir rulo var. Etiketinde aynı el yazısı: \"Göl, 3 Mart.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Bu ruloyu banyo ettiğinde kimin yalan söylediğini göreceğiz. Babamın mı, Haluk amcanın mı."
+     }
+    ],
+    "truth": "lake",
+    "truthNote": "Rulo 2'deki göl fotoğrafları gösterecek."
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Saatçi dükkânı",
+     "date": "24 Şubat 1989",
+     "puzzle": [
+      ".###.",
+      "#.#.#",
+      "#.###",
+      "#...#",
+      ".###."
+     ],
+     "photo": "photos/r1_k1_shopfront.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.sign",
+       "x": 150,
+       "y": 92,
+       "r": 44,
+       "kind": "person",
+       "title": "Necati Aydın",
+       "body": "Saatçi. Dükkânı çarşının tam ortasında; tabelası hep tozsuz.",
+       "person": "necati"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Tabelayı babam kendi elleriyle boyamış. Annem anlatırdı; ben o zaman kucakta bebekmişim."
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Duvar saatleri",
+     "date": "24 Şubat 1989",
+     "puzzle": [
+      "#####",
+      "#.#.#",
+      "#.###",
+      "#...#",
+      "#####"
+     ],
+     "photo": "photos/r1_k2_clocks.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.clocks",
+       "x": 150,
+       "y": 165,
+       "r": 34,
+       "kind": "clue",
+       "title": "Saatler hep doğru",
+       "body": "Duvardaki bütün saatler aynı anı gösteriyor. Necati'nin fotoğraflarında saate güvenebilirsin.",
+       "tag": "4:10"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Annem hep söylerdi: babam saatleri asla yanlış bırakmazmış. \"Saat yalan söylerse insan da söyler\" dermiş."
+     },
+     "search": true
+    },
+    {
+     "number": 3,
+     "title": "Tezgâh",
+     "date": "24 Şubat 1989",
+     "puzzle": [
+      "..###..",
+      "#######",
+      "#.....#",
+      "#.###.#",
+      "#.###.#",
+      "#.....#",
+      "#######"
+     ],
+     "photo": "photos/r1_k3_bench.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.camera",
+       "x": 222,
+       "y": 300,
+       "r": 36,
+       "kind": "clue",
+       "title": "Fotoğraf makinesi",
+       "body": "Necati fotoğraf meraklısı; makinesi tezgâhta, hep elinin altında."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu makineyi hiç görmedim. Babam tutuklanınca ortadan kaybolmuş. Demek filmleriyle birlikte Nermin Hanım'a bırakmış."
+     },
+     "scene": {
+      "eyebrow": "BUGÜN · DÜKKÂNDA",
+      "title": "Gazete kupürleri",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ertesi sabah Ayşe dükkâna sararmış bir dosyayla geliyor.",
+        "sfx": "doorbell"
+       },
+       {
+        "speaker": null,
+        "style": "paper",
+        "text": "SAATÇİ KUYUMCUYU SOYDU. Kasabamızda 3 Mart cumartesi öğle saatlerinde Rıza Kuyumculuk soyuldu. Tutuklanan saatçi N. A. suçlamaları kabul etmiyor. (6 Mart 1989)",
+        "sfx": "newspaper"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Annem bu kupürleri yıllarca sakladı. Ben bakmaya hiç cesaret edemedim."
+       },
+       {
+        "speaker": "ayse",
+        "text": "\"Kabul etmiyor\" yazmışlar. Sanki susmak da bir suçmuş gibi."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Sen fotoğraflara devam et. Ben bu sefer sonuna kadar okuyacağım."
+       }
+      ]
+     },
+     "search": false
+    },
+    {
+     "number": 4,
+     "title": "Çırak",
+     "date": "25 Şubat 1989",
+     "puzzle": [
+      "..###..",
+      "..###..",
+      "...#...",
+      ".#####.",
+      "#.###.#",
+      "..#.#..",
+      ".##.##."
+     ],
+     "photo": "photos/r1_k4_apprentice.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.cem",
+       "x": 150,
+       "y": 150,
+       "r": 36,
+       "kind": "person",
+       "title": "Cem Demir",
+       "body": "17 yaşında, Necati'nin çırağı. İşini seviyor; ustasına hayran.",
+       "person": "cem"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Cem. Babamın çırağı. Mahkemeden sonra kasabadan gitmiş; nereye gittiğini kimse bilmiyor."
+     },
+     "search": false
+    },
+    {
+     "number": 5,
+     "title": "Üçü bir arada",
+     "date": "25 Şubat 1989",
+     "puzzle": [
+      "##.##.##",
+      "##.##.##",
+      "........",
+      "########",
+      "########",
+      "##.##.##",
+      "##.##.##",
+      "##.##.##"
+     ],
+     "photo": "photos/r1_k5_three.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.haluk",
+       "x": 230,
+       "y": 150,
+       "r": 34,
+       "kind": "person",
+       "title": "Haluk Demir",
+       "body": "Polis memuru. Necati'nin çocukluk arkadaşı ve Cem'in ağabeyi.",
+       "person": "haluk"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Haluk amca her bayram bize gelirmiş. Mahkemeden sonra bir kez bile kapımızı çalmamış."
+     },
+     "search": false
+    },
+    {
+     "number": 6,
+     "title": "Karşı dükkân",
+     "date": "25 Şubat 1989",
+     "puzzle": [
+      "..####..",
+      ".#.##.#.",
+      "########",
+      ".######.",
+      "..####..",
+      "...##...",
+      "..#..#..",
+      "...##..."
+     ],
+     "photo": "photos/r1_k6_jeweller.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.insurance",
+       "x": 98,
+       "y": 252,
+       "r": 32,
+       "kind": "clue",
+       "title": "Yeni sigorta levhası",
+       "body": "Rıza Usta'nın vitrininde yepyeni bir \"Sigortalıdır\" levhası. Ayşe: \"Belki kendi dükkânını soydu, sigortadan para almak için.\""
+      },
+      {
+       "id": "wm.r1.riza",
+       "x": 226,
+       "y": 248,
+       "r": 34,
+       "kind": "person",
+       "title": "Rıza Usta",
+       "body": "Karşıdaki kuyumcu. Soyulan dükkân onun.",
+       "person": "riza"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Rıza Usta soygundan bir yıl sonra dükkânı kapatıp İzmir'e taşınmış. Sigortadan ne aldığını kimse bilmiyor."
+     },
+     "search": false
+    },
+    {
+     "number": 7,
+     "title": "3 Mart, sabah",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#.#....#.#",
+      "#.#....#.#",
+      "#.#..###.#",
+      "#.#....#.#",
+      "#.#....#.#",
+      "#.######.#",
+      "##########"
+     ],
+     "photo": "photos/r1_k7_morning.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.t0900",
+       "x": 80,
+       "y": 110,
+       "r": 30,
+       "kind": "time",
+       "title": "Dükkân açıldı",
+       "body": "Soygun günü. Necati dükkânı her zamanki gibi açıyor.",
+       "tag": "09:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "3 Mart. Babamın son sıradan sabahı. Bunu bilmeden fotoğrafını çekmiş."
+     },
+     "scene": {
+      "eyebrow": "BUGÜN · AKŞAM",
+      "title": "Bir mektup",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Akşam telefon çalıyor. Ayşe'nin sesi titrek.",
+        "sfx": "phone"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Kupürlerin arasından bir mektup çıktı. Babam cezaevinden yazmış, ben altı yaşındayken."
+       },
+       {
+        "speaker": null,
+        "style": "letter",
+        "text": "Kızım, saatler yalan söylemez. Bir gün o sabahın saatleri de konuşacak. O gün beni affet ya da affetme, ama bil ki ben göldeydim.",
+        "sfx": "letter"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Çocukken okusam hiçbir şey anlamazdım. Ama şimdi elimizde o sabahın fotoğrafları var."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Sıradaki kareler soygun günü, değil mi? Saatlere iyi bak."
+       }
+      ]
+     },
+     "search": false
+    },
+    {
+     "number": 8,
+     "title": "Kırmızı motosiklet",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "......###.",
+      ".......##.",
+      "..#######.",
+      ".#########",
+      "##########",
+      "####..####",
+      "#..#..#..#",
+      "#..#..#..#",
+      "####..####",
+      ".##....##."
+     ],
+     "photo": "photos/r1_k8_moto.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.t1040",
+       "x": 62,
+       "y": 78,
+       "r": 28,
+       "kind": "time",
+       "title": "Cem çıktı",
+       "body": "\"Annem hasta\" deyip izin istedi.",
+       "tag": "10:40"
+      },
+      {
+       "id": "wm.r1.moto",
+       "x": 178,
+       "y": 292,
+       "r": 44,
+       "kind": "clue",
+       "title": "Kırmızı motosiklet",
+       "body": "Cem'in motosikleti. Kasabada başka kırmızısı yok."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "\"Annem hasta\" mı? Annem, Cem'in annesiyle komşuydu. O hafta hasta olduğunu hiç söylemedi."
+     },
+     "search": true
+    },
+    {
+     "number": 9,
+     "title": "Kapalı",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "....##....",
+      "...####...",
+      "..##..##..",
+      "##########",
+      "##########",
+      "##.####.##",
+      "##.####.##",
+      "##########",
+      "##########",
+      ".........."
+     ],
+     "photo": "photos/r1_k9_closed.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.t1105",
+       "x": 150,
+       "y": 66,
+       "r": 28,
+       "kind": "time",
+       "title": "Dükkân kapandı",
+       "body": "Necati kapıya \"Kapalı\" levhasını astı.",
+       "tag": "11:05"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Cumartesi öğleden önce dükkânı kapatmak babama hiç uymaz. Ya çok önemli bir işi vardı ya da biri onu çağırdı."
+     },
+     "search": true
+    },
+    {
+     "number": 10,
+     "title": "Göle",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "........##",
+      ".......##.",
+      "..######..",
+      ".##.##.##.",
+      "##########",
+      "##########",
+      "##########",
+      ".##....##.",
+      ".##....##.",
+      ".........."
+     ],
+     "photo": "photos/r1_k10_car.svg",
+     "hotspots": [
+      {
+       "id": "wm.r1.rods",
+       "x": 210,
+       "y": 170,
+       "r": 38,
+       "kind": "clue",
+       "title": "Arabada oltalar",
+       "body": "Kapıda Haluk'un arabası, arka camdan oltalar uzanıyor. Göle gidiyorlar."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Göl. Babam yıllarca \"göldeydim\" dedi. O gün gerçekten oradaysa, sonraki rulo bunu gösterecek."
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "title": "Göl",
+   "intro": "Etikette aynı el yazısı: \"Göl, 3 Mart.\" Soygun günü, öğle saatleri.",
+   "question": {
+    "text": "Peki Haluk mahkemede neden \"onu görmedim\" dedi?",
+    "options": [
+     {
+      "id": "protect",
+      "text": "Birini korumak için",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Kimi? Babamı değil, belli. Babamı yakmış. O zaman başka birini."
+      }
+     },
+     {
+      "id": "threat",
+      "text": "Biri onu tehdit etti",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Haluk amca polisti. Onu kim tehdit edebilir ki? Ama sesi gerçekten korkmuş gibiydi."
+      }
+     },
+     {
+      "id": "forgot",
+      "text": "Gerçekten hatırlamıyordu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Üç gün sonra mı? Bütün gün balık tuttukları bir günü? Buna inanmak isterdim."
+      }
+     }
+    ],
+    "truth": "protect",
+    "truthNote": "Rulo 5–6 gösterecek: kardeşi Cem'i koruyordu.",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Torbadaki üçüncü rulonun etiketi: \"Göl yolu.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Babam dönüş yolunu da çekmiş. Belki yolda bir şey görmüşlerdir."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Göle varış",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "....##....",
+      "...####...",
+      "....##....",
+      "....##....",
+      ".#..##..#.",
+      "##########",
+      "#.#.#.#.##",
+      "##########",
+      ".........."
+     ],
+     "photo": "photos/r2_k1_gole_varis.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.t1140",
+       "x": 232,
+       "y": 128,
+       "r": 30,
+       "kind": "time",
+       "title": "Göle vardılar",
+       "body": "Karşı kıyıdaki saat kulesi 11:40'ı gösteriyor. Kasaba 20 kilometre geride.",
+       "tag": "11:40"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "O saat kulesi hâlâ duruyor. Geçen yaz önünden geçtim, hiç dikkat etmemişim."
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Haluk ve oltası",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      "..#.#.....",
+      "...#..###.",
+      "....#.###.",
+      ".....#.#..",
+      "....######",
+      "...#######",
+      "..##.#####",
+      ".........."
+     ],
+     "photo": "photos/r2_k2_haluk_ve_oltasi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.antenna",
+       "x": 107,
+       "y": 296,
+       "r": 30,
+       "kind": "clue",
+       "title": "Telsiz anteni",
+       "body": "Haluk bugün izinli; üniforması yok. Ama arabasının tavanında polis telsizinin anteni var."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Haluk amca hep böyleydi; izinliyken bile telsizini yanından ayırmazmış."
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "İlk balık",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      ".....##...",
+      "...######.",
+      ".#########",
+      "##.#######",
+      "##########",
+      ".#########",
+      "...######.",
+      ".....##...",
+      ".........."
+     ],
+     "photo": "photos/r2_k3_ilk_balik.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.t1205",
+       "x": 240,
+       "y": 300,
+       "r": 30,
+       "kind": "time",
+       "title": "İlk balık",
+       "body": "Necati balığın yanına kol saatini koymuş: 12:05. Saatçinin şakası.",
+       "tag": "12:05"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam bunu her balıkta yaparmış. Annem \"Saatçi balık tutmaz, zaman tutar\" derdi."
+     },
+     "search": true,
+     "scene": {
+      "eyebrow": "BUGÜN · ÖĞLE ARASI",
+      "title": "Bir telefon",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Öğle arasında Ayşe dükkâna geliyor; telefonu hâlâ elinde.",
+        "sfx": "doorbell"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Haluk amcayı aradım. Otuz yedi yıl sonra ilk kez."
+       },
+       {
+        "speaker": "ayse",
+        "text": "\"Göl\" dedim, sesi değişti. \"Eski şeyleri kurcalama, kızım\" dedi ve kapattı."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Hiç kızmadı. Korkmuş gibiydi."
+       }
+      ]
+     }
+    },
+    {
+     "number": 4,
+     "title": "Öğle güneşi",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "...##.....",
+      "..####....",
+      "...##.....",
+      "..####....",
+      ".######...",
+      "..####....",
+      "..#..#....",
+      "..#..#....",
+      "..#..#....",
+      ".########."
+     ],
+     "photo": "photos/r2_k4_ogle_gunesi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.shadow",
+       "x": 156,
+       "y": 360,
+       "r": 28,
+       "kind": "clue",
+       "title": "Gölgeler kısa",
+       "body": "Necati'nin gölgesi ayağının dibinde. Güneş tepede: öğle vakti."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Saat, gölge, kule… Babam sanki bir gün birinin bu fotoğraflara bakacağını biliyormuş."
+     },
+     "search": false
+    },
+    {
+     "number": 5,
+     "title": "İkinci balık",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "....###...",
+      "..#######.",
+      "##########",
+      "###.######",
+      "##########",
+      "..#######.",
+      "....###...",
+      "..........",
+      "##########"
+     ],
+     "photo": "photos/r2_k5_ikinci_balik.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.t1230",
+       "x": 222,
+       "y": 292,
+       "r": 32,
+       "kind": "time",
+       "title": "Necati göldeydi",
+       "body": "Balığın yanındaki saat 12:30'u gösteriyor. Soygun anında Necati kasabadan 20 kilometre uzakta.",
+       "tag": "12:30"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "12:30… Tam soygun saati. Babam doğruyu söylemiş. Otuz yedi yıl sonra."
+     },
+     "search": true
+    },
+    {
+     "number": 6,
+     "title": "Haluk gülüyor",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "...####...",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "...#..#...",
+      "....##....",
+      "#..####..#",
+      "##########",
+      "#..####..#",
+      "....##...."
+     ],
+     "photo": "photos/r2_k6_haluk_guluyor.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.haluk_fish",
+       "x": 150,
+       "y": 175,
+       "r": 40,
+       "kind": "clue",
+       "title": "Haluk da oradaydı",
+       "body": "Haluk, Necati'nin balığını tutmuş kahkaha atıyor. Mahkemede \"O gün onu görmedim\" demişti."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Mahkemede yemin etmiş. Bu fotoğrafta babamın balığını tutuyor."
+     },
+     "search": false
+    },
+    {
+     "number": 7,
+     "title": "Termos",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..##......",
+      ".####.....",
+      "..##......",
+      ".####.####",
+      ".####.#..#",
+      ".####.####",
+      ".####.#..#",
+      ".####.####",
+      ".####.....",
+      ".........."
+     ],
+     "photo": "photos/r2_k7_termos.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.paper",
+       "x": 200,
+       "y": 272,
+       "r": 34,
+       "kind": "clue",
+       "title": "Günün gazetesi",
+       "body": "Termosun yanında 3 Mart 1989 tarihli gazete. Fotoğraf o güne ait."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Avukat \"tarih kanıtlanamaz\" derdi belki. Ama gazete de saat de aynı günü söylüyor."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · AKŞAM",
+      "title": "Tanık ifadesi",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe dava dosyasının fotokopisini getiriyor. Bir sayfanın kenarı yıllardır kıvrık.",
+        "sfx": "folder"
+       },
+       {
+        "speaker": null,
+        "text": "TANIK İFADESİ · H. DEMİR · 12 Nisan 1989. \"Üç Mart günü sanık Necati Aydın'ı görmedim. Gün boyu görevdeydim.\"",
+        "style": "paper",
+        "sfx": "newspaper"
+       },
+       {
+        "speaker": "ayse",
+        "text": "\"Görevdeydim\" demiş. Oysa o gün izinliymiş; fotoğraflarda sivil."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Neden yalan söylesin? Babamın en yakın arkadaşıydı."
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Kule",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "....##....",
+      "...####...",
+      "...#..#...",
+      "...####...",
+      "...####...",
+      "...####...",
+      "..######..",
+      ".########.",
+      "##########",
+      ".........."
+     ],
+     "photo": "photos/r2_k8_kule.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.t1250",
+       "x": 150,
+       "y": 105,
+       "r": 28,
+       "kind": "time",
+       "title": "Hâlâ göldeler",
+       "body": "Kule 12:50'yi gösteriyor. Soygundan yirmi dakika sonra ikisi hâlâ kıyıda.",
+       "tag": "12:50"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Yirmi kilometre. O yolu motosikletle bile yirmi dakikada gidemezsin."
+     },
+     "search": true
+    },
+    {
+     "number": 9,
+     "title": "İki arkadaş",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..##..##..",
+      ".####.####",
+      ".####.####",
+      "..##..##..",
+      ".###..###.",
+      "##########",
+      "##########",
+      "####..####",
+      "###....###",
+      "###....###"
+     ],
+     "photo": "photos/r2_k9_iki_arkadas.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.friends",
+       "x": 155,
+       "y": 286,
+       "r": 32,
+       "kind": "clue",
+       "title": "Kol kola",
+       "body": "Necati makineyi bir kütüğe koyup zamanlayıcıyla ikisini birlikte çekmiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu fotoğrafı duvara asmak isterdim. Ama Haluk amcanın yüzüne bakamıyorum."
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "Son balık",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      ".###......",
+      "#####.....",
+      "#.####....",
+      "######.##.",
+      ".#######..",
+      "..######..",
+      "..##.###..",
+      "......##..",
+      ".......#.."
+     ],
+     "photo": "photos/r2_k10_son_balik.svg",
+     "hotspots": [
+      {
+       "id": "wm.r2.t1300",
+       "x": 214,
+       "y": 270,
+       "r": 30,
+       "kind": "time",
+       "title": "Son balık",
+       "body": "Saat 13:00. Necati son balığı da saatiyle fotoğraflamış.",
+       "tag": "13:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Saat bir. Soygundan yarım saat sonra hâlâ oradalar. Artık eminim."
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "title": "Göl yolu",
+   "intro": "Etikette: \"Göl yolu.\" Necati'nin ikinci makinesi; aynı gün, göl ile kasaba arası.",
+   "question": {
+    "text": "O kırmızı motosiklet kimin?",
+    "options": [
+     {
+      "id": "cem",
+      "text": "Cem'in",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Kasabada tek kırmızı motosiklet. \"Annem hasta\" deyip çıkmıştı. Annesinin evi göl yolunda değil."
+      }
+     },
+     {
+      "id": "stranger",
+      "text": "Tanımadığımız birinin",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Olabilir. Ama o yol sadece göle gider. Göl yolunda tanımadığımız biri ne arasın?"
+      }
+     },
+     {
+      "id": "haluk",
+      "text": "Haluk'un",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Haluk amca o saatte babamın yanındaydı. Motosiklet de onun değil; arabası var."
+      }
+     }
+    ],
+    "truth": "cem",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Dördüncü rulonun etiketi: \"Dükkân, akşamüstü.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Soygundan birkaç saat sonra. Bakalım o gün dükkâna kim döndü."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Göl yolu",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..######..",
+      "..#....#..",
+      "..######..",
+      ".....#....",
+      ".....#....",
+      "....###...",
+      "...#####..",
+      "..#######.",
+      ".#########",
+      "##########"
+     ],
+     "photo": "photos/r3_k1_gol_yolu.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.sign",
+       "x": 220,
+       "y": 182,
+       "r": 32,
+       "kind": "clue",
+       "title": "Tek yol",
+       "body": "Tabela: Göl 3 km, kasaba 17 km. Göl ile kasaba arasında başka yol yok."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu yol kasabaya tek bağlantı. Gelen giden herkes buradan geçer."
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Manzara",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..##......",
+      ".####.....",
+      "######..##",
+      "##########",
+      "####..####",
+      "###....###",
+      "##......##",
+      "#........#",
+      ".........."
+     ],
+     "photo": "photos/r3_k2_manzara.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.empty",
+       "x": 150,
+       "y": 250,
+       "r": 34,
+       "kind": "clue",
+       "title": "Boş yol",
+       "body": "Saat 12:10 sularında yol bomboş. Necati manzarayı çekmiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam manzaraya bayılırdı. Ama sanki bir şey bekliyormuş gibi."
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "12:18",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      ".#....###.",
+      "##....#..#",
+      "#.#..#...#",
+      "##.##....#",
+      ".#..#...##",
+      "..##.###..",
+      "..........",
+      ".........."
+     ],
+     "photo": "photos/r3_k3_12_18.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.t1218",
+       "x": 172,
+       "y": 204,
+       "r": 28,
+       "kind": "time",
+       "title": "Kırmızı motosiklet",
+       "body": "Göl yolunda kasabaya doğru hızla giden kırmızı bir motosiklet. Necati'nin saati 12:18.",
+       "tag": "12:18"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Kırmızı bir motosiklet… Göl yolunda ne işi vardı? Nerede görmüştüm bunu?"
+     },
+     "search": true
+    },
+    {
+     "number": 4,
+     "title": "Büyütme",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..####....",
+      "..#####...",
+      "..#####...",
+      "...###....",
+      "..#####...",
+      ".#######..",
+      "..#####...",
+      ".#.###.#..",
+      "#.#...#.#.",
+      ".#.....#.."
+     ],
+     "photo": "photos/r3_k4_buyutme.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.rider",
+       "x": 160,
+       "y": 160,
+       "r": 36,
+       "kind": "clue",
+       "title": "Sürücü",
+       "body": "Büyütünce: sürücünün kaskı yok; saçları koyu ve kıvırcık. Genç biri."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Kıvırcık saç… Hayır. Acele etmeyelim."
+     },
+     "search": true,
+     "scene": {
+      "eyebrow": "BUGÜN · AKŞAM",
+      "title": "Bir profil",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe geç saatte arıyor.",
+        "sfx": "mobile"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Cem'i internette buldum. İzmir'de oto tamircisi. Elli dört yaşında, iki çocuk babası."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Eski bir fotoğrafı var: kırmızı bir motosikletin önünde. Altında \"İlk aşkım, 1987\" yazıyor."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Bir şey demeyeceğim. Henüz değil."
+       }
+      ]
+     }
+    },
+    {
+     "number": 5,
+     "title": "Dalgın",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "...####...",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "..##..##..",
+      "...####...",
+      "..######..",
+      ".########.",
+      "##########"
+     ],
+     "photo": "photos/r3_k5_dalgin.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.distracted",
+       "x": 170,
+       "y": 192,
+       "r": 36,
+       "kind": "clue",
+       "title": "Dalgın",
+       "body": "12:40 sularında. Haluk oltasını bırakmış, yola bakıyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Balık tutmuyor. Yola bakıyor. Bir şey görmüş olmalı."
+     },
+     "search": false
+    },
+    {
+     "number": 6,
+     "title": "Telsiz",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "#########.",
+      "#.##.#...#",
+      "#.##.#.#.#",
+      "#########.",
+      "........#.",
+      "........#.",
+      ".......###",
+      ".......###",
+      ".......###"
+     ],
+     "photo": "photos/r3_k6_telsiz.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.radio",
+       "x": 110,
+       "y": 240,
+       "r": 40,
+       "kind": "clue",
+       "title": "Polis telsizi",
+       "body": "Haluk arabadaki polis telsizini dinliyor. Soygun ihbarı bu kanaldan geçmiş olmalı."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Soygunu buradan, telsizden duymuş. Ve babama hiçbir şey söylememiş."
+     },
+     "search": true
+    },
+    {
+     "number": 7,
+     "title": "Habersiz",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "...####...",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "...####...",
+      "..........",
+      "..#####.#.",
+      ".########.",
+      "..#####.#.",
+      ".........."
+     ],
+     "photo": "photos/r3_k7_habersiz.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.unaware",
+       "x": 150,
+       "y": 175,
+       "r": 40,
+       "kind": "clue",
+       "title": "Habersiz",
+       "body": "Necati balığıyla poz veriyor; kasabada olanlardan haberi yok."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam o an dünyanın en mutlu adamı gibi. İki gün sonra her şeyini kaybedecek."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · DÜKKÂNDA",
+      "title": "Rıza Usta'nın kızı",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe dükkâna not defteriyle geliyor; yarısı karalanmış.",
+        "sfx": "doorbell"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Rıza Usta'nın kızına ulaştım. Babası yaşıyormuş, İzmir'de bir huzurevinde."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Kızı dedi ki: \"Babam o soygundan sonra bir daha hiç dükkân açmadı. Sigortadan tek kuruş alamadı.\""
+       },
+       {
+        "speaker": "ayse",
+        "text": "Tek kuruş mu? Ama vitrinde sigorta levhası vardı…"
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Apar topar",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "...#......",
+      "....####..",
+      "...#....#.",
+      "..#......#",
+      "#########.",
+      "##########",
+      "##########",
+      ".##....##.",
+      ".##....##.",
+      ".........."
+     ],
+     "photo": "photos/r3_k8_apar_topar.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.t1310",
+       "x": 260,
+       "y": 90,
+       "r": 30,
+       "kind": "time",
+       "title": "Merkeze",
+       "body": "Haluk \"Merkeze gitmem lazım\" deyip toplanıyor. Saat 13:10.",
+       "tag": "13:10"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Telsizi duyduktan yarım saat sonra. Neden hemen gitmemiş? Neyi düşünmüş o yarım saat?"
+     },
+     "search": false
+    },
+    {
+     "number": 9,
+     "title": "Taze iz",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "#.#.#.#.##",
+      ".......###",
+      "......###.",
+      ".....###..",
+      "....###...",
+      "...###....",
+      "..###.....",
+      ".###......",
+      "###.......",
+      "#.#.#.#.#."
+     ],
+     "photo": "photos/r3_k9_taze_iz.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.track",
+       "x": 170,
+       "y": 162,
+       "r": 36,
+       "kind": "clue",
+       "title": "Taze iz",
+       "body": "Yol kenarındaki çamurda ince, taze bir lastik izi. Motosiklet izi."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bunu da çekmiş. Babam bir şeyden şüphelenmiş miydi acaba?"
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "Kasabaya dönüş",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "....##....",
+      "...####...",
+      "...#..#...",
+      "...####...",
+      "###....###",
+      "#.#....#.#",
+      "##########",
+      "..........",
+      ".##....##.",
+      ".##....##."
+     ],
+     "photo": "photos/r3_k10_kasabaya_donus.svg",
+     "hotspots": [
+      {
+       "id": "wm.r3.t1340",
+       "x": 150,
+       "y": 84,
+       "r": 30,
+       "kind": "time",
+       "title": "Kasabaya döndüler",
+       "body": "Kule 13:40. Kasaba girişinde polis arabaları. Haluk, Necati'yi burada bırakıp merkeze gitmiş.",
+       "tag": "13:40"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam soygunu ilk burada duymuş olmalı. Şüphelinin kendisi olacağı aklına bile gelmemiş."
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "title": "Akşamüstü",
+   "intro": "Etikette: \"Dükkân, akşamüstü.\" Soygundan birkaç saat sonra.",
+   "question": {
+    "text": "Soyguncu topallıyordu. Cem neden topallıyor?",
+    "options": [
+     {
+      "id": "window",
+      "text": "Pencereden atlarken yaralandı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Rıza Usta \"atlayan düştü\" dedi. Aynı gün Cem'in bileği sargılı, ayağı aksıyor…"
+      }
+     },
+     {
+      "id": "bike",
+      "text": "Söylediği gibi motosikletten düştü",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Belki. Ama motosikleti çizik bile değil. Sadece çamurlu."
+      }
+     },
+     {
+      "id": "always",
+      "text": "Hep topallardı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Bir gün önceki fotoğraflarda koşturuyordu. Hayır, bu yeni."
+      }
+     }
+    ],
+    "truth": "window",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Beşinci rulonun etiketi: \"Gece ışığı.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Babamın bir yarışma için çektiği gece fotoğrafları. Annem anlatırdı; o fotoğrafları hiç görememiş."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Dönüş",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "#.######..",
+      ".#......#.",
+      "#....#..##",
+      "#....#...#",
+      "#....#...#",
+      "#....####.",
+      "#........#",
+      "#........#",
+      ".#......#.",
+      "..#######."
+     ],
+     "photo": "photos/r4_k1_donus.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.t1600",
+       "x": 196,
+       "y": 62,
+       "r": 30,
+       "kind": "time",
+       "title": "Dükkâna döndü",
+       "body": "Duvardaki saatler 16:00. Necati dükkânı yeniden açmış.",
+       "tag": "16:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Soygundan üç buçuk saat sonra babam sakin sakin dükkânını açıyor. Suçlu biri böyle mi davranır?"
+     },
+     "search": true
+    },
+    {
+     "number": 2,
+     "title": "Kapının önünde",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "....##....",
+      "..#####.##",
+      ".######.#.",
+      "..####....",
+      ".##..###..",
+      "#..#.#..#.",
+      "#..#.#..#.",
+      ".##...##..",
+      ".........."
+     ],
+     "photo": "photos/r4_k2_kapinin_onunde.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.mud",
+       "x": 108,
+       "y": 338,
+       "r": 34,
+       "kind": "clue",
+       "title": "Çamur",
+       "body": "Cem'in kırmızı motosikleti dükkânın önünde. Tekerlekleri çamurlu; kasabanın yolları asfalt."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Çamur… Göl yolunun çamuru mu bu?"
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "Sargılı bilek",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      ".######...",
+      "#.#.#.##..",
+      "#.#.#.#.##",
+      "######..##",
+      "#.#.#.#.##",
+      ".######...",
+      "..........",
+      ".........."
+     ],
+     "photo": "photos/r4_k3_sargili_bilek.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.bandage",
+       "x": 142,
+       "y": 260,
+       "r": 30,
+       "kind": "clue",
+       "title": "Sargılı bilek",
+       "body": "Cem'in sol bileği sargılı. Necati'ye \"Motosikletten düştüm\" demiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Düşmüş… Soyguncu da pencereden atlarken düşmüş olabilir mi?"
+     },
+     "search": true,
+     "scene": {
+      "eyebrow": "BUGÜN · OKUL ÇIKIŞI",
+      "title": "Dava dosyası",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe okul çantasından kalın bir dosya çıkarıyor.",
+        "sfx": "folder"
+       },
+       {
+        "speaker": null,
+        "text": "İFADE · RIZA KARACA · 3 Mart 1989. \"Arka pencereden atlayan kişi düştü, kalkıp topallayarak kaçtı. Yüzünü görmedim.\"",
+        "style": "paper",
+        "sfx": "newspaper"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Babamın eski bir bacak sakatlığı vardı. Herkes ona baktı."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Kimse başka topallayan aramadı."
+       }
+      ]
+     }
+    },
+    {
+     "number": 4,
+     "title": "Topallıyor",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "...##.....",
+      "..####....",
+      "...##.....",
+      ".######...",
+      ".######...",
+      "..####....",
+      "..#..##...",
+      "..#...#...",
+      "..#....#..",
+      ".##....##."
+     ],
+     "photo": "photos/r4_k4_topalliyor.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.limp",
+       "x": 168,
+       "y": 306,
+       "r": 32,
+       "kind": "clue",
+       "title": "Topallıyor",
+       "body": "Cem kutu taşırken sol ayağını sürüyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam ona takılıyor, gülüyor. Hiçbir şeyden şüphelenmemiş."
+     },
+     "search": false
+    },
+    {
+     "number": 5,
+     "title": "Karşı dükkân",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "##########",
+      "#........#",
+      "##########",
+      "#..####..#",
+      "#..#..#..#",
+      "#..####..#",
+      "##########",
+      "#........#"
+     ],
+     "photo": "photos/r4_k5_karsi_dukkan.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.seal",
+       "x": 150,
+       "y": 210,
+       "r": 34,
+       "kind": "clue",
+       "title": "Mühür",
+       "body": "Rıza Usta'nın dükkânı kapalı; kepenkte polis mührü."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Kasabanın yarısı oradaymış herhalde. Babam ise karşıda saat tamir ediyor."
+     },
+     "search": false
+    },
+    {
+     "number": 6,
+     "title": "Camdaki not",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#........#",
+      "#.#####..#",
+      "#........#",
+      "#.######.#",
+      "#........#",
+      "#....###.#",
+      "##########"
+     ],
+     "photo": "photos/r4_k6_camdaki_not.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.uninsured",
+       "x": 150,
+       "y": 160,
+       "r": 44,
+       "kind": "clue",
+       "title": "Sigortasız",
+       "body": "Rıza'nın el yazısı: poliçe 1 Nisan'da başlayacakmış. \"Sigortalıdır\" levhasını sigortacı asmış. Soygun günü dükkân sigortasızmış."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Rıza Usta'dan şüphelenmiştim. O levha sigortacının reklamıymış. Adam her şeyini kaybetmiş."
+     },
+     "search": true
+    },
+    {
+     "number": 7,
+     "title": "Rıza Usta",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "...####...",
+      "..######..",
+      "#.#.##.#.#",
+      "#.######.#",
+      "##.####.##",
+      ".##....##.",
+      "..######..",
+      ".########.",
+      "##########"
+     ],
+     "photo": "photos/r4_k7_riza_usta.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.riza",
+       "x": 150,
+       "y": 205,
+       "r": 40,
+       "kind": "person",
+       "title": "Rıza Usta",
+       "body": "Dükkânının önünde, başını elleri arasına almış. Her şeyini kaybetmiş bir adam.",
+       "person": "riza"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu adamı otuz yıl içimden suçladım. Ona bir özür borçluyum."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · TELEFON",
+      "title": "Rıza Usta",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe'nin telefonu çalıyor. Huzurevinden.",
+        "sfx": "mobile"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Rıza Usta'yla konuştum. Doksanına yakın, ama her şeyi hatırlıyor."
+       },
+       {
+        "speaker": "ayse",
+        "text": "\"Necati'yi hiç suçlamadım\" dedi. \"Kaçan hafifti, çevikti. Bir çocuktu.\""
+       },
+       {
+        "speaker": "ayse",
+        "text": "Bir çocuk. Otuz yedi yıl boyunca kimse ona sormamış."
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Göz göze",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..##...##.",
+      ".####.####",
+      ".#..#.####",
+      ".####.####",
+      "..##...##.",
+      ".####.####",
+      "######.###",
+      "######.###",
+      "######.###",
+      ".........."
+     ],
+     "photo": "photos/r4_k8_goz_goze.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.eyes",
+       "x": 215,
+       "y": 200,
+       "r": 34,
+       "kind": "clue",
+       "title": "Gözlerini kaçırıyor",
+       "body": "Necati sargıya bakıp gülüyor. Cem başını eğmiş, gözlerini kaçırıyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Gözlerini kaçırıyor. Bunu ilk kez fark ediyorum."
+     },
+     "search": false
+    },
+    {
+     "number": 9,
+     "title": "Kapanış",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..#######.",
+      ".#......#.",
+      "##..#....#",
+      "#...#....#",
+      "#...#....#",
+      "#...#....#",
+      "#...#....#",
+      "#...#....#",
+      ".#..#...#.",
+      "#.######.."
+     ],
+     "photo": "photos/r4_k9_kapanis.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.t1800",
+       "x": 120,
+       "y": 56,
+       "r": 28,
+       "kind": "time",
+       "title": "Kapanış",
+       "body": "Saatler 18:00. Necati dükkânı kapatıyor; Cem hâlâ içeride.",
+       "tag": "18:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Herkes eve gidiyor. Cem neden gitmiyor?"
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "İçerideki gölge",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#...##...#",
+      "#..####..#",
+      "#...##...#",
+      "#..####..#",
+      "#.######.#",
+      "#..#..#..#",
+      "#..#..#..#",
+      "##########"
+     ],
+     "photo": "photos/r4_k10_icerideki_golge.svg",
+     "hotspots": [
+      {
+       "id": "wm.r4.shadow",
+       "x": 110,
+       "y": 222,
+       "r": 36,
+       "kind": "clue",
+       "title": "İçerideki gölge",
+       "body": "Kapanıştan sonra vitrinin ardında bir gölge: tezgâhın arkasında biri var. Boyu Cem'in boyu."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Kapandıktan sonra ne işi vardı içeride?"
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "title": "Çekmece",
+   "intro": "Etikette: \"Gece ışığı.\" Necati bir fotoğraf yarışması için dükkânını gece çekmiş.",
+   "question": {
+    "text": "Haluk bunu biliyor muydu?",
+    "options": [
+     {
+      "id": "knew",
+      "text": "Biliyordu, kardeşini korudu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "O zaman mahkemedeki yalan da anlaşılır. Ama bu, babamın arkadaşının bunu bile bile yaptığı demek."
+      }
+     },
+     {
+      "id": "nothing",
+      "text": "Hiçbir şeyden haberi yoktu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Keşke. Ama telsizi dinledi, motosikleti gördü. Hiç mi düşünmedi?"
+      }
+     },
+     {
+      "id": "believed",
+      "text": "Necati'yi gerçekten suçlu sandı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "O zaman neden \"onu görmedim\" dedi? Göldeydiler, birlikte."
+      }
+     }
+    ],
+    "truth": "knew",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Altıncı rulonun etiketi: \"4 Mart, sabah.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Soygunun ertesi sabahı. Babam tutuklanmadan bir gün önce."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Gece vitrini",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#.#....#.#",
+      "#.#.#..#.#",
+      "#.#.###..#",
+      "#.#....#.#",
+      "#.######.#",
+      "#........#",
+      "##########"
+     ],
+     "photo": "photos/r5_k1_gece_vitrini.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.t2000",
+       "x": 100,
+       "y": 210,
+       "r": 36,
+       "kind": "time",
+       "title": "Gece çekimi",
+       "body": "Vitrindeki saat 20:00. Necati yarışma için dükkânını gece ışığında çekiyor.",
+       "tag": "20:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam bu yarışmayı çok istiyormuş. Annem \"ilk ödülü alacaktı\" derdi."
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Tezgâh lambası",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "....##....",
+      "...####...",
+      "..######..",
+      ".########.",
+      "....##....",
+      "....##....",
+      "....##....",
+      "...####...",
+      "..######..",
+      "##########"
+     ],
+     "photo": "photos/r5_k2_tezgah_lambasi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.lamp",
+       "x": 150,
+       "y": 146,
+       "r": 34,
+       "kind": "clue",
+       "title": "Uzun pozlama",
+       "body": "Lamba yanık, her şey keskin. Necati makineyi sehpaya kurmuş, ışığı uzun süre içeri alıyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Uzun pozlama… Hareket eden her şey bulanık çıkar. Babam bunu bilirdi."
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "Bulanık gölge",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "......##..",
+      ".....####.",
+      "......##..",
+      "....#####.",
+      "...######.",
+      "....####..",
+      "..#.#####.",
+      "...#.##.#.",
+      "..########",
+      "..#......#"
+     ],
+     "photo": "photos/r5_k3_bulanik_golge.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.blur",
+       "x": 222,
+       "y": 250,
+       "r": 40,
+       "kind": "clue",
+       "title": "Bulanık gölge",
+       "body": "Uzun pozlamada hareket eden biri bulanık çıkar: Cem, arka çekmeceye eğilmiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Neden bulanık? Hareket ediyormuş. Çekmeceye bir şey koyuyor ya da alıyor."
+     },
+     "search": true,
+     "scene": {
+      "eyebrow": "BUGÜN · AYŞE'NİN EVİ",
+      "title": "Delil 4",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe dava dosyasından tek bir sayfa çıkarıyor; kenarları parmak izinden kararmış.",
+        "sfx": "folder"
+       },
+       {
+        "speaker": null,
+        "text": "DELİL 4 · Lacivert kadife kolye kutusu. Sanığın dükkânında, arka çekmecede bulunmuştur. 5 Mart 1989.",
+        "style": "paper",
+        "sfx": "newspaper"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Bu fotoğrafı yıllarca ezberledim. Babamı mahkûm eden kutu."
+       }
+      ]
+     }
+    },
+    {
+     "number": 4,
+     "title": "Çekmece aralık",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#...##...#",
+      "#........#",
+      "##########",
+      ".#......#.",
+      ".#.####.#.",
+      ".#.####.#.",
+      ".########.",
+      ".........."
+     ],
+     "photo": "photos/r5_k4_cekmece_aralik.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.box",
+       "x": 182,
+       "y": 266,
+       "r": 32,
+       "kind": "clue",
+       "title": "Lacivert kadife",
+       "body": "Arka çekmece aralık kalmış. İçinde lacivert kadife bir kutunun köşesi."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Aynı kutu. Dava dosyasındaki kutu. Saat 20:00'de babamın çekmecesinde duruyormuş."
+     },
+     "search": true
+    },
+    {
+     "number": 5,
+     "title": "Aynadaki Necati",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#.#....#.#",
+      "#.#.##.#.#",
+      "#.#.##.#.#",
+      "#.#....#.#",
+      "#.######.#",
+      "#........#",
+      "##########"
+     ],
+     "photo": "photos/r5_k5_aynadaki_necati.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.mirror",
+       "x": 115,
+       "y": 154,
+       "r": 34,
+       "kind": "clue",
+       "title": "Aynadaki Necati",
+       "body": "Aynada Necati: gözü vizörde. Arka çekmeceyi görmüyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam tam karşısında, ama görmüyor. Gözü sadece ışıkta."
+     },
+     "search": false
+    },
+    {
+     "number": 6,
+     "title": "Cem çıkıyor",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..######..",
+      "##......#.",
+      "#....#..##",
+      "#......#.#",
+      "#....##..#",
+      "#....#...#",
+      "#........#",
+      "#........#",
+      ".#......##",
+      "..######.."
+     ],
+     "photo": "photos/r5_k6_cem_cikiyor.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.t2020",
+       "x": 196,
+       "y": 62,
+       "r": 30,
+       "kind": "time",
+       "title": "Cem çıktı",
+       "body": "20:20. Cem kaskını alıp çıkıyor. Elleri boş.",
+       "tag": "20:20"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Elleri boş çıkıyor. Kutu çekmecede kaldı."
+     },
+     "search": false
+    },
+    {
+     "number": 7,
+     "title": "Anahtar",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      ".###......",
+      "#.#.#.....",
+      "#...######",
+      "#...#..#.#",
+      ".###...#.#",
+      "..........",
+      "..........",
+      ".........."
+     ],
+     "photo": "photos/r5_k7_anahtar.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.t2045",
+       "x": 250,
+       "y": 60,
+       "r": 28,
+       "kind": "time",
+       "title": "Dükkân kilitlendi",
+       "body": "20:45. Necati kapıyı kilitliyor. Anahtar yalnızca onda ve Cem'de var.",
+       "tag": "20:45"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Anahtar ikisinde de varmış. Başka kimse giremezdi."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · GECE",
+      "title": "Görüldü",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Gece yarısına doğru Ayşe'den bir mesaj geliyor.",
+        "sfx": "message"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Cem'e yazdım. \"Babamın 1989'dan kalma fotoğraflarını buldum\" dedim, başka bir şey demedim."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Üç saattir \"görüldü\"de. Cevap yok."
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Yarışma karesi",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "##.#..##.#",
+      ".#.#..#.#.",
+      "..#....#..",
+      "...####...",
+      "##.####.##",
+      "...####...",
+      "#.#....##.",
+      ".#.#..#.#.",
+      "#..#..#..#",
+      ".........."
+     ],
+     "photo": "photos/r5_k8_yarisma_karesi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.contest",
+       "x": 150,
+       "y": 172,
+       "r": 38,
+       "kind": "clue",
+       "title": "Yarışma fotoğrafı",
+       "body": "Necati'nin yarışma için seçtiği kare. Hiç gönderilmedi."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Ne güzel bir fotoğraf. Bunu çerçeveletip asacağım, ne olursa olsun."
+     },
+     "search": false
+    },
+    {
+     "number": 9,
+     "title": "Kilitsiz",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "##########",
+      "#........#",
+      "#...##...#",
+      "#..#..#..#",
+      "#..####..#",
+      "#..####..#",
+      "#........#",
+      "##########",
+      ".........."
+     ],
+     "photo": "photos/r5_k9_kilitsiz.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.nolock",
+       "x": 150,
+       "y": 214,
+       "r": 30,
+       "kind": "clue",
+       "title": "Kilitsiz",
+       "body": "Arka çekmecenin kilidi yok. Dükkânda olan herkes açabilir."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Avukat bunu hiç sormamış mı? Herkes açabilirmiş."
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "Damga",
+     "date": "3 Mart 1989",
+     "puzzle": [
+      "..........",
+      "##########",
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#.#....#.#",
+      "#.######.#",
+      "#........#",
+      "##########",
+      ".........."
+     ],
+     "photo": "photos/r5_k10_damga.svg",
+     "hotspots": [
+      {
+       "id": "wm.r5.stamp",
+       "x": 150,
+       "y": 232,
+       "r": 40,
+       "kind": "clue",
+       "title": "Rıza'nın damgası",
+       "body": "Kutunun kapağında altın yaldızla \"Rıza Kuyumculuk\". Çalıntı kutu, soygundan yedi buçuk saat sonra burada."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Artık şüphe yok. Kutuyu oraya Cem koymuş. Babam değil."
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "title": "Haluk",
+   "intro": "Etikette: \"4 Mart, sabah.\" Soygunun ertesi günü, tutuklanmadan bir gün önce.",
+   "question": {
+    "text": "Bu filmler neden 37 yıl boyunca hiç banyo edilmedi?",
+    "options": [
+     {
+      "id": "nermin",
+      "text": "Nermin Hanım onları sakladı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Haluk amca \"hep yok dediler\" dedi. Biri bu filmleri bilerek saklamış."
+      }
+     },
+     {
+      "id": "forgot",
+      "text": "Necati onları unuttu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Ertesi gün tutuklandı. Altı yıl yattı. Belki… ama fotoğraf için yaşayan bir adam unutur mu?"
+      }
+     },
+     {
+      "id": "haluk",
+      "text": "Haluk onlara el koydu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "O zaman neden hâlâ arıyor? Filmler onda değil. Hiç olmadı."
+      }
+     }
+    ],
+    "truth": "nermin",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Torbada son bir rulo kaldı. Etiketinde: \"4 Mart, ev.\"",
+      "sfx": "bag"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Babamın evde çektiği son fotoğraflar. Ertesi sabah onu götürdüler."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Erken ziyaret",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "...####...",
+      "..######..",
+      ".########.",
+      "..#.##.#..",
+      "..######..",
+      "...####...",
+      "..######..",
+      ".#.####.#.",
+      ".########.",
+      ".########."
+     ],
+     "photo": "photos/r6_k1_erken_ziyaret.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.t0800",
+       "x": 250,
+       "y": 52,
+       "r": 30,
+       "kind": "time",
+       "title": "Haluk geldi",
+       "body": "4 Mart, 08:00. Haluk üniformasıyla, dükkân açılmadan geliyor.",
+       "tag": "08:00"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Pazar sabahı, üniformayla. Görevli değilse neden üniformalı?"
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Dışarı",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..#.......",
+      ".###....#.",
+      "..#....###",
+      ".###....#.",
+      "#####..###",
+      ".###..####",
+      ".#.#...###",
+      ".#.#...#.#",
+      ".#.#...#..",
+      "##.##.##.."
+     ],
+     "photo": "photos/r6_k2_disari.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.call",
+       "x": 148,
+       "y": 174,
+       "r": 30,
+       "kind": "clue",
+       "title": "Dışarı",
+       "body": "Haluk, Cem'i el işaretiyle dışarı çağırıyor. Necati camın arkasından çekiyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Babam neden camın arkasından çekmiş? Merak etmiş olmalı."
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "Tartışma",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      ".##.......",
+      "####......",
+      ".##.......",
+      "####....#.",
+      "#####..###",
+      "####.#..#.",
+      "####..####",
+      "####...###",
+      "####...###",
+      "####...###"
+     ],
+     "photo": "photos/r6_k3_tartisma.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.argue",
+       "x": 188,
+       "y": 214,
+       "r": 30,
+       "kind": "clue",
+       "title": "Tartışma",
+       "body": "Haluk parmağıyla Cem'i gösteriyor. Sesleri duyulmuyor ama yüzleri her şeyi anlatıyor."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Ağabey kardeşini azarlıyor. Haluk biliyor."
+     },
+     "search": true,
+     "scene": {
+      "eyebrow": "BUGÜN · DÜKKÂNDA",
+      "title": "Bir ziyaretçi",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Dükkânın zili çalıyor. Kapıda yaşlı, uzun boylu bir adam; şapkasını çıkarıyor.",
+        "sfx": "doorbell"
+       },
+       {
+        "speaker": "haluk",
+        "text": "Nermin Hanım'ın dükkânı burası mı? Eskiden bir filmim kalmıştı burada."
+       },
+       {
+        "speaker": "haluk",
+        "text": "Otuz yıldır arada bir sorarım. Hep \"yok\" dediler."
+       },
+       {
+        "speaker": null,
+        "text": "Gözleri arkadaki dolapta. Bir süre bakıyor. Sonra hiçbir şey istemeden çıkıp gidiyor."
+       }
+      ]
+     }
+    },
+    {
+     "number": 4,
+     "title": "Gözyaşı",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..#.##.#..",
+      ".########.",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "..##..##..",
+      "...####...",
+      "....##....",
+      "..######..",
+      ".########."
+     ],
+     "photo": "photos/r6_k4_gozyasi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.tears",
+       "x": 142,
+       "y": 196,
+       "r": 32,
+       "kind": "clue",
+       "title": "Gözyaşı",
+       "body": "Cem ağlıyor. Haluk elini omzuna koymuş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "On yedi yaşında bir çocuk. Kızamıyorum bile; ne garip."
+     },
+     "search": false
+    },
+    {
+     "number": 5,
+     "title": "Çekmeceye bakıyor",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..........",
+      ".##.......",
+      "####......",
+      ".##.......",
+      "######....",
+      "####.#####",
+      "####.#...#",
+      "####.#.#.#",
+      "####.#####",
+      ".........."
+     ],
+     "photo": "photos/r6_k5_cekmeceye_bakiyor.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.look",
+       "x": 212,
+       "y": 290,
+       "r": 34,
+       "kind": "clue",
+       "title": "Çekmeceye bakıyor",
+       "body": "Haluk arka çekmeceyi açıp içine bakıyor. Kimse ona nereye bakacağını söylemedi."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Nereye bakacağını biliyor. Kimse söylemeden."
+     },
+     "search": true
+    },
+    {
+     "number": 6,
+     "title": "Dokunmadan",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      "....######",
+      "....#....#",
+      "##..#.##.#",
+      "##..#....#",
+      "....######",
+      "..........",
+      "##########",
+      "#........#"
+     ],
+     "photo": "photos/r6_k6_dokunmadan.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.closed",
+       "x": 180,
+       "y": 236,
+       "r": 36,
+       "kind": "clue",
+       "title": "Hiçbir şey almadı",
+       "body": "Haluk çekmeceyi kapatıyor. Kutuya dokunmadan."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Alıp atabilirdi. Ama orada bıraktı. Babamın çekmecesinde."
+     },
+     "search": false
+    },
+    {
+     "number": 7,
+     "title": "Omuz",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "......##..",
+      "..##.####.",
+      ".####.##..",
+      ".#..#####.",
+      ".####.##..",
+      "..##......",
+      ".#####.###",
+      "##########",
+      "##########",
+      "####..####"
+     ],
+     "photo": "photos/r6_k7_omuz.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.smile",
+       "x": 210,
+       "y": 190,
+       "r": 34,
+       "kind": "clue",
+       "title": "Gülümseme",
+       "body": "Çıkarken Haluk, Necati'nin omzuna dokunup gülümsüyor. Fotoğrafı Cem çekmiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu gülümsemeyi hiç unutmayacağım."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · GECE",
+      "title": "Tutanak",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe gece yarısı dava dosyasının son sayfalarını fotoğraflayıp gönderiyor.",
+        "sfx": "message"
+       },
+       {
+        "speaker": null,
+        "text": "ARAMA TUTANAĞI · 5 Mart 1989. Arama ekibi amiri: Komiser Yrd. H. Demir. Arka çekmecede lacivert kadife kolye kutusu bulunmuştur.",
+        "style": "paper",
+        "sfx": "newspaper"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Aramayı kendisi yönetmiş. Kutunun nerede olduğunu bile bile."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Bugün dükkâna gelen adam… Haluk amcaydı, değil mi?"
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Sıradan bir sabah",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..######..",
+      "##......##",
+      "#....#...#",
+      "#....#...#",
+      "#....#...#",
+      "#....#...#",
+      "#...#....#",
+      "#..#.#.#.#",
+      ".#......#.",
+      "..######.."
+     ],
+     "photo": "photos/r6_k8_siradan_bir_sabah.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.t0930",
+       "x": 196,
+       "y": 62,
+       "r": 30,
+       "kind": "time",
+       "title": "Sıradan bir sabah",
+       "body": "09:30. Necati her sabahki gibi saat tamir ediyor.",
+       "tag": "09:30"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Hiçbir şeyden haberi yok. Ertesi sabah onu bu tezgâhın başından alacaklar."
+     },
+     "search": false
+    },
+    {
+     "number": 9,
+     "title": "Boş tabure",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..........",
+      "..........",
+      "..######..",
+      "..######..",
+      "...#..#...",
+      "...#..#...",
+      "...#..#...",
+      "..#....#..",
+      "..#....#..",
+      "##########"
+     ],
+     "photo": "photos/r6_k9_bos_tabure.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.stool",
+       "x": 150,
+       "y": 254,
+       "r": 34,
+       "kind": "clue",
+       "title": "Cem gitti",
+       "body": "Cem'in taburesi boş. O sabahtan sonra dükkâna bir daha gelmemiş."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Dava boyunca bir kez bile ifade vermemiş. Kimse ona sormamış bile."
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "Uzaklaşan araba",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..........",
+      "...#####..",
+      "..#.#.#.#.",
+      ".#..#.#..#",
+      "##########",
+      "##########",
+      "##########",
+      ".##....##.",
+      ".##....##.",
+      ".........."
+     ],
+     "photo": "photos/r6_k10_uzaklasan_araba.svg",
+     "hotspots": [
+      {
+       "id": "wm.r6.passenger",
+       "x": 122,
+       "y": 210,
+       "r": 28,
+       "kind": "clue",
+       "title": "Ön koltukta Cem",
+       "body": "Haluk'un arabası uzaklaşıyor; ön koltukta Cem."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Kardeşini alıp götürmüş. Ertesi gün de babamı."
+     },
+     "search": true
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "title": "Son gün",
+   "intro": "Etikette: \"4 Mart, ev.\" Torbadaki son rulo.",
+   "question": {
+    "text": "Delil masası: kutuyu çekmeceye kim koydu, kim sakladı?",
+    "options": [
+     {
+      "id": "cem_haluk",
+      "text": "Cem koydu, Haluk sakladı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "12:18'deki motosiklet. Sargılı bilek. Gece çekmeceye eğilen bulanık gölge. Ertesi sabah çekmeceye bakıp dokunmayan Haluk. Hepsi aynı yeri gösteriyor."
+      }
+     },
+     {
+      "id": "cem_alone",
+      "text": "Cem koydu, kimse bilmiyordu",
+      "reply": {
+       "speaker": "ayse",
+       "text": "Haluk ertesi sabah doğruca o çekmeceyi açtı. Aramayı da kendisi yönetti. Biliyordu."
+      }
+     },
+     {
+      "id": "haluk_alone",
+      "text": "Haluk koydu, suçu Cem'e attı",
+      "reply": {
+       "speaker": "ayse",
+       "text": "12:30'da Haluk babamla göldeydi. Kutuyu çalan da koyan da o olamaz. Ama sakladı."
+      }
+     }
+    ],
+    "truth": "cem_haluk",
+    "outro": [
+     {
+      "speaker": null,
+      "text": "Ayşe fotoğrafları masaya diziyor. Tek tek, sırayla. Sonunda ortaya çıkan hikâye şu:"
+     },
+     {
+      "speaker": null,
+      "text": "3 Mart, öğle arası. Kumar borcu olan Cem, kuyumcuya arka pencereden giriyor. Atlarken bileğini incitiyor."
+     },
+     {
+      "speaker": null,
+      "text": "Çaldıklarından bir kutuyu, sonra almak üzere ustasının dükkânındaki arka çekmeceye saklıyor."
+     },
+     {
+      "speaker": null,
+      "text": "Haluk o saatte Necati'yle göldeydi. Telsizden soygunu duydu; yolda kardeşinin motosikletini görmüştü. Ertesi sabah gerçeği öğrendi."
+     },
+     {
+      "speaker": null,
+      "text": "Kardeşini korumak için kutuyu yerinde bıraktı, aramayı kendisi yönetti ve mahkemede arkadaşını görmediğini söyledi."
+     },
+     {
+      "speaker": null,
+      "text": "Necati ölene kadar kimin yaptığını hiç öğrenmedi. Gerçeği ilk öğrenen kişi sensin."
+     }
+    ]
+   },
+   "frames": [
+    {
+     "number": 1,
+     "title": "Ev",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "....##....",
+      "...####...",
+      "..######..",
+      ".########.",
+      "##########",
+      ".#......#.",
+      ".#.##.#.#.",
+      ".#.##.#.#.",
+      ".#....#.#.",
+      ".########."
+     ],
+     "photo": "photos/r7_k1_ev.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.home",
+       "x": 150,
+       "y": 176,
+       "r": 44,
+       "kind": "clue",
+       "title": "Aydın ailesinin evi",
+       "body": "4 Mart öğleden sonra. Necati'nin evi."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu ev… Babam hapisteyken satmışız. Burada yaşadığımı bile hatırlamıyorum."
+     },
+     "search": false
+    },
+    {
+     "number": 2,
+     "title": "Tamir masası",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..........",
+      ".#.####...",
+      "..#....##.",
+      ".#......#.",
+      ".#......#.",
+      ".##.....#.",
+      "..#....#..",
+      "...####...",
+      "..........",
+      "##########"
+     ],
+     "photo": "photos/r7_k2_tamir_masasi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.loupe",
+       "x": 120,
+       "y": 214,
+       "r": 32,
+       "kind": "clue",
+       "title": "Saatçi büyüteci",
+       "body": "Necati'nin evdeki tamir masası; üstünde saatçi büyüteci."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu büyüteç bende. Babamdan kalan tek şey."
+     },
+     "search": false
+    },
+    {
+     "number": 3,
+     "title": "İlk adım",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "...####...",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "...####...",
+      "#.######.#",
+      ".########.",
+      "..######..",
+      "..##..##..",
+      "..##..##.."
+     ],
+     "photo": "photos/r7_k3_ilk_adim.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.firststep",
+       "x": 150,
+       "y": 200,
+       "r": 40,
+       "kind": "person",
+       "title": "Bebek Ayşe",
+       "body": "Ayşe'nin ilk adımları. 4 Mart 1989.",
+       "person": "ayse"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Bu benim. İlk adımım. Hiç bilmiyordum."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · DÜKKÂNDA",
+      "title": "İlk adım",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Ayşe uzun süre konuşmuyor. Fotoğrafı iki eliyle tutuyor.",
+        "sfx": "clock"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Annem \"İlk adımını babanın kucağına doğru attın\" derdi. Hep uydurduğunu sanırdım."
+       }
+      ]
+     }
+    },
+    {
+     "number": 4,
+     "title": "Kucakta",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "..####....",
+      ".######...",
+      ".#.##.#...",
+      ".######...",
+      "..####.##.",
+      ".#####.##.",
+      "########..",
+      "#########.",
+      "#########.",
+      ".########."
+     ],
+     "photo": "photos/r7_k4_kucakta.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.hug",
+       "x": 170,
+       "y": 250,
+       "r": 40,
+       "kind": "clue",
+       "title": "Babası",
+       "body": "Necati, Ayşe'yi tamir masasının başında kucağına almış."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Ertesi sabah onu götürdüler. Bir babanın son mutlu günü."
+     },
+     "search": false
+    },
+    {
+     "number": 5,
+     "title": "Duvar saati",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "########..",
+      ".#......#.",
+      ".#..#...#.",
+      ".#..#...#.",
+      ".#..##..#.",
+      ".#......#.",
+      "..######..",
+      "....##....",
+      "...####...",
+      "...####..."
+     ],
+     "photo": "photos/r7_k5_duvar_saati.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.t1630",
+       "x": 150,
+       "y": 110,
+       "r": 36,
+       "kind": "time",
+       "title": "Evdeki saat",
+       "body": "16:30. Necati filmleri bırakmak için evden çıkmak üzere.",
+       "tag": "16:30"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Saatleri hep doğru. Evde bile."
+     },
+     "search": true
+    },
+    {
+     "number": 6,
+     "title": "Karanlık Oda",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#.#.##.#.#",
+      "##########",
+      "..........",
+      "####..####",
+      "#..#..#..#",
+      "#..#..#..#",
+      "####..#.##",
+      "#..#..#..#",
+      "####..####"
+     ],
+     "photo": "photos/r7_k6_karanlik_oda.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.darkroom",
+       "x": 150,
+       "y": 86,
+       "r": 40,
+       "kind": "clue",
+       "title": "Senin dükkânın",
+       "body": "Tabelada \"Karanlık Oda\". 1989'da, senin dükkânın."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Burası… burası senin dükkânın! Babam filmleri buraya getirmiş."
+     },
+     "search": true
+    },
+    {
+     "number": 7,
+     "title": "Nermin Hanım",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "...####...",
+      "..######..",
+      "..#.##.#..",
+      "..######..",
+      "...####...",
+      "..######..",
+      ".########.",
+      "..........",
+      "#.#.#.#.#.",
+      "#.#.#.#.#."
+     ],
+     "photo": "photos/r7_k7_nermin_hanim.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.nermin",
+       "x": 150,
+       "y": 296,
+       "r": 40,
+       "kind": "clue",
+       "title": "Yedi rulo",
+       "body": "Tezgâhta genç Nermin Hanım yedi ruloyu teslim alıyor: \"N. Aydın, 4 Mart 1989.\""
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Nermin Hanım'ı hiç bu kadar genç görmemiştim. Babam ona güvenmiş."
+     },
+     "search": false,
+     "scene": {
+      "eyebrow": "BUGÜN · TORBANIN DİBİ",
+      "title": "Bir not",
+      "lines": [
+       {
+        "speaker": null,
+        "text": "Torbanın dibinde katlanmış, sararmış bir kâğıt var. Nermin Hanım'ın el yazısı.",
+        "sfx": "bag"
+       },
+       {
+        "speaker": null,
+        "text": "6 Mart'ta Haluk Bey geldi, filmleri istedi. \"Bozuk çıktı\" dedim, vermedim. Mahkemeye de götüremedim, korktum. Bu dolaptaki her film bir borç.",
+        "style": "letter",
+        "sfx": "letter"
+       },
+       {
+        "speaker": "ayse",
+        "text": "Nermin Hanım da biliyormuş. Ve otuz yedi yıl susmuş."
+       },
+       {
+        "speaker": "ayse",
+        "text": "Dükkânı sana bırakmış. Belki de borcu sen ödeyesin diye."
+       }
+      ]
+     }
+    },
+    {
+     "number": 8,
+     "title": "Teslim fişi",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#........#",
+      "#.######.#",
+      "#........#",
+      "#.####...#",
+      "#........#",
+      "#.#####..#",
+      "#........#",
+      "#.###....#",
+      "##########"
+     ],
+     "photo": "photos/r7_k8_teslim_fisi.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.t1710",
+       "x": 130,
+       "y": 222,
+       "r": 36,
+       "kind": "time",
+       "title": "Filmler teslim edildi",
+       "body": "Fiş No. 1147: N. Aydın, 7 rulo, 4 Mart 1989 saat 17:10. Teslim günü: 11 Mart.",
+       "tag": "17:10"
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "11 Mart'ta alacakmış. 5 Mart'ta tutuklandı. Bir daha hiç gelemedi."
+     },
+     "search": true
+    },
+    {
+     "number": 9,
+     "title": "Yansıma",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "##########",
+      "#...##...#",
+      "#..####..#",
+      "#..#..#..#",
+      "#..####..#",
+      "#...##...#",
+      "#.######.#",
+      "#########.",
+      "##########",
+      "##########"
+     ],
+     "photo": "photos/r7_k9_yansima.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.selfie",
+       "x": 150,
+       "y": 178,
+       "r": 40,
+       "kind": "clue",
+       "title": "Son fotoğraf",
+       "body": "Necati'nin kendini çektiği tek kare: Karanlık Oda'nın vitrinine yansımış, makinesi elinde."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Gülümsüyor. Ertesi gün olacaklardan habersiz."
+     },
+     "search": false
+    },
+    {
+     "number": 10,
+     "title": "Son kare",
+     "date": "4 Mart 1989",
+     "puzzle": [
+      "#.....####",
+      ".......###",
+      "........##",
+      ".........#",
+      "..........",
+      "..........",
+      "#.........",
+      "##........",
+      "###.......",
+      "####......"
+     ],
+     "photo": "photos/r7_k10_son_kare.svg",
+     "hotspots": [
+      {
+       "id": "wm.r7.lastframe",
+       "x": 236,
+       "y": 130,
+       "r": 44,
+       "kind": "clue",
+       "title": "Son kare",
+       "body": "Rulonun son karesine ışık sızmış. Geri kalanı fotoğraflarda değil artık."
+      }
+     ],
+     "reaction": {
+      "speaker": "ayse",
+      "text": "Hepsi bu. Artık her şeyi biliyoruz… değil mi?"
+     },
+     "search": false
+    }
+   ]
+  }
+ ],
+ "finale": {
+  "eyebrow": "SON KARAR",
+  "intro": [
+   {
+    "speaker": "ayse",
+    "text": "Şimdi ne yapmalıyım?"
+   },
+   {
+    "speaker": "ayse",
+    "text": "Haluk amca yetmiş bir yaşında, emekli. Cem elli dört yaşında, iki çocuk babası. Babam artık yok."
+   }
+  ],
+  "question": "Fotoğrafları kime vereceksin?",
+  "hint": "Doğru cevabı yok. Ayşe senin kararına uyacak.",
+  "options": [
+   {
+    "id": "lawyer",
+    "text": "Bir avukata ver",
+    "detail": "Davanın yeniden açılması için başvurulsun; Necati'nin adı resmen temize çıksın.",
+    "ending": [
+     {
+      "speaker": null,
+      "text": "Bir hafta sonra, kasabanın tek hukuk bürosu. Avukat fotoğrafları tek tek masaya diziyor.",
+      "sfx": "folder"
+     },
+     {
+      "speaker": "ayse",
+      "text": "Davanın yeniden açılması aylar sürebilir, dedi. Ama babamın adı resmen temize çıkacak."
+     },
+     {
+      "speaker": null,
+      "text": "İki ay sonra, adliye koridoru. Ayşe'nin karşısındaki bankta yaşlı, uzun boylu bir adam oturuyor; şapkası dizlerinde."
+     },
+     {
+      "speaker": "haluk",
+      "text": "Otuz yedi yıl, her sabah o çekmeceyi düşündüm. Kardeşimdi. Onu kurtardığımı sandım."
+     },
+     {
+      "speaker": "haluk",
+      "text": "Necati'yi değil… kendimi kurtarmışım. O da değil aslında."
+     },
+     {
+      "speaker": "ayse",
+      "text": "Babam sizi hiç suçlamadı, biliyor musunuz? Ölene kadar \"Haluk'un bir bildiği vardır\" dedi."
+     },
+     {
+      "speaker": null,
+      "text": "Haluk başını eğiyor. Bir şey diyecek gibi oluyor, diyemiyor."
+     },
+     {
+      "speaker": null,
+      "text": "Koridorun ucunda Cem beliriyor. İzmir'den ilk otobüsle gelmiş, kendi ayağıyla. Ağabeyinin yanına oturuyor ve ilk kez Ayşe'nin yüzüne bakıyor."
+     },
+     {
+      "speaker": null,
+      "style": "photo",
+      "image": "assets/case_files/wrong_man/photos/end_court.svg",
+      "text": "Adliye koridoru. Necati Aydın'ın davası yeniden açıldı."
+     },
+     {
+      "speaker": "ayse",
+      "text": "Babam bunu görseydi… Belki de görüyor."
+     }
+    ]
+   },
+   {
+    "id": "ayse",
+    "text": "Sadece Ayşe'ye ver",
+    "detail": "Babasının masum olduğunu o bilsin; başka kimse bilmesin.",
+    "ending": [
+     {
+      "speaker": null,
+      "text": "Ayşe yarışma fotoğrafını çerçeveletiyor. Evinin duvarına, babasının portresinin yanına asıyor."
+     },
+     {
+      "speaker": "ayse",
+      "text": "Kimse bilmeyecek. Ama ben biliyorum. Babam yapmadı."
+     },
+     {
+      "speaker": null,
+      "text": "Bir akşam dükkânın zili çalıyor. Kapıda yine o yaşlı adam. Bu kez filmleri sormuyor.",
+      "sfx": "doorbell"
+     },
+     {
+      "speaker": "haluk",
+      "text": "Necati'nin kızı… biliyor mu?"
+     },
+     {
+      "speaker": null,
+      "text": "Başını sallıyorsun. Haluk uzun süre susuyor. Sonra cebinden kenarları yıpranmış bir fotoğraf çıkarıp tezgâha bırakıyor: göl kıyısı, iki genç adam, kol kola."
+     },
+     {
+      "speaker": "haluk",
+      "text": "Ona ver. Bende durmaya hakkı yok."
+     },
+     {
+      "speaker": null,
+      "text": "Bir hafta sonra Ayşe'nin kapısının altından bir zarf atılmış. İçinde tek satır var.",
+      "sfx": "letter"
+     },
+     {
+      "speaker": null,
+      "text": "Özür dilerim. — C.",
+      "style": "letter"
+     },
+     {
+      "speaker": null,
+      "style": "photo",
+      "image": "assets/case_files/wrong_man/photos/end_wall.svg",
+      "text": "Ayşe'nin evi. Duvarda iki fotoğraf: yarışma karesi ve göldeki iki arkadaş."
+     },
+     {
+      "speaker": "ayse",
+      "text": "Bazen gerçeği bilmek yeter. Bazen yetmez. Bugün yetiyor."
+     }
+    ]
+   }
+  ],
+  "epilogue": [
+   {
+    "speaker": null,
+    "text": "O gece dükkânda yalnızsın. Saatlerin tik takından başka ses yok.",
+    "sfx": "clock"
+   },
+   {
+    "speaker": null,
+    "text": "Nermin Hanım'ın notu hâlâ cebinde: \"Bu dolaptaki her film bir borç.\""
+   },
+   {
+    "speaker": null,
+    "text": "Torbanın boşalan yerine kendi el yazınla küçük bir etiket yapıştırıyorsun: \"N. Aydın · teslim edildi.\""
+   },
+   {
+    "speaker": null,
+    "text": "Rafta onlarca torba daha var; her biri başka birinin hikâyesi. Birinin etiketi gözüne takılıyor: \"Oda 214, Temmuz 1979.\"",
+    "sfx": "bag"
+   },
+   {
+    "speaker": null,
+    "style": "photo",
+    "image": "assets/case_files/wrong_man/photos/end_shelf.svg",
+    "text": "Teslim edilmeyenler. Bir borç ödendi."
+   }
+  ]
+ }
+}

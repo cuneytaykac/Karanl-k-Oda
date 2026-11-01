@@ -1,0 +1,320 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Karanlık Oda",
+  "navDeveloping": "Banyo",
+  "navCaseFiles": "Dosyalar",
+  "navNotebook": "Defter",
+  "pageNotFound": "Sayfa bulunamadı: {uri}",
+  "@pageNotFound": {
+    "placeholders": {
+      "uri": {
+        "type": "String"
+      }
+    }
+  },
+  "caseFilesEyebrow": "TESLİM EDİLMEYENLER",
+  "caseFilesTitle": "Dosyalar",
+  "caseFilesPlaceholder": "Dosya listesi burada olacak.",
+  "settingsTitle": "Ayarlar",
+  "back": "Geri",
+  "sectionGame": "OYUN",
+  "showMistakes": "Yanlışları göster",
+  "showMistakesSubtitle": "Yanlış doldurulan kare kırmızı yanar",
+  "hintsPerReel": "Her rulo başında {count} ipucu.",
+  "@hintsPerReel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "stuckHelp": "Takılma yardımı",
+  "stuckHelpSubtitle": "2 dk ilerleme yoksa ücretsiz ipucu",
+  "sectionSound": "SES VE TİTREŞİM",
+  "music": "Müzik",
+  "sfx": "Efekt sesleri",
+  "vibration": "Titreşim",
+  "sectionNotifications": "BİLDİRİM",
+  "newCaseNotification": "Yeni dosya bildirimi",
+  "newCaseNotificationSubtitle": "Dolaba yeni film gelince haber ver",
+  "puzzleBackLabel": "Banyoya dön",
+  "puzzleTitle": "Rulo {reel} · Kare {frame}",
+  "@puzzleTitle": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "puzzleGridPlaceholder": "Izgara · Aşama 1",
+  "brandDark": "KARANLIK ",
+  "brandRoom": "ODA",
+  "developingHeadline": "Dolap seni bekliyor.",
+  "developingSubtitle": "Nermin Hanım’ın teslim etmediği filmlerden birini seç.",
+  "openCaseFiles": "Dosyalara bak",
+  "debugPuzzle": "Deneme bulmacası",
+  "notebookEyebrow": "SORUŞTURMA",
+  "notebookTitle": "Defter",
+  "notebookEmptyTitle": "Defterin boş",
+  "notebookEmptyBody": "Bir dosya açtığında bulduğun her şey buraya kendiliğinden yazılır.",
+  "goToCaseFiles": "Dosyalara git",
+  "puzzleToolFill": "Doldur",
+  "puzzleToolCross": "İşaretle",
+  "puzzleUndo": "Geri al",
+  "puzzleHint": "İpucu · {count}",
+  "@puzzleHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "puzzleClear": "Temizle",
+  "puzzleHintAd": "+1 İpucu",
+  "puzzleAdDismissed": "Reklam yarıda kaldı; ipucu verilmedi.",
+  "puzzleNoHints": "İpucun kalmadı. Kendin çözebilirsin.",
+  "puzzleSolvedTitle": "Negatif hazır.",
+  "puzzleSolvedBody": "Bir şey belirdi.",
+  "puzzleSeePhoto": "Fotoğrafı gör",
+  "puzzleHelp": "Dokun ya da sürükle. Yanlış kare cezasız.",
+  "puzzleGridLabel": "{width}×{height} bulmaca ızgarası",
+  "@puzzleGridLabel": {
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      }
+    }
+  },
+  "puzzleContinue": "Devam",
+  "negativeEyebrow": "RULO {reel} · KARE {frame}",
+  "@negativeEyebrow": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "negativeTitle": "Negatif hazır",
+  "negativeImageLabel": "Tamamlanmış film negatifi",
+  "negativeHint": "Fotoğrafta ne olduğunu ancak banyoda göreceksin.",
+  "statTime": "süre",
+  "statHints": "ipucu",
+  "statFrame": "rulo",
+  "developButton": "Banyo et",
+  "skip": "Atla",
+  "developingSemantics": "Banyo tepsisinde beliren fotoğraf",
+  "developingProgress": "Fotoğraf beliriyor…",
+  "developingDone": "Hazır.",
+  "developingTapToSpeed": "Hızlandırmak için dokun",
+  "developedPhotoLabel": "Banyo edilmiş fotoğraf",
+  "done": "Tamam",
+  "inspectHint": "Fotoğrafta bir ayrıntı var. Parmağınla dolaş; büyüteç bir şeye takılınca anlarsın.",
+  "inspectSkip": "Şimdilik geç",
+  "inspectAddToNotebook": "Deftere ekle · Kare {frame}",
+  "@inspectAddToNotebook": {
+    "placeholders": {
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "inspectNextFrame": "Kare {frame}",
+  "@inspectNextFrame": {
+    "placeholders": {
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "inspectPhotoLabel": "İncelenen fotoğraf. Büyüteçle gezmek için parmağını sürükle.",
+  "caseNumber": "DOSYA {number}",
+  "@caseNumber": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "caseStatusNew": "YENİ",
+  "caseComingSoon": "Yakında",
+  "casePeopleCount": "KİŞİLER · {count}",
+  "@casePeopleCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "caseOpen": "Dosyayı aç",
+  "caseOneAtATime": "Bir seferde bir dosya. Yarıda bırakırsan kaldığın yerden sürer.",
+  "caseOpenBag": "Torbayı aç",
+  "tapToContinue": "Devam etmek için dokun",
+  "reelOf": "RULO {reel} / {total}",
+  "@reelOf": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "reelFrames": "{count} kare, hepsi karanlık",
+  "@reelFrames": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reelStart": "İlk kareyi banyo et",
+  "inspectReveal": "Bulamadım, göster",
+  "inspectNudge": "Ayrıntının yeri hafifçe parlıyor. Büyüteci oraya götür.",
+  "caseStatusInProgress": "DEVAM EDİYOR",
+  "caseFramesProgress": "{solved}/{total} kare",
+  "@caseFramesProgress": {
+    "placeholders": {
+      "solved": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "resumeEyebrow": "KALDIĞIN YER",
+  "resumeButton": "Devam et",
+  "resumeWhere": "Rulo {reel} · Kare {frame}",
+  "@resumeWhere": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "resumeAt": "Devam et · Rulo {reel} · Kare {frame}",
+  "@resumeAt": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
+  "reelWaiting": "Rulo {reel} tamam. Rulo {next} yakında.",
+  "@reelWaiting": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "next": {
+        "type": "int"
+      }
+    }
+  },
+  "reelComingSoon": "Sonraki rulo yakında",
+  "questionEyebrow": "RULO {reel} SONU · TEORİN",
+  "@questionEyebrow": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      }
+    }
+  },
+  "questionHint": "Doğru cevabı şimdi öğrenmeyeceksin. Sonraki rulolar gösterecek.",
+  "questionSaved": "Teorin deftere yazıldı.",
+  "questionNextReel": "Sıradaki rulo",
+  "questionBackToDeveloping": "Banyo'ya dön",
+  "resumeTheory": "Rulo {reel} sonu · teorin bekleniyor",
+  "@resumeTheory": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      }
+    }
+  },
+  "notebookTabPeople": "Kişiler",
+  "notebookTabClues": "İpuçları",
+  "notebookTabTimeline": "Zaman",
+  "notebookTabTheories": "Teoriler",
+  "notebookUnknownName": "Bilinmeyen kişi",
+  "notebookUnknownPerson": "Henüz tanışmadın. Fotoğraflarda karşına çıkacak.",
+  "notebookNoClues": "Henüz ipucu yok. Fotoğrafları incelerken bulduğun ayrıntılar buraya yazılır.",
+  "notebookNoTimes": "Fotoğraflarda saat buldukça buraya eklenir.",
+  "notebookTimelineHint": "Saatlerin arasındaki boşluklara dikkat et.",
+  "notebookKnownFact": "Bilinen",
+  "notebookTheoryLabel": "RULO {reel} SONU",
+  "@notebookTheoryLabel": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      }
+    }
+  },
+  "notebookTheoryPending": "Rulo {reel} bitince sorulacak.",
+  "@notebookTheoryPending": {
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      }
+    }
+  },
+  "notebookTheoryHint": "Teorilerin doğru mu, sonraki rulolar gösterecek.",
+  "notebookTapToClose": "Kapatmak için dokun",
+  "caseStatusClosed": "KAPANDI",
+  "caseReread": "Kapanışı yeniden oku",
+  "caseYourDecision": "Kararın: {decision}",
+  "@caseYourDecision": {
+    "placeholders": {
+      "decision": {
+        "type": "String"
+      }
+    }
+  },
+  "questionToFinale": "Son karar",
+  "finaleConfirm": "Kararımı verdim",
+  "backToCaseFiles": "Dosyalara dön",
+  "notebookDecisionLabel": "SON KARAR",
+  "welcomeEyebrow": "KARANLIK ODA",
+  "welcomeTitle": "Bir vasiyet",
+  "welcomeStart": "Notu oku",
+  "tutorialEyebrow": "NERMİN HANIM'IN NOTU",
+  "tutorialTitle": "Negatif okumak",
+  "tutorialStepOf": "ADIM {step} / {total}",
+  "@tutorialStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tutorialStep1": "Soldaki sayı, o satırda kaç kare dolu olduğunu söyler. En üst satırda 5 var: beşi de dolu. Parmağını satır boyunca sürükle.",
+  "tutorialStep2": "Üstteki sayılar sütunlar için aynısını söyler. En sağdaki sütun da 5. Onu da doldur.",
+  "tutorialStep3": "\"1 1\" iki ayrı dolu kare demek; aralarında boşluk var. İkinci satırın iki ucu dolu, ortası boş. Alttan \"İşaretle\"yi seç, boş olduğundan emin olduğun kareye × koy.",
+  "tutorialStep4": "Gerisini sen tamamla. Takılırsan ipucu bir satırı açar. Yanlış kare cezasız; kırmızı görünür.",
+  "tutorialDoneTitle": "NEGATİF HAZIR",
+  "tutorialDoneBody": "Bir fotoğraf çerçevesi. İlk dersin bu. Her karenin altında bir fotoğraf, her fotoğrafın içinde bir hikâye var.",
+  "tutorialOpenCabinet": "Dolabı aç",
+  "sectionHelp": "YARDIM",
+  "replayTutorial": "Öğreticiyi yeniden oyna",
+  "replayTutorialSubtitle": "Giriş hikâyesi ve ilk bulmaca",
+  "splashTagline": "Her fotoğrafın bir hikâyesi var."
+}

@@ -1,0 +1,95 @@
+name: karanlik_oda
+description: "Karanlık Oda — nonogram gizem oyunu."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.5.0
+
+# Paketler kurulum.sh içindeki `flutter pub add` komutuyla eklenir;
+# böylece her paketin o günkü en güncel uyumlu sürümü yazılır.
+dependencies:
+  audioplayers: ^6.8.1
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.2
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  flutter_svg: ^2.3.2
+  freezed_annotation: ^3.1.0
+  go_router: ^18.1.2
+  google_mobile_ads: ^9.2.0
+  hive_ce: ^2.22.0
+  hive_ce_flutter: ^2.5.0
+  intl: ^0.20.3
+  json_annotation: ^4.12.0
+
+dev_dependencies:
+  build_runner: ^2.17.1
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.8
+  flutter_test:
+    sdk: flutter
+  freezed: ^4.0.3
+  json_serializable: ^6.15.2
+  mocktail: ^1.0.5
+
+flutter:
+  uses-material-design: true
+  generate: true
+  # Google reklam paketi (google_mobile_ads) iOS'ta henüz yalnızca CocoaPods destekliyor.
+  # Swift Package Manager açıkken iOS kurulumu çakışıyor; destek gelince açılabilir.
+  config:
+    enable-swift-package-manager: false
+
+  assets:
+    - assets/images/
+    # Efektler ve ortam sesi (koddan sentezlendi, telifsiz).
+    - assets/audio/
+    - assets/case_files/
+    # Her Dosya'nın fotoğraf klasörü ayrı yazılmalı (Flutter alt klasörleri kendiliğinden almaz).
+    - assets/case_files/wrong_man/
+    - assets/case_files/wrong_man/photos/
+
+  fonts:
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Lora-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Lora-MediumItalic.ttf
+          weight: 500
+          style: italic
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Caveat-Bold.ttf
+          weight: 700
+
+# Telefonun kendi açılış ekranı (uygulama yüklenirken). Değiştirince:
+#   dart run flutter_native_splash:create
+# Düz koyu: açılış sahnesi karanlıktan kesintisiz başlasın.
+# Android 12+ bir simgeyi zorunlu kılar; orada piksel makine görünür.
+flutter_native_splash:
+  color: "#0A0807"
+  android_12:
+    color: "#0A0807"
+    image: assets/images/splash_icon.png
+  fullscreen: false
