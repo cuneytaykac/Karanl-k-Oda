@@ -78,11 +78,25 @@ class Board {
     return true;
   }
 
-  /// Çözümde boş olduğu hâlde doldurulmuş hücreler ("Yanlışları göster" açıksa kırmızı yanar).
+  /// Çözümde boş olduğu hâlde doldurulmuş hücreler.
   List<int> get wrongFills => [
         for (var i = 0; i < cells.length; i++)
           if (cells[i] == CellState.filled && !puzzle.isFilledAt(i)) i,
       ];
+
+  /// Çözümle çelişen bütün hücreler: boş olması gerekirken doldurulanlar ve
+  /// dolu olması gerekirken × konanlar. İpucu bunları kırmızıyla gösterir.
+  List<int> get mistakes => [
+        for (var i = 0; i < cells.length; i++)
+          if ((cells[i] == CellState.filled && !puzzle.isFilledAt(i)) ||
+              (cells[i] == CellState.crossed && puzzle.isFilledAt(i)))
+            i,
+      ];
+
+  /// Oyuncu bitirdiğini sanıyor ama yanlış: çözümdeki kadar (ya da daha çok)
+  /// kare doldurulmuş, yine de ipuçları tutmuyor. ("Negatif bulanık çıktı.")
+  bool get looksFinishedButWrong =>
+      filledCount >= puzzle.filledCount && !isSolved;
 
   int get filledCount => cells.where((s) => s == CellState.filled).length;
 

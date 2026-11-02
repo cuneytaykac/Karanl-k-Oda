@@ -18,8 +18,6 @@
   "settingsTitle": "Ayarlar",
   "back": "Geri",
   "sectionGame": "OYUN",
-  "showMistakes": "Yanlışları göster",
-  "showMistakesSubtitle": "Yanlış doldurulan kare kırmızı yanar",
   "hintsPerReel": "Her rulo başında {count} ipucu.",
   "@hintsPerReel": {
     "placeholders": {
@@ -79,7 +77,7 @@
   "puzzleSolvedTitle": "Negatif hazır.",
   "puzzleSolvedBody": "Bir şey belirdi.",
   "puzzleSeePhoto": "Fotoğrafı gör",
-  "puzzleHelp": "Dokun ya da sürükle. Yanlış kare cezasız.",
+  "puzzleHelp": "Dokun ya da sürükle. Takılırsan ipucu hatalarını gösterir.",
   "puzzleGridLabel": "{width}×{height} bulmaca ızgarası",
   "@puzzleGridLabel": {
     "placeholders": {
@@ -292,6 +290,14 @@
   "notebookDecisionLabel": "SON KARAR",
   "welcomeEyebrow": "KARANLIK ODA",
   "welcomeTitle": "Bir vasiyet",
+  "welcomeLine1": "Geçen kış, kasabanın eski fotoğrafçısı Nermin Hanım öldü.",
+  "welcomeLine2": "Vasiyetinde senin adın geçiyor.",
+  "welcomeLine3": "Karanlık Oda'yı, çocukken bir kez gelip bana \"Işık nereye gidiyor?\" diye soran küçüğe bırakıyorum.",
+  "welcomeLine4": "Bir sabah anahtarı alıp kepengi kaldırıyorsun. İçerisi kimyasal kokuyor; tavanda kırmızı bir lamba.",
+  "welcomeLine5": "Arka tarafta bir dolap var. Kapağında el yazısıyla: \"Teslim edilmeyenler.\" İçinde, sahibine hiç verilmemiş onlarca film.",
+  "welcomeLine6": "Tezgâhta, senin için bırakılmış bir not duruyor.",
+  "welcomeLine7": "Filmler banyo edilmeyi bekliyor. Ama önce negatif okumayı öğren. Kenardaki sayılar her şeyi söyler; gerisi sabır.",
+  "devSkip": "Atla",
   "welcomeStart": "Notu oku",
   "tutorialEyebrow": "NERMİN HANIM'IN NOTU",
   "tutorialTitle": "Negatif okumak",
@@ -309,7 +315,7 @@
   "tutorialStep1": "Soldaki sayı, o satırda kaç kare dolu olduğunu söyler. En üst satırda 5 var: beşi de dolu. Parmağını satır boyunca sürükle.",
   "tutorialStep2": "Üstteki sayılar sütunlar için aynısını söyler. En sağdaki sütun da 5. Onu da doldur.",
   "tutorialStep3": "\"1 1\" iki ayrı dolu kare demek; aralarında boşluk var. İkinci satırın iki ucu dolu, ortası boş. Alttan \"İşaretle\"yi seç, boş olduğundan emin olduğun kareye × koy.",
-  "tutorialStep4": "Gerisini sen tamamla. Takılırsan ipucu bir satırı açar. Yanlış kare cezasız; kırmızı görünür.",
+  "tutorialStep4": "Gerisini sen tamamla. Takılırsan ipucuna bas: önce hatalı kareleri gösterir, hata yoksa bir satırı açar.",
   "tutorialDoneTitle": "NEGATİF HAZIR",
   "tutorialDoneBody": "Bir fotoğraf çerçevesi. İlk dersin bu. Her karenin altında bir fotoğraf, her fotoğrafın içinde bir hikâye var.",
   "tutorialOpenCabinet": "Dolabı aç",
@@ -319,5 +325,8 @@
   "sectionHelp": "YARDIM",
   "replayTutorial": "Öğreticiyi yeniden oyna",
   "replayTutorialSubtitle": "Giriş hikâyesi ve ilk bulmaca",
-  "splashTagline": "Her fotoğrafın bir hikâyesi var."
+  "splashTagline": "Her fotoğrafın bir hikâyesi var.",
+  "puzzleBlurred": "Negatif bulanık çıktı. Bir yerde hata var; ipucu hatalı kareleri gösterir.",
+  "puzzleMistakesShown": "Hatalı kareler kırmızıyla işaretlendi.",
+  "puzzleNoAd": "Şu an reklam yüklenemedi. Biraz sonra tekrar dene."
 }

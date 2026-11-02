@@ -23,7 +23,7 @@ class PuzzleState {
     required this.hintsLeft,
     required this.canUndo,
     required this.solved,
-    required this.showMistakes,
+    required this.mistakes,
     required this.hintsUsed,
     this.solveTime,
     this.activeRow,
@@ -50,8 +50,13 @@ class PuzzleState {
   final bool canUndo;
   final bool solved;
 
-  /// "Yanlışları göster" açıksa yanlış dolu kareler kırmızı gösterilir.
-  final bool showMistakes;
+  /// Kırmızıyla gösterilen yanlış kareler. Oyun sırasında hatalar gösterilmez
+  /// (klasik nonogram); yalnızca ipucu onları açığa çıkarır. Oyuncu düzelttikçe
+  /// kırmızı kendiliğinden söner.
+  final Set<int> mistakes;
+
+  /// Bütün kareler dolduruldu ama sonuç yanlış: "Negatif bulanık çıktı."
+  bool get looksFinishedButWrong => board.looksFinishedButWrong;
 
   /// Sürükleme sırasında vurgulanan satır/sütun.
   final int? activeRow;
@@ -67,7 +72,8 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
 
   final FrameKey key;
   late PuzzleSession _session;
-  late bool _showMistakes;
+  /// İpucunun gösterdiği yanlış kareler (düzeltilmemiş olanlar kırmızı kalır).
+  Set<int> _flagged = const {};
   late int _startHints;
   bool _adLoading = false;
   int? _activeRow, _activeCol;
@@ -79,8 +85,6 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
 
   @override
   PuzzleState build() {
-    final settings = ref.read(settingsProvider);
-    _showMistakes = settings.showMistakes;
     // Hak rulo başına herkese aynı; bu rulonun kullanılanı düşülür.
     const perReel = Settings.hintsPerReel;
     final hints = ref
@@ -103,7 +107,7 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
         hintsLeft: _session.hintsLeft,
         canUndo: _session.canUndo,
         solved: _session.isSolved,
-        showMistakes: _showMistakes,
+        mistakes: _flagged.intersection(_session.board.mistakes.toSet()),
         hintsUsed: _startHints - _session.hintsLeft,
         solveTime: _solveTime,
         activeRow: _activeRow,
@@ -196,16 +200,24 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
     _emit();
   }
 
-  /// İpucu kullanıldıysa açılan satır, kullanılamadıysa null.
-  int? useHint() {
+  /// İpucu: tahtada yanlış kare varsa önce onları kırmızıyla gösterir; yoksa
+  /// bir satırı açar. İkisi de aynı haktan düşer. Kullanılamadıysa null.
+  HintKind? useHint() {
     if (_locked) return null;
     _startClock();
-    final row = _session.useHint();
-    if (row != null) {
+    final mistakes = _session.revealMistakes();
+    final HintKind? kind;
+    if (mistakes != null) {
+      _flagged = mistakes.toSet();
+      kind = HintKind.mistakes;
+    } else {
+      kind = _session.useHint() == null ? null : HintKind.row;
+    }
+    if (kind != null) {
       ref.read(progressProvider.notifier).useHint(key.caseId, key.reel);
     }
     _emit();
-    return row;
+    return kind;
   }
 
   /// GELİŞTİRME: bulmacayı anında çözer ("Atla" düğmesi, bkz. [kDevSkipButton]).
@@ -222,8 +234,8 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
     _emit();
   }
 
-  /// Hak bitince: reklam izlenirse ek ipucu kazanılır ve hemen kullanılır.
-  /// Reklam yüklenemezse oyuncu cezalandırılmaz; ipucu yine verilir.
+  /// Hak bitince: reklam sonuna kadar izlenirse ek ipucu kazanılır ve hemen
+  /// kullanılır. Reklam yoksa ya da yarıda kapatılırsa ipucu verilmez.
   Future<AdHintOutcome> watchAdForHint() async {
     if (!state.adHintAvailable || _adLoading) return AdHintOutcome.unavailable;
     _adLoading = true;
@@ -231,9 +243,16 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
     final result = await ref.read(adsCoordinatorProvider).showRewarded();
     if (!ref.mounted) return AdHintOutcome.unavailable;
     _adLoading = false;
-    if (result == RewardedAdResult.dismissed) {
-      _emit();
-      return AdHintOutcome.dismissed;
+    // İpucu yalnızca reklam sonuna kadar izlenirse verilir.
+    switch (result) {
+      case RewardedAdResult.dismissed:
+        _emit();
+        return AdHintOutcome.dismissed;
+      case RewardedAdResult.unavailable:
+        _emit();
+        return AdHintOutcome.noAd;
+      case RewardedAdResult.earned:
+        break;
     }
     ref.read(progressProvider.notifier).earnAdHint(key.caseId, key.reel);
     _session.hintsLeft += 1;
@@ -251,13 +270,25 @@ class PuzzleViewModel extends Notifier<PuzzleState> {
   }
 }
 
+/// İpucunun ne yaptığı.
+enum HintKind {
+  /// Yanlış kareler kırmızıyla gösterildi.
+  mistakes,
+
+  /// Bir satır çözüldü.
+  row,
+}
+
 /// Reklamla ipucu isteğinin sonucu.
 enum AdHintOutcome {
-  /// İpucu verildi (reklam izlendi ya da reklam yoktu).
+  /// Reklam izlendi, ipucu verildi.
   granted,
 
   /// Oyuncu reklamı yarıda kapattı.
   dismissed,
+
+  /// Gösterilecek reklam yok (internet yok, reklam yüklenmedi): ipucu verilmedi.
+  noAd,
 
   /// Şu an reklamla ipucu alınamaz (hâlâ hak var, bulmaca çözüldü ya da başka bir reklam açık).
   unavailable,

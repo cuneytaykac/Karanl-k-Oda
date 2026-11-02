@@ -71,6 +71,9 @@ class Puzzle {
 
   bool isFilledAt(int index) => _solution[index];
 
+  /// Çözümdeki dolu kare sayısı.
+  int get filledCount => _solution.where((filled) => filled).length;
+
   List<bool> solutionRow(int row) => _row(_solution, width, row);
 
   List<bool> solutionCol(int col) => _col(_solution, width, height, col);

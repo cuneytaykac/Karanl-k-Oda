@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Dark Room';
+  String get appTitle => 'Karanlık Oda';
 
   @override
   String get navDeveloping => 'Developing';
@@ -42,12 +42,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sectionGame => 'GAME';
-
-  @override
-  String get showMistakes => 'Show mistakes';
-
-  @override
-  String get showMistakesSubtitle => 'A wrongly filled square turns red';
 
   @override
   String hintsPerReel(int count) {
@@ -100,17 +94,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get puzzleGridPlaceholder => 'Grid · Stage 1';
 
   @override
-  String get brandDark => 'DARK ';
+  String get brandDark => 'KARANLIK ';
 
   @override
-  String get brandRoom => 'ROOM';
+  String get brandRoom => 'ODA';
 
   @override
   String get developingHeadline => 'The cabinet is waiting for you.';
 
   @override
   String get developingSubtitle =>
-      'Pick one of the films Ms. Nermin never handed in.';
+      'Pick one of the films Mrs Nermin never handed in.';
 
   @override
   String get openCaseFiles => 'Browse case files';
@@ -171,7 +165,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get puzzleSeePhoto => 'See the photo';
 
   @override
-  String get puzzleHelp => 'Tap or drag. Wrong squares carry no penalty.';
+  String get puzzleHelp =>
+      'Tap or drag. If you\'re stuck, a hint shows your mistakes.';
 
   @override
   String puzzleGridLabel(int width, int height) {
@@ -427,10 +422,39 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notebookDecisionLabel => 'FINAL DECISION';
 
   @override
-  String get welcomeEyebrow => 'THE DARKROOM';
+  String get welcomeEyebrow => 'KARANLIK ODA';
 
   @override
   String get welcomeTitle => 'A will';
+
+  @override
+  String get welcomeLine1 =>
+      'Last winter, Mrs Nermin, the town\'s old photographer, passed away.';
+
+  @override
+  String get welcomeLine2 => 'Your name is in her will.';
+
+  @override
+  String get welcomeLine3 =>
+      'I leave Karanlık Oda, my darkroom, to the little one who came in once, as a child, and asked me, \"Where does the light go?\"';
+
+  @override
+  String get welcomeLine4 =>
+      'One morning you take the key and roll up the shutter. The air smells of chemicals; a red lamp hangs from the ceiling.';
+
+  @override
+  String get welcomeLine5 =>
+      'At the back there is a cabinet. On its door, in handwriting: \"Never collected.\" Inside, dozens of films that never reached their owners.';
+
+  @override
+  String get welcomeLine6 => 'On the counter, a note has been left for you.';
+
+  @override
+  String get welcomeLine7 =>
+      'The films are waiting to be developed. But first, learn to read a negative. The numbers on the edges tell you everything; the rest is patience.';
+
+  @override
+  String get devSkip => 'Skip';
 
   @override
   String get welcomeStart => 'Read the note';
@@ -460,7 +484,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialStep4 =>
-      'Finish the rest. If you\'re stuck, a hint reveals a row. Wrong cells cost nothing; they show in red.';
+      'Finish the rest. If you\'re stuck, tap Hint: it shows your mistakes first, and if there are none, it reveals a row.';
 
   @override
   String get tutorialDoneTitle => 'NEGATIVE READY';
@@ -492,4 +516,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get splashTagline => 'Every photograph has a story.';
+
+  @override
+  String get puzzleBlurred =>
+      'The negative came out blurry. Something\'s wrong; a hint will show the wrong squares.';
+
+  @override
+  String get puzzleMistakesShown => 'The wrong squares are marked in red.';
+
+  @override
+  String get puzzleNoAd =>
+      'No ad is available right now. Try again in a moment.';
 }

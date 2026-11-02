@@ -6,22 +6,23 @@ void main() {
   group('Ayarlar', () {
     test('varsayılanlar', () {
       const a = Settings();
-      expect(a.showMistakes, isTrue);
+      expect(a.music, isTrue);
       expect(Settings.hintsPerReel, 3);
     });
 
     test('JSON gidiş-dönüş bozulmuyor', () {
-      final a = const Settings().copyWith(showMistakes: false, vibration: true);
+      final a = const Settings().copyWith(music: false, vibration: true);
       final b = Settings.fromJson(a.toJson());
-      expect(b.showMistakes, isFalse);
+      expect(b.music, isFalse);
       expect(b.vibration, isTrue);
     });
 
     test('bozuk kayıt varsayılana döner', () {
-      // Eski sürümdeki "difficulty" alanı yok sayılır.
-      final a = Settings.fromJson({'difficulty': 'easy', 'music': 'yes'});
-      expect(a.showMistakes, isTrue);
+      // Eski sürümlerdeki "difficulty" ve "showMistakes" alanları yok sayılır.
+      final a = Settings.fromJson(
+          {'difficulty': 'easy', 'showMistakes': false, 'music': 'yes'});
       expect(a.music, isTrue);
+      expect(a.toJson().containsKey('showMistakes'), isFalse);
     });
   });
 

@@ -8,7 +8,7 @@ import '../models/case_file_mapper.dart';
 
 /// DATA · [ContentRepository]'nin uygulaması: JSON'dan yüklenmiş Dosyalar, bellekte.
 class ContentRepositoryImpl implements ContentRepository {
-  const ContentRepositoryImpl(this.cases);
+  const ContentRepositoryImpl(this.cases, {this.upcoming = const []});
 
   /// Boş: testlerde ve içerik yüklenemezse. Ekranlar örnek içeriğe düşer.
   static const empty = ContentRepositoryImpl({});
@@ -17,7 +17,16 @@ class ContentRepositoryImpl implements ContentRepository {
     final files = [
       for (final json in await source.loadAll()) CaseFileMapper.fromJson(json)
     ];
-    return ContentRepositoryImpl({for (final f in files) f.id: f});
+    final upcoming = [
+      for (final u in await source.loadUpcoming())
+        (
+          number: u['number'] as int,
+          title: u['title'] as String,
+          blurb: u['blurb'] as String,
+        ),
+    ];
+    return ContentRepositoryImpl({for (final f in files) f.id: f},
+        upcoming: upcoming);
   }
 
   @override
@@ -27,19 +36,9 @@ class ContentRepositoryImpl implements ContentRepository {
   List<CaseFile> get ordered =>
       cases.values.toList()..sort((a, b) => a.number.compareTo(b.number));
 
+  /// Yakında gelecek Dosyalar (oyuncunun dilinde).
   @override
-  List<UpcomingCase> get upcoming => const [
-        (
-          number: 2,
-          title: 'Oda 214',
-          blurb: '1979 yazı. Bir otel misafiri iz bırakmadan kayboldu.'
-        ),
-        (
-          number: 3,
-          title: 'Göl Evi',
-          blurb: 'Bir yaz boğulduğu sanıldı. Ceset hiç bulunmadı.'
-        ),
-      ];
+  final List<UpcomingCase> upcoming;
 
   @override
   Frame? frame(String caseId, int reel, int frame) =>

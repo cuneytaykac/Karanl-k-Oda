@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app.dart';
+import 'core/locale/content_language.dart';
 import 'core/audio/audio.dart';
 import 'core/dev_flags.dart';
 import 'core/di/providers.dart';
@@ -25,7 +26,8 @@ Future<void> main() async {
   // Dosyaların içeriği (hikâye, bulmacalar, fotoğraflar) pakette JSON olarak durur.
   ContentRepository library;
   try {
-    library = await ContentRepositoryImpl.load(CaseJsonDataSource(rootBundle));
+    library = await ContentRepositoryImpl.load(
+        CaseJsonDataSource(rootBundle, language: contentLanguage()));
   } catch (e, st) {
     // İçerik dosyası bozuksa uygulama yine açılsın; ekranlar örnek içeriğe düşer.
     FlutterError.reportError(

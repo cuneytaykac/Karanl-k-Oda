@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:karanlik_oda/core/settings/settings.dart';
 import 'package:karanlik_oda/features/puzzle/domain/nonogram/cell_state.dart';
+import 'package:karanlik_oda/features/puzzle/domain/nonogram/puzzle.dart';
 import 'package:karanlik_oda/features/puzzle/presentation/view_model/puzzle_view_model.dart';
 
 class _FixedSettings extends SettingsController {
@@ -37,12 +38,29 @@ void main() {
     expect(view().tool, Tool.fill);
     expect(view().hintsLeft, 3);
     expect(view().solved, isFalse);
-    expect(view().showMistakes, isTrue);
+    expect(view().mistakes, isEmpty);
   });
 
-  test('"Yanlışları göster" kapatılabilir', () {
-    container = make(const Settings(showMistakes: false));
-    expect(view().showMistakes, isFalse);
+  test('yanlış kare kendiliğinden kırmızı olmaz (klasik nonogram)', () {
+    final emptyCell = _firstEmptyCell(view().puzzle);
+    ctrl().startStroke(emptyCell.$1, emptyCell.$2);
+    ctrl().endStroke();
+    expect(view().board.mistakes, isNotEmpty);
+    expect(view().mistakes, isEmpty, reason: 'ipucu istenmedi');
+  });
+
+  test('ipucu önce hataları gösterir, hata yoksa satır açar', () {
+    final emptyCell = _firstEmptyCell(view().puzzle);
+    ctrl().startStroke(emptyCell.$1, emptyCell.$2);
+    ctrl().endStroke();
+    expect(ctrl().useHint(), HintKind.mistakes);
+    expect(view().mistakes, hasLength(1));
+    expect(view().hintsLeft, 2);
+    // Oyuncu düzeltince kırmızı söner.
+    ctrl().undo();
+    expect(view().mistakes, isEmpty);
+    expect(ctrl().useHint(), HintKind.row);
+    expect(view().hintsLeft, 1);
   });
 
   test('sürükleme sırasında satır/sütun vurgulanır, bitince kalkar', () {
@@ -98,4 +116,14 @@ void main() {
     expect(view().solved, isTrue);
     expect(view().hintsLeft, 3);
   });
+}
+
+/// Çözümde boş olan ilk kare.
+(int, int) _firstEmptyCell(Puzzle p) {
+  for (var r = 0; r < p.height; r++) {
+    for (var c = 0; c < p.width; c++) {
+      if (!p.isFilled(r, c)) return (r, c);
+    }
+  }
+  throw StateError('boş kare yok');
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "number": 2,
+    "title": { "tr": "Oda 214", "en": "Room 214" },
+    "blurb": {
+      "tr": "1979 yazı. Bir otel misafiri iz bırakmadan kayboldu.",
+      "en": "Summer 1979. A hotel guest vanished without a trace."
+    }
+  },
+  {
+    "number": 3,
+    "title": { "tr": "Göl Evi", "en": "The Lake House" },
+    "blurb": {
+      "tr": "Bir yaz boğulduğu sanıldı. Ceset hiç bulunmadı.",
+      "en": "One summer, she was thought to have drowned. The body was never found."
+    }
+  }
+]

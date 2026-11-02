@@ -164,18 +164,6 @@ abstract class AppLocalizations {
   /// **'OYUN'**
   String get sectionGame;
 
-  /// No description provided for @showMistakes.
-  ///
-  /// In tr, this message translates to:
-  /// **'Yanlışları göster'**
-  String get showMistakes;
-
-  /// No description provided for @showMistakesSubtitle.
-  ///
-  /// In tr, this message translates to:
-  /// **'Yanlış doldurulan kare kırmızı yanar'**
-  String get showMistakesSubtitle;
-
   /// No description provided for @hintsPerReel.
   ///
   /// In tr, this message translates to:
@@ -389,7 +377,7 @@ abstract class AppLocalizations {
   /// No description provided for @puzzleHelp.
   ///
   /// In tr, this message translates to:
-  /// **'Dokun ya da sürükle. Yanlış kare cezasız.'**
+  /// **'Dokun ya da sürükle. Takılırsan ipucu hatalarını gösterir.'**
   String get puzzleHelp;
 
   /// No description provided for @puzzleGridLabel.
@@ -824,6 +812,54 @@ abstract class AppLocalizations {
   /// **'Bir vasiyet'**
   String get welcomeTitle;
 
+  /// No description provided for @welcomeLine1.
+  ///
+  /// In tr, this message translates to:
+  /// **'Geçen kış, kasabanın eski fotoğrafçısı Nermin Hanım öldü.'**
+  String get welcomeLine1;
+
+  /// No description provided for @welcomeLine2.
+  ///
+  /// In tr, this message translates to:
+  /// **'Vasiyetinde senin adın geçiyor.'**
+  String get welcomeLine2;
+
+  /// No description provided for @welcomeLine3.
+  ///
+  /// In tr, this message translates to:
+  /// **'Karanlık Oda\'yı, çocukken bir kez gelip bana \"Işık nereye gidiyor?\" diye soran küçüğe bırakıyorum.'**
+  String get welcomeLine3;
+
+  /// No description provided for @welcomeLine4.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bir sabah anahtarı alıp kepengi kaldırıyorsun. İçerisi kimyasal kokuyor; tavanda kırmızı bir lamba.'**
+  String get welcomeLine4;
+
+  /// No description provided for @welcomeLine5.
+  ///
+  /// In tr, this message translates to:
+  /// **'Arka tarafta bir dolap var. Kapağında el yazısıyla: \"Teslim edilmeyenler.\" İçinde, sahibine hiç verilmemiş onlarca film.'**
+  String get welcomeLine5;
+
+  /// No description provided for @welcomeLine6.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tezgâhta, senin için bırakılmış bir not duruyor.'**
+  String get welcomeLine6;
+
+  /// No description provided for @welcomeLine7.
+  ///
+  /// In tr, this message translates to:
+  /// **'Filmler banyo edilmeyi bekliyor. Ama önce negatif okumayı öğren. Kenardaki sayılar her şeyi söyler; gerisi sabır.'**
+  String get welcomeLine7;
+
+  /// No description provided for @devSkip.
+  ///
+  /// In tr, this message translates to:
+  /// **'Atla'**
+  String get devSkip;
+
   /// No description provided for @welcomeStart.
   ///
   /// In tr, this message translates to:
@@ -869,7 +905,7 @@ abstract class AppLocalizations {
   /// No description provided for @tutorialStep4.
   ///
   /// In tr, this message translates to:
-  /// **'Gerisini sen tamamla. Takılırsan ipucu bir satırı açar. Yanlış kare cezasız; kırmızı görünür.'**
+  /// **'Gerisini sen tamamla. Takılırsan ipucuna bas: önce hatalı kareleri gösterir, hata yoksa bir satırı açar.'**
   String get tutorialStep4;
 
   /// No description provided for @tutorialDoneTitle.
@@ -931,6 +967,24 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Her fotoğrafın bir hikâyesi var.'**
   String get splashTagline;
+
+  /// No description provided for @puzzleBlurred.
+  ///
+  /// In tr, this message translates to:
+  /// **'Negatif bulanık çıktı. Bir yerde hata var; ipucu hatalı kareleri gösterir.'**
+  String get puzzleBlurred;
+
+  /// No description provided for @puzzleMistakesShown.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hatalı kareler kırmızıyla işaretlendi.'**
+  String get puzzleMistakesShown;
+
+  /// No description provided for @puzzleNoAd.
+  ///
+  /// In tr, this message translates to:
+  /// **'Şu an reklam yüklenemedi. Biraz sonra tekrar dene.'**
+  String get puzzleNoAd;
 }
 
 class _AppLocalizationsDelegate

@@ -67,14 +67,20 @@ class PuzzleScreen extends ConsumerWidget {
       ..hideCurrentSnackBar()
       ..showSnackBar(SnackBar(content: Text(message)));
 
-    // Hak varsa ipucu; bittiyse reklamla ek ipucu; o da dolduysa kendin çöz.
+    // Hak varsa ipucu; bittiyse yalnızca reklam izleyerek ek ipucu.
     Future<void> hint() async {
       if (view.hintsLeft > 0) {
-        ctrl.useHint();
+        if (ctrl.useHint() == HintKind.mistakes) say(l10n.puzzleMistakesShown);
       } else if (view.adHintAvailable) {
         final outcome = await ctrl.watchAdForHint();
-        if (outcome == AdHintOutcome.dismissed && context.mounted) {
-          say(l10n.puzzleAdDismissed);
+        if (!context.mounted) return;
+        switch (outcome) {
+          case AdHintOutcome.dismissed:
+            say(l10n.puzzleAdDismissed);
+          case AdHintOutcome.noAd:
+            say(l10n.puzzleNoAd);
+          case AdHintOutcome.granted || AdHintOutcome.unavailable:
+            break;
         }
       } else {
         say(l10n.puzzleNoHints);
@@ -109,7 +115,7 @@ class PuzzleScreen extends ConsumerWidget {
                     KoIconButton(
                         key: const Key('dev-skip'),
                         icon: Icons.fast_forward_rounded,
-                        label: 'Atla',
+                        label: l10n.devSkip,
                         onPressed: ctrl.devSkip)
                   else
                     const SizedBox(width: KoSize.iconButton),
@@ -121,7 +127,7 @@ class PuzzleScreen extends ConsumerWidget {
                   child: SingleChildScrollView(
                     child: NonogramBoard(
                       board: view.board,
-                      showMistakes: view.showMistakes,
+                      mistakes: view.mistakes,
                       activeRow: view.activeRow,
                       activeCol: view.activeCol,
                       semanticLabel: l10n.puzzleGridLabel(p.width, p.height),
@@ -157,9 +163,14 @@ class PuzzleScreen extends ConsumerWidget {
                         },
                       )
                     : Padding(
-                        key: const ValueKey('help'),
+                        // Bitti sanıp yanlışsa: negatif bulanık; ipucu hataları gösterir.
+                        key: ValueKey(
+                            view.looksFinishedButWrong ? 'blurred' : 'help'),
                         padding: const EdgeInsets.only(bottom: KoSpacing.m),
-                        child: Text(l10n.puzzleHelp,
+                        child: Text(
+                            view.looksFinishedButWrong
+                                ? l10n.puzzleBlurred
+                                : l10n.puzzleHelp,
                             style: KoText.bodySmall,
                             textAlign: TextAlign.center),
                       ),

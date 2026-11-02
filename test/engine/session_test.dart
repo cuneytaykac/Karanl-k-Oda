@@ -184,6 +184,19 @@ void main() {
       expect(s.hintsLeft, 2);
     });
 
+    test('hata varsa ipucu onları gösterir (tahtaya dokunmaz)', () {
+      final p = Puzzle.fromRows(fish);
+      final t = PuzzleSession(p, hintsLeft: 3);
+      expect(t.revealMistakes(), isNull, reason: 'hata yok');
+      expect(t.hintsLeft, 3);
+      t.startStroke(0, 0); // satır 0 boş olmalı
+      t.endStroke();
+      final before = t.board;
+      expect(t.revealMistakes(), [0]);
+      expect(t.hintsLeft, 2);
+      expect(identical(t.board, before), isTrue);
+    });
+
     test('10 ipucuyla bulmaca tamamen çözülür', () {
       final many = PuzzleSession(Puzzle.fromRows(fish), hintsLeft: 99);
       while (many.useHint() != null) {}

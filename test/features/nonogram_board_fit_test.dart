@@ -28,7 +28,6 @@ void main() {
                   width: width,
                   child: NonogramBoard(
                     board: Board.empty(frame.puzzle),
-                    showMistakes: true,
                     onStrokeStart: (_, __, ___) {},
                     onStrokeExtend: (_, __, ___) {},
                     onStrokeEnd: (_) {},

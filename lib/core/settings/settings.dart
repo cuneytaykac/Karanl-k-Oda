@@ -5,7 +5,6 @@ import '../storage/storage.dart';
 /// Oyuncu ayarları. Değişmez (immutable) bir değer sınıfı.
 class Settings {
   const Settings({
-    this.showMistakes = true,
     this.music = true,
     this.sfx = true,
     this.vibration = false,
@@ -13,8 +12,6 @@ class Settings {
     this.newCaseNotification = false,
   });
 
-  /// Yanlış doldurulan kare kırmızı yanar.
-  final bool showMistakes;
   final bool music;
   final bool sfx;
   final bool vibration;
@@ -25,7 +22,6 @@ class Settings {
   static const hintsPerReel = 3;
 
   Settings copyWith({
-    bool? showMistakes,
     bool? music,
     bool? sfx,
     bool? vibration,
@@ -33,7 +29,6 @@ class Settings {
     bool? newCaseNotification,
   }) =>
       Settings(
-        showMistakes: showMistakes ?? this.showMistakes,
         music: music ?? this.music,
         sfx: sfx ?? this.sfx,
         vibration: vibration ?? this.vibration,
@@ -42,7 +37,6 @@ class Settings {
       );
 
   Map<String, dynamic> toJson() => {
-        'showMistakes': showMistakes,
         'music': music,
         'sfx': sfx,
         'vibration': vibration,
@@ -59,7 +53,6 @@ class Settings {
     }
 
     return Settings(
-      showMistakes: readBool('showMistakes', defaults.showMistakes),
       music: readBool('music', defaults.music),
       sfx: readBool('sfx', defaults.sfx),
       vibration: readBool('vibration', defaults.vibration),
@@ -81,8 +74,6 @@ class SettingsController extends Notifier<Settings> {
     ref.read(storageProvider).writeSettings(next.toJson());
   }
 
-  void setShowMistakes(bool enabled) =>
-      _save(state.copyWith(showMistakes: enabled));
   void setMusic(bool enabled) => _save(state.copyWith(music: enabled));
   void setSfx(bool enabled) => _save(state.copyWith(sfx: enabled));
   void setVibration(bool enabled) => _save(state.copyWith(vibration: enabled));

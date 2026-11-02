@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/theme.dart';
@@ -16,7 +17,7 @@ class NonogramBoard extends StatelessWidget {
   const NonogramBoard({
     super.key,
     required this.board,
-    required this.showMistakes,
+    this.mistakes = const {},
     required this.onStrokeStart,
     required this.onStrokeExtend,
     required this.onStrokeEnd,
@@ -27,7 +28,8 @@ class NonogramBoard extends StatelessWidget {
   });
 
   final Board board;
-  final bool showMistakes;
+  /// Kırmızıyla gösterilecek yanlış kareler (ipucunun açığa çıkardıkları).
+  final Set<int> mistakes;
   final int? activeRow;
   final int? activeCol;
   final String? semanticLabel;
@@ -189,7 +191,7 @@ class NonogramBoard extends StatelessWidget {
                       painter: _GridPainter(
                         board: b,
                         cell: cell,
-                        showMistakes: showMistakes,
+                        mistakes: mistakes,
                         activeRow: activeRow,
                         activeCol: activeCol,
                       ),
@@ -241,14 +243,14 @@ class _GridPainter extends CustomPainter {
   _GridPainter({
     required this.board,
     required this.cell,
-    required this.showMistakes,
+    required this.mistakes,
     this.activeRow,
     this.activeCol,
   });
 
   final Board board;
   final double cell;
-  final bool showMistakes;
+  final Set<int> mistakes;
   final int? activeRow;
   final int? activeCol;
 
@@ -276,7 +278,10 @@ class _GridPainter extends CustomPainter {
       ..color = KoColor.paperLabel
       ..strokeWidth = math.max(1.4, cell * 0.07)
       ..strokeCap = StrokeCap.round;
-    final wrongSet = showMistakes ? board.wrongFills.toSet() : const <int>{};
+    final wrongCross = Paint()
+      ..color = KoColor.safelight
+      ..strokeWidth = math.max(1.6, cell * 0.08)
+      ..strokeCap = StrokeCap.round;
     final inset = cell * 0.3;
 
     for (var r = 0; r < p.height; r++) {
@@ -286,12 +291,13 @@ class _GridPainter extends CustomPainter {
         switch (board.cells[i]) {
           case CellState.filled:
             canvas.drawRect(
-                rect.deflate(0.5), wrongSet.contains(i) ? wrong : ink);
+                rect.deflate(0.5), mistakes.contains(i) ? wrong : ink);
           case CellState.crossed:
+            final pen = mistakes.contains(i) ? wrongCross : cross;
             canvas.drawLine(rect.topLeft + Offset(inset, inset),
-                rect.bottomRight - Offset(inset, inset), cross);
+                rect.bottomRight - Offset(inset, inset), pen);
             canvas.drawLine(rect.topRight + Offset(-inset, inset),
-                rect.bottomLeft + Offset(inset, -inset), cross);
+                rect.bottomLeft + Offset(inset, -inset), pen);
           case CellState.empty:
             break;
         }
@@ -328,7 +334,7 @@ class _GridPainter extends CustomPainter {
   bool shouldRepaint(_GridPainter old) =>
       !identical(old.board, board) ||
       old.cell != cell ||
-      old.showMistakes != showMistakes ||
+      !setEquals(old.mistakes, mistakes) ||
       old.activeRow != activeRow ||
       old.activeCol != activeCol;
 }

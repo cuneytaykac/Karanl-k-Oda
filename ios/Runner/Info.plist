@@ -7,7 +7,13 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Karanlik Oda</string>
+		<string>Karanlık Oda</string>
+		<!-- Uygulamanın dilleri (Flutter'ın Türkçe/İngilizce seçebilmesi için) -->
+		<key>CFBundleLocalizations</key>
+		<array>
+			<string>en</string>
+			<string>tr</string>
+		</array>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -15,7 +21,7 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>karanlik_oda</string>
+		<string>Karanlık Oda</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>

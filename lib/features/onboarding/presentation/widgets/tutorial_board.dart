@@ -18,7 +18,8 @@ class TutorialBoard extends ConsumerWidget {
 
     return NonogramBoard(
       board: state.board,
-      showMistakes: true,
+      // Öğrenirken hata anında görünsün (oyunda yalnızca ipucu gösterir).
+      mistakes: state.board.mistakes.toSet(),
       activeRow: state.activeRow,
       activeCol: state.activeCol,
       semanticLabel: context.l10n.puzzleGridLabel(5, 5),

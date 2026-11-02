@@ -42,9 +42,6 @@ class SettingsScreen extends ConsumerWidget {
             ),
             _SectionHeader(context.l10n.sectionGame),
             _Group(children: [
-              _SwitchRow(context.l10n.showMistakes, settings.showMistakes,
-                  controller.setShowMistakes,
-                  subtitle: context.l10n.showMistakesSubtitle),
               _SwitchRow(context.l10n.stuckHelp, settings.stuckHelp,
                   controller.setStuckHelp,
                   subtitle: context.l10n.stuckHelpSubtitle),

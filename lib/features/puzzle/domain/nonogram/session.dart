@@ -125,6 +125,16 @@ class PuzzleSession {
 
   /// İlk hatalı satırı çözümle değiştirir (dolular doldurulur, boşlara × konur).
   /// İpucu hakkı yoksa ya da tüm satırlar doğruysa `null` döner, hak düşmez.
+  /// İpucu: tahtadaki yanlış kareleri gösterir (tahtayı değiştirmeden).
+  /// Bir ipucu hakkı harcar. Yanlış yoksa ya da hak bittiyse null.
+  List<int>? revealMistakes() {
+    if (hintsLeft <= 0) return null;
+    final mistakes = _board.mistakes;
+    if (mistakes.isEmpty) return null;
+    hintsLeft--;
+    return mistakes;
+  }
+
   int? useHint() {
     if (hintsLeft <= 0) return null;
     for (var r = 0; r < puzzle.height; r++) {

@@ -44,12 +44,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get sectionGame => 'OYUN';
 
   @override
-  String get showMistakes => 'Yanlışları göster';
-
-  @override
-  String get showMistakesSubtitle => 'Yanlış doldurulan kare kırmızı yanar';
-
-  @override
   String hintsPerReel(int count) {
     return 'Her rulo başında $count ipucu.';
   }
@@ -164,7 +158,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get puzzleSeePhoto => 'Fotoğrafı gör';
 
   @override
-  String get puzzleHelp => 'Dokun ya da sürükle. Yanlış kare cezasız.';
+  String get puzzleHelp =>
+      'Dokun ya da sürükle. Takılırsan ipucu hatalarını gösterir.';
 
   @override
   String puzzleGridLabel(int width, int height) {
@@ -426,6 +421,35 @@ class AppLocalizationsTr extends AppLocalizations {
   String get welcomeTitle => 'Bir vasiyet';
 
   @override
+  String get welcomeLine1 =>
+      'Geçen kış, kasabanın eski fotoğrafçısı Nermin Hanım öldü.';
+
+  @override
+  String get welcomeLine2 => 'Vasiyetinde senin adın geçiyor.';
+
+  @override
+  String get welcomeLine3 =>
+      'Karanlık Oda\'yı, çocukken bir kez gelip bana \"Işık nereye gidiyor?\" diye soran küçüğe bırakıyorum.';
+
+  @override
+  String get welcomeLine4 =>
+      'Bir sabah anahtarı alıp kepengi kaldırıyorsun. İçerisi kimyasal kokuyor; tavanda kırmızı bir lamba.';
+
+  @override
+  String get welcomeLine5 =>
+      'Arka tarafta bir dolap var. Kapağında el yazısıyla: \"Teslim edilmeyenler.\" İçinde, sahibine hiç verilmemiş onlarca film.';
+
+  @override
+  String get welcomeLine6 => 'Tezgâhta, senin için bırakılmış bir not duruyor.';
+
+  @override
+  String get welcomeLine7 =>
+      'Filmler banyo edilmeyi bekliyor. Ama önce negatif okumayı öğren. Kenardaki sayılar her şeyi söyler; gerisi sabır.';
+
+  @override
+  String get devSkip => 'Atla';
+
+  @override
   String get welcomeStart => 'Notu oku';
 
   @override
@@ -453,7 +477,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tutorialStep4 =>
-      'Gerisini sen tamamla. Takılırsan ipucu bir satırı açar. Yanlış kare cezasız; kırmızı görünür.';
+      'Gerisini sen tamamla. Takılırsan ipucuna bas: önce hatalı kareleri gösterir, hata yoksa bir satırı açar.';
 
   @override
   String get tutorialDoneTitle => 'NEGATİF HAZIR';
@@ -485,4 +509,14 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get splashTagline => 'Her fotoğrafın bir hikâyesi var.';
+
+  @override
+  String get puzzleBlurred =>
+      'Negatif bulanık çıktı. Bir yerde hata var; ipucu hatalı kareleri gösterir.';
+
+  @override
+  String get puzzleMistakesShown => 'Hatalı kareler kırmızıyla işaretlendi.';
+
+  @override
+  String get puzzleNoAd => 'Şu an reklam yüklenemedi. Biraz sonra tekrar dene.';
 }

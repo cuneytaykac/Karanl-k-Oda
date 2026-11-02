@@ -19,7 +19,12 @@ class AdmobPlatform implements AdsPlatform {
     await _updateConsentInfo();
     await _showFormIfRequired();
     final allowed = await ConsentInformation.instance.canRequestAds();
-    if (allowed) await MobileAds.instance.initialize();
+    final status = await ConsentInformation.instance.getConsentStatus();
+    debugPrint('[Reklam] Onay durumu: $status · reklam istenebilir: $allowed');
+    if (allowed) {
+      await MobileAds.instance.initialize();
+      debugPrint('[Reklam] AdMob başlatıldı');
+    }
     return allowed;
   }
 

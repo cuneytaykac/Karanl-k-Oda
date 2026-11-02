@@ -127,35 +127,29 @@ void main() {
     expect(_view(tester).board.cellAt(0, 0), CellState.empty);
   });
 
-  testWidgets('ipucu satır açar, bitince uyarı çıkar', (tester) async {
+  testWidgets('ipucu satır açar; hak bitince reklamla ek ipucu teklif edilir',
+      (tester) async {
     await _open(tester);
     for (final left in [3, 2, 1]) {
       await tester.tap(find.text('İpucu · $left'));
       await tester.pump();
     }
-    expect(find.text('İpucu · 0'), findsOneWidget);
     expect(_view(tester).board.isRowCorrect(1), isTrue);
-    await tester.tap(find.text('İpucu · 0'));
-    await tester.pump();
-    expect(find.text('İpucun kalmadı. Kendin çözebilirsin.'), findsOneWidget);
+    expect(find.text('+1 İpucu'), findsOneWidget);
+    expect(find.byIcon(Icons.smart_display_outlined), findsOneWidget);
   });
 
-  testWidgets('3 ipucu; yanlış kare işaretlenir', (tester) async {
-    await _open(tester);
-    expect(find.text('İpucu · 3'), findsOneWidget);
-    await tester.tapAt(_cell(tester, 0, 0)); // çözümde boş
-    await tester.pump();
-    final v = _view(tester);
-    expect(v.showMistakes, isTrue);
-    expect(v.board.wrongFills, [0]);
-  });
-
-  testWidgets('"Yanlışları göster" kapalıysa yanlış kare işaretlenmez',
+  testWidgets('yanlış kare kırmızı olmaz; ipucu hataları gösterir',
       (tester) async {
-    await _open(tester, settings: const Settings(showMistakes: false));
+    await _open(tester);
     await tester.tapAt(_cell(tester, 0, 0)); // çözümde boş
     await tester.pump();
-    expect(_view(tester).showMistakes, isFalse);
+    expect(_view(tester).board.wrongFills, [0]);
+    expect(_view(tester).mistakes, isEmpty);
+    await tester.tap(find.text('İpucu · 3'));
+    await tester.pump();
+    expect(_view(tester).mistakes, {0});
+    expect(find.text('Hatalı kareler kırmızıyla işaretlendi.'), findsOneWidget);
   });
 
   testWidgets('balığı çizince çözülür, ızgara kilitlenir, Devam sonucu taşır',

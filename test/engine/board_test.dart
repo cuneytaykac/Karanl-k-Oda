@@ -83,4 +83,22 @@ void main() {
     expect(Board.fromJson(p, ['filled']).filledCount, 0);
     expect(Board.fromJson(p, List.filled(100, 'bilinmeyen')).filledCount, 0);
   });
+
+  test('yanlış ×, hatalar arasında sayılır', () {
+    final p = Puzzle.fromRows(fish);
+    final i = [for (var k = 0; k < p.cellCount; k++) if (p.isFilledAt(k)) k].first;
+    final b = Board.empty(p).withCells({i: CellState.crossed});
+    expect(b.mistakes, [i]);
+    expect(b.wrongFills, isEmpty);
+  });
+
+  test('her kare dolu ama yanlışsa "bitti sanıyor"', () {
+    final p = Puzzle.fromRows(fish);
+    final wrong = Board.empty(p).withCells({
+      for (var k = 0; k < p.filledCount; k++) k: CellState.filled,
+    });
+    expect(wrong.isSolved, isFalse);
+    expect(wrong.looksFinishedButWrong, isTrue);
+    expect(Board.empty(p).looksFinishedButWrong, isFalse);
+  });
 }

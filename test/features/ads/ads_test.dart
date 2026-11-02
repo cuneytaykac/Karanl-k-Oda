@@ -149,10 +149,14 @@ void main() {
       expect(state().adHintAvailable, isTrue, reason: 'tekrar denenebilir');
     });
 
-    test('reklam yoksa oyuncu cezalandırılmaz: ipucu yine verilir', () async {
+    test('reklam yoksa ipucu verilmez', () async {
       spendHints();
       rewarded.next = RewardedAdResult.unavailable;
-      expect(await vm().watchAdForHint(), AdHintOutcome.granted);
+      final filledBefore = state().board.filledCount;
+      expect(await vm().watchAdForHint(), AdHintOutcome.noAd);
+      expect(state().board.filledCount, filledBefore);
+      expect(state().adHintAvailable, isTrue, reason: 'sonra tekrar denenebilir');
+      expect(c.read(progressProvider)['wrong_man']!.adHints[2], isNull);
     });
 
     test('sınır yok: sonraki karede de reklamla ipucu alınabilir', () async {

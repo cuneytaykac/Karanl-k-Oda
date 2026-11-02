@@ -1,0 +1,3317 @@
+{
+  "id": "wrong_man",
+  "number": 1,
+  "title": "The Wrong Man",
+  "summary": "Watchmaker Necati Aydın went to prison in 1989 for a jewellery shop robbery. Until the day he died he said, \"I didn't do it.\" The films that could clear his name have been sitting in your shop for 37 years.",
+  "reelCount": 7,
+  "tags": [
+    "7 reels",
+    "70 frames",
+    "Mystery · 12+"
+  ],
+  "timeline": {
+    "title": "3 March 1989 · Saturday",
+    "date": "3 March 1989",
+    "events": [
+      {
+        "tag": "12:30",
+        "title": "Robbery",
+        "body": "Rıza's jewellery shop was robbed. The person who fled was limping."
+      }
+    ]
+  },
+  "intro": [
+    {
+      "speaker": null,
+      "text": "A bag in the \"Never collected\" cabinet: seven rolls of film. On it, Mrs Nermin's handwriting: \"N. Aydın, 4 March 1989.\"",
+      "sfx": "bag"
+    },
+    {
+      "speaker": null,
+      "text": "His name is in an old newspaper: watchmaker Necati Aydın, arrested on 5 March 1989 for a jewellery shop robbery.",
+      "sfx": "newspaper"
+    },
+    {
+      "speaker": "ayse",
+      "text": "My father said \"I didn't do it\" until the day he died. Nobody believed him. I was never sure either."
+    },
+    {
+      "speaker": "ayse",
+      "text": "The robbery happened on Saturday 3 March, at 12:30. The person who ran was limping, and my father had an old leg injury. Two days later the police found a stolen necklace box in the back drawer of his shop."
+    },
+    {
+      "speaker": "ayse",
+      "text": "My father said, \"I was at the lake at that time, and Haluk was with me.\" But Uncle Haluk told the court, \"I didn't see him that day.\""
+    }
+  ],
+  "people": [
+    {
+      "id": "ayse",
+      "name": "Ayşe Aydın",
+      "initial": "A",
+      "role": "Necati's daughter · 38 · teacher",
+      "known": true
+    },
+    {
+      "id": "necati",
+      "name": "Necati Aydın",
+      "initial": "N",
+      "role": "Watchmaker · imprisoned in 1989",
+      "known": true
+    },
+    {
+      "id": "cem",
+      "name": "Cem Demir",
+      "initial": "C",
+      "role": "Necati's apprentice · 17 in 1989",
+      "known": false
+    },
+    {
+      "id": "haluk",
+      "name": "Haluk Demir",
+      "initial": "H",
+      "role": "Police officer · Necati's childhood friend",
+      "known": false
+    },
+    {
+      "id": "riza",
+      "name": "Master Rıza",
+      "initial": "R",
+      "role": "The jeweller across the street · the shop that was robbed",
+      "known": false
+    }
+  ],
+  "reels": [
+    {
+      "number": 1,
+      "title": "The watchmaker's shop",
+      "intro": "The first film in the bag. On the label, Necati's handwriting: \"Shop, February.\"",
+      "question": {
+        "text": "At 12:30, the time of the robbery, where was Necati?",
+        "options": [
+          {
+            "id": "lake",
+            "text": "At the lake with Haluk",
+            "reply": {
+              "speaker": "ayse",
+              "text": "That's what my father said for years. But Uncle Haluk said the opposite in court. One of them is lying."
+            }
+          },
+          {
+            "id": "shop",
+            "text": "In his shop, alone",
+            "reply": {
+              "speaker": "ayse",
+              "text": "But at 11:05 he hung \"Closed\" on the door. Would you close your shop just to sit alone? I don't know… maybe."
+            }
+          },
+          {
+            "id": "jeweller",
+            "text": "In the back street behind the jeweller's",
+            "reply": {
+              "speaker": "ayse",
+              "text": "I don't even want to think about it. But you're the one looking at the photos, not me. Maybe everyone was right."
+            }
+          }
+        ],
+        "outro": [
+          {
+            "speaker": null,
+            "text": "There's a second roll in the bag. The same handwriting on its label: \"Lake, 3 March.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "When you develop this roll, we'll see who was lying. My father, or Uncle Haluk."
+          }
+        ],
+        "truth": "lake",
+        "truthNote": "The lake photos on Reel 2 will show it."
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "The watchmaker's shop",
+          "date": "24 February 1989",
+          "puzzle": [
+            ".###.",
+            "#.#.#",
+            "#.###",
+            "#...#",
+            ".###."
+          ],
+          "photo": "photos/r1_k1_shopfront.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.sign",
+              "x": 150,
+              "y": 92,
+              "r": 44,
+              "kind": "person",
+              "title": "Necati Aydın",
+              "body": "Watchmaker. His shop sits right in the middle of the market; the sign is never dusty.",
+              "person": "necati"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My father painted that sign with his own hands. My mother used to tell me; I was a baby in her arms back then."
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "Wall clocks",
+          "date": "24 February 1989",
+          "puzzle": [
+            "#####",
+            "#.#.#",
+            "#.###",
+            "#...#",
+            "#####"
+          ],
+          "photo": "photos/r1_k2_clocks.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.clocks",
+              "x": 150,
+              "y": 165,
+              "r": 34,
+              "kind": "clue",
+              "title": "The clocks are always right",
+              "body": "Every clock on the wall shows the same moment. You can trust the time in Necati's photos.",
+              "tag": "4:10"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My mother always said my father never left a clock wrong. \"If a clock lies, so will a man,\" he used to say."
+          },
+          "search": true
+        },
+        {
+          "number": 3,
+          "title": "Counter",
+          "date": "24 February 1989",
+          "puzzle": [
+            "..###..",
+            "#######",
+            "#.....#",
+            "#.###.#",
+            "#.###.#",
+            "#.....#",
+            "#######"
+          ],
+          "photo": "photos/r1_k3_bench.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.camera",
+              "x": 222,
+              "y": 300,
+              "r": 36,
+              "kind": "clue",
+              "title": "Camera",
+              "body": "Necati loves photography; his camera sits on the counter, always within reach."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I've never seen this camera. It vanished when my father was arrested. So he left it with Mrs Nermin, along with the films."
+          },
+          "scene": {
+            "eyebrow": "TODAY · AT THE SHOP",
+            "title": "Newspaper clippings",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "The next morning Ayşe comes to the shop with a yellowed folder.",
+                "sfx": "doorbell"
+              },
+              {
+                "speaker": null,
+                "style": "paper",
+                "text": "WATCHMAKER ROBS JEWELLER. On Saturday 3 March, around midday, Rıza's jewellery shop in our town was robbed. The arrested watchmaker, N. A., denies the charges. (6 March 1989)",
+                "sfx": "newspaper"
+              },
+              {
+                "speaker": "ayse",
+                "text": "My mother kept these clippings for years. I never had the courage to look."
+              },
+              {
+                "speaker": "ayse",
+                "text": "\"Denies the charges,\" they wrote. As if keeping quiet were a crime too."
+              },
+              {
+                "speaker": "ayse",
+                "text": "You keep going with the photos. This time I'll read to the very end."
+              }
+            ]
+          },
+          "search": false
+        },
+        {
+          "number": 4,
+          "title": "The apprentice",
+          "date": "25 February 1989",
+          "puzzle": [
+            "..###..",
+            "..###..",
+            "...#...",
+            ".#####.",
+            "#.###.#",
+            "..#.#..",
+            ".##.##."
+          ],
+          "photo": "photos/r1_k4_apprentice.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.cem",
+              "x": 150,
+              "y": 150,
+              "r": 36,
+              "kind": "person",
+              "title": "Cem Demir",
+              "body": "Seventeen, Necati's apprentice. He loves the work; he looks up to his master.",
+              "person": "cem"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Cem. My father's apprentice. He left town after the trial; nobody knows where he went."
+          },
+          "search": false
+        },
+        {
+          "number": 5,
+          "title": "The three of them",
+          "date": "25 February 1989",
+          "puzzle": [
+            "##.##.##",
+            "##.##.##",
+            "........",
+            "########",
+            "########",
+            "##.##.##",
+            "##.##.##",
+            "##.##.##"
+          ],
+          "photo": "photos/r1_k5_three.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.haluk",
+              "x": 230,
+              "y": 150,
+              "r": 34,
+              "kind": "person",
+              "title": "Haluk Demir",
+              "body": "Police officer. Necati's childhood friend and Cem's older brother.",
+              "person": "haluk"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Uncle Haluk used to visit us on every holiday. After the trial he never knocked on our door again."
+          },
+          "search": false
+        },
+        {
+          "number": 6,
+          "title": "The shop across the street",
+          "date": "25 February 1989",
+          "puzzle": [
+            "..####..",
+            ".#.##.#.",
+            "########",
+            ".######.",
+            "..####..",
+            "...##...",
+            "..#..#..",
+            "...##..."
+          ],
+          "photo": "photos/r1_k6_jeweller.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.insurance",
+              "x": 98,
+              "y": 252,
+              "r": 32,
+              "kind": "clue",
+              "title": "A new insurance sign",
+              "body": "A brand-new \"Insured\" sign in Master Rıza's window. Ayşe: \"Maybe he robbed his own shop, to get the insurance money.\""
+            },
+            {
+              "id": "wm.r1.riza",
+              "x": 226,
+              "y": 248,
+              "r": 34,
+              "kind": "person",
+              "title": "Master Rıza",
+              "body": "The jeweller across the street. The shop that was robbed is his.",
+              "person": "riza"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A year after the robbery, Master Rıza closed his shop and moved to İzmir. Nobody knows what he got from the insurance."
+          },
+          "search": false
+        },
+        {
+          "number": 7,
+          "title": "3 March, morning",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#.#....#.#",
+            "#.#....#.#",
+            "#.#..###.#",
+            "#.#....#.#",
+            "#.#....#.#",
+            "#.######.#",
+            "##########"
+          ],
+          "photo": "photos/r1_k7_morning.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.t0900",
+              "x": 80,
+              "y": 110,
+              "r": 30,
+              "kind": "time",
+              "title": "The shop opened",
+              "body": "The day of the robbery. Necati opens his shop as usual.",
+              "tag": "09:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "3 March. My father's last ordinary morning. He took this photo without knowing."
+          },
+          "scene": {
+            "eyebrow": "TODAY · EVENING",
+            "title": "A letter",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "In the evening the phone rings. Ayşe's voice is shaking.",
+                "sfx": "phone"
+              },
+              {
+                "speaker": "ayse",
+                "text": "A letter fell out from among the clippings. My father wrote it from prison, when I was six."
+              },
+              {
+                "speaker": null,
+                "style": "letter",
+                "text": "My daughter, clocks don't lie. One day the clocks of that morning will speak too. On that day forgive me or don't, but know that I was at the lake.",
+                "sfx": "letter"
+              },
+              {
+                "speaker": "ayse",
+                "text": "As a child I wouldn't have understood a word. But now we have the photos from that morning."
+              },
+              {
+                "speaker": "ayse",
+                "text": "The next frames are from the day of the robbery, aren't they? Look closely at the clocks."
+              }
+            ]
+          },
+          "search": false
+        },
+        {
+          "number": 8,
+          "title": "Red motorcycle",
+          "date": "3 March 1989",
+          "puzzle": [
+            "......###.",
+            ".......##.",
+            "..#######.",
+            ".#########",
+            "##########",
+            "####..####",
+            "#..#..#..#",
+            "#..#..#..#",
+            "####..####",
+            ".##....##."
+          ],
+          "photo": "photos/r1_k8_moto.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.t1040",
+              "x": 62,
+              "y": 78,
+              "r": 28,
+              "kind": "time",
+              "title": "Cem left",
+              "body": "He said \"My mother is ill\" and asked for the day off.",
+              "tag": "10:40"
+            },
+            {
+              "id": "wm.r1.moto",
+              "x": 178,
+              "y": 292,
+              "r": 44,
+              "kind": "clue",
+              "title": "Red motorcycle",
+              "body": "Cem's motorcycle. There's no other red one in town."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "\"My mother is ill\"? My mother was neighbours with Cem's mother. She never mentioned her being ill that week."
+          },
+          "search": true
+        },
+        {
+          "number": 9,
+          "title": "Closed",
+          "date": "3 March 1989",
+          "puzzle": [
+            "....##....",
+            "...####...",
+            "..##..##..",
+            "##########",
+            "##########",
+            "##.####.##",
+            "##.####.##",
+            "##########",
+            "##########",
+            ".........."
+          ],
+          "photo": "photos/r1_k9_closed.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.t1105",
+              "x": 150,
+              "y": 66,
+              "r": 28,
+              "kind": "time",
+              "title": "The shop closed",
+              "body": "Necati hung the \"Closed\" sign on the door.",
+              "tag": "11:05"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Closing the shop before noon on a Saturday isn't like my father at all. Either he had something very important to do, or someone called him away."
+          },
+          "search": true
+        },
+        {
+          "number": 10,
+          "title": "To the lake",
+          "date": "3 March 1989",
+          "puzzle": [
+            "........##",
+            ".......##.",
+            "..######..",
+            ".##.##.##.",
+            "##########",
+            "##########",
+            "##########",
+            ".##....##.",
+            ".##....##.",
+            ".........."
+          ],
+          "photo": "photos/r1_k10_car.svg",
+          "hotspots": [
+            {
+              "id": "wm.r1.rods",
+              "x": 210,
+              "y": 170,
+              "r": 38,
+              "kind": "clue",
+              "title": "Fishing rods in the car",
+              "body": "Haluk's car is at the door, fishing rods sticking out of the back window. They're going to the lake."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "The lake. For years my father said, \"I was at the lake.\" If he really was there that day, the next roll will show it."
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Lake",
+      "intro": "The same handwriting on the label: \"Lake, 3 March.\" The day of the robbery, around midday.",
+      "question": {
+        "text": "So why did Haluk tell the court \"I didn't see him\"?",
+        "options": [
+          {
+            "id": "protect",
+            "text": "To protect someone",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Who? Not my father, clearly. He sank my father. Someone else, then."
+            }
+          },
+          {
+            "id": "threat",
+            "text": "Someone threatened him",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Uncle Haluk was a policeman. Who could threaten him? But his voice really did sound frightened."
+            }
+          },
+          {
+            "id": "forgot",
+            "text": "He genuinely didn't remember",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Three days later? A whole day they spent fishing? I'd like to believe that."
+            }
+          }
+        ],
+        "truth": "protect",
+        "truthNote": "Reels 5–6 will show it: he was protecting his brother, Cem.",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "The label on the third roll in the bag: \"Lake road.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "My father photographed the way back too. Maybe they saw something on the road."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "Arriving at the lake",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "....##....",
+            "...####...",
+            "....##....",
+            "....##....",
+            ".#..##..#.",
+            "##########",
+            "#.#.#.#.##",
+            "##########",
+            ".........."
+          ],
+          "photo": "photos/r2_k1_gole_varis.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.t1140",
+              "x": 232,
+              "y": 128,
+              "r": 30,
+              "kind": "time",
+              "title": "They reached the lake",
+              "body": "The clock tower on the far shore shows 11:40. The town is 20 kilometres behind them.",
+              "tag": "11:40"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "That clock tower is still standing. I drove past it last summer and never even noticed."
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "Haluk and his rod",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            "..#.#.....",
+            "...#..###.",
+            "....#.###.",
+            ".....#.#..",
+            "....######",
+            "...#######",
+            "..##.#####",
+            ".........."
+          ],
+          "photo": "photos/r2_k2_haluk_ve_oltasi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.antenna",
+              "x": 107,
+              "y": 296,
+              "r": 30,
+              "kind": "clue",
+              "title": "Radio antenna",
+              "body": "Haluk is off duty today; no uniform. But there's a police radio antenna on the roof of his car."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Uncle Haluk was always like that; even off duty he never let his radio out of reach."
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "The first fish",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            ".....##...",
+            "...######.",
+            ".#########",
+            "##.#######",
+            "##########",
+            ".#########",
+            "...######.",
+            ".....##...",
+            ".........."
+          ],
+          "photo": "photos/r2_k3_ilk_balik.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.t1205",
+              "x": 240,
+              "y": 300,
+              "r": 30,
+              "kind": "time",
+              "title": "The first fish",
+              "body": "Necati has put his wristwatch next to the fish: 12:05. A watchmaker's joke.",
+              "tag": "12:05"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He did this with every fish. My mother used to say, \"A watchmaker doesn't catch fish, he catches time.\""
+          },
+          "search": true,
+          "scene": {
+            "eyebrow": "TODAY · LUNCH BREAK",
+            "title": "A phone call",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "At lunchtime Ayşe comes to the shop, phone still in her hand.",
+                "sfx": "doorbell"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I called Uncle Haluk. For the first time in thirty-seven years."
+              },
+              {
+                "speaker": "ayse",
+                "text": "I said \"the lake\" and his voice changed. \"Don't go digging up old things, girl,\" he said, and hung up."
+              },
+              {
+                "speaker": "ayse",
+                "text": "He wasn't angry at all. He sounded scared."
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "title": "Midday sun",
+          "date": "3 March 1989",
+          "puzzle": [
+            "...##.....",
+            "..####....",
+            "...##.....",
+            "..####....",
+            ".######...",
+            "..####....",
+            "..#..#....",
+            "..#..#....",
+            "..#..#....",
+            ".########."
+          ],
+          "photo": "photos/r2_k4_ogle_gunesi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.shadow",
+              "x": 156,
+              "y": 360,
+              "r": 28,
+              "kind": "clue",
+              "title": "Short shadows",
+              "body": "Necati's shadow is right at his feet. The sun is overhead: midday."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "The clock, the shadow, the tower… It's as if my father knew that one day someone would look at these photos."
+          },
+          "search": false
+        },
+        {
+          "number": 5,
+          "title": "The second fish",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "....###...",
+            "..#######.",
+            "##########",
+            "###.######",
+            "##########",
+            "..#######.",
+            "....###...",
+            "..........",
+            "##########"
+          ],
+          "photo": "photos/r2_k5_ikinci_balik.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.t1230",
+              "x": 222,
+              "y": 292,
+              "r": 32,
+              "kind": "time",
+              "title": "Necati was at the lake",
+              "body": "The watch beside the fish shows 12:30. At the moment of the robbery, Necati was 20 kilometres from town.",
+              "tag": "12:30"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "12:30… The exact time of the robbery. My father was telling the truth. Thirty-seven years later."
+          },
+          "search": true
+        },
+        {
+          "number": 6,
+          "title": "Haluk laughing",
+          "date": "3 March 1989",
+          "puzzle": [
+            "...####...",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "...#..#...",
+            "....##....",
+            "#..####..#",
+            "##########",
+            "#..####..#",
+            "....##...."
+          ],
+          "photo": "photos/r2_k6_haluk_guluyor.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.haluk_fish",
+              "x": 150,
+              "y": 175,
+              "r": 40,
+              "kind": "clue",
+              "title": "Haluk was there too",
+              "body": "Haluk is holding Necati's fish, roaring with laughter. In court he said, \"I didn't see him that day.\""
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He swore an oath in court. In this photo he's holding my father's fish."
+          },
+          "search": false
+        },
+        {
+          "number": 7,
+          "title": "Thermos",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..##......",
+            ".####.....",
+            "..##......",
+            ".####.####",
+            ".####.#..#",
+            ".####.####",
+            ".####.#..#",
+            ".####.####",
+            ".####.....",
+            ".........."
+          ],
+          "photo": "photos/r2_k7_termos.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.paper",
+              "x": 200,
+              "y": 272,
+              "r": 34,
+              "kind": "clue",
+              "title": "The day's newspaper",
+              "body": "Next to the thermos, a newspaper dated 3 March 1989. The photo belongs to that day."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A lawyer might say \"the date can't be proven.\" But the newspaper and the watch both name the same day."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · EVENING",
+            "title": "Witness statement",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe brings a photocopy of the case file. The corner of one page has been folded for years.",
+                "sfx": "folder"
+              },
+              {
+                "speaker": null,
+                "text": "WITNESS STATEMENT · H. DEMİR · 12 April 1989. \"I did not see the defendant Necati Aydın on 3 March. I was on duty all day.\"",
+                "style": "paper",
+                "sfx": "newspaper"
+              },
+              {
+                "speaker": "ayse",
+                "text": "\"I was on duty,\" he said. But he was off that day; in the photos he's in plain clothes."
+              },
+              {
+                "speaker": "ayse",
+                "text": "Why would he lie? He was my father's closest friend."
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "Tower",
+          "date": "3 March 1989",
+          "puzzle": [
+            "....##....",
+            "...####...",
+            "...#..#...",
+            "...####...",
+            "...####...",
+            "...####...",
+            "..######..",
+            ".########.",
+            "##########",
+            ".........."
+          ],
+          "photo": "photos/r2_k8_kule.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.t1250",
+              "x": 150,
+              "y": 105,
+              "r": 28,
+              "kind": "time",
+              "title": "Still at the lake",
+              "body": "The tower shows 12:50. Twenty minutes after the robbery, the two of them are still on the shore.",
+              "tag": "12:50"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Twenty kilometres. You couldn't cover that road in twenty minutes, not even on a motorcycle."
+          },
+          "search": true
+        },
+        {
+          "number": 9,
+          "title": "Two friends",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..##..##..",
+            ".####.####",
+            ".####.####",
+            "..##..##..",
+            ".###..###.",
+            "##########",
+            "##########",
+            "####..####",
+            "###....###",
+            "###....###"
+          ],
+          "photo": "photos/r2_k9_iki_arkadas.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.friends",
+              "x": 155,
+              "y": 286,
+              "r": 32,
+              "kind": "clue",
+              "title": "Arm in arm",
+              "body": "Necati set the camera on a log and used the timer to take a photo of them together."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I'd love to hang this photo on the wall. But I can't look Uncle Haluk in the face."
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "The last fish",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            ".###......",
+            "#####.....",
+            "#.####....",
+            "######.##.",
+            ".#######..",
+            "..######..",
+            "..##.###..",
+            "......##..",
+            ".......#.."
+          ],
+          "photo": "photos/r2_k10_son_balik.svg",
+          "hotspots": [
+            {
+              "id": "wm.r2.t1300",
+              "x": 214,
+              "y": 270,
+              "r": 30,
+              "kind": "time",
+              "title": "The last fish",
+              "body": "13:00. Necati photographed the last fish with his watch, too.",
+              "tag": "13:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "One o'clock. Half an hour after the robbery, they're still there. Now I'm sure."
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Lake road",
+      "intro": "On the label: \"Lake road.\" Necati's second camera; the same day, between the lake and the town.",
+      "question": {
+        "text": "Whose is that red motorcycle?",
+        "options": [
+          {
+            "id": "cem",
+            "text": "Cem's",
+            "reply": {
+              "speaker": "ayse",
+              "text": "The only red motorcycle in town. He left saying \"My mother is ill.\" His mother's house isn't on the lake road."
+            }
+          },
+          {
+            "id": "stranger",
+            "text": "Someone we don't know",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Could be. But that road only goes to the lake. What would a stranger be doing on the lake road?"
+            }
+          },
+          {
+            "id": "haluk",
+            "text": "Haluk's",
+            "reply": {
+              "speaker": "ayse",
+              "text": "At that time Uncle Haluk was with my father. And it's not his motorcycle; he has a car."
+            }
+          }
+        ],
+        "truth": "cem",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "The label on the fourth roll: \"Shop, late afternoon.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "A few hours after the robbery. Let's see who came back to the shop that day."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "Lake road",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..######..",
+            "..#....#..",
+            "..######..",
+            ".....#....",
+            ".....#....",
+            "....###...",
+            "...#####..",
+            "..#######.",
+            ".#########",
+            "##########"
+          ],
+          "photo": "photos/r3_k1_gol_yolu.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.sign",
+              "x": 220,
+              "y": 182,
+              "r": 32,
+              "kind": "clue",
+              "title": "The only road",
+              "body": "The sign: Lake 3 km, town 17 km. There's no other road between the lake and the town."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "This road is the only link to town. Everyone coming or going passes here."
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "The view",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "..##......",
+            ".####.....",
+            "######..##",
+            "##########",
+            "####..####",
+            "###....###",
+            "##......##",
+            "#........#",
+            ".........."
+          ],
+          "photo": "photos/r3_k2_manzara.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.empty",
+              "x": 150,
+              "y": 250,
+              "r": 34,
+              "kind": "clue",
+              "title": "Empty road",
+              "body": "Around 12:10 the road is completely empty. Necati photographed the view."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My father loved a view. But it's as if he were waiting for something."
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "12:18",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            ".#....###.",
+            "##....#..#",
+            "#.#..#...#",
+            "##.##....#",
+            ".#..#...##",
+            "..##.###..",
+            "..........",
+            ".........."
+          ],
+          "photo": "photos/r3_k3_12_18.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.t1218",
+              "x": 172,
+              "y": 204,
+              "r": 28,
+              "kind": "time",
+              "title": "Red motorcycle",
+              "body": "A red motorcycle speeding towards town on the lake road. Necati's watch reads 12:18.",
+              "tag": "12:18"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A red motorcycle… What was it doing on the lake road? Where have I seen it before?"
+          },
+          "search": true
+        },
+        {
+          "number": 4,
+          "title": "Enlargement",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..####....",
+            "..#####...",
+            "..#####...",
+            "...###....",
+            "..#####...",
+            ".#######..",
+            "..#####...",
+            ".#.###.#..",
+            "#.#...#.#.",
+            ".#.....#.."
+          ],
+          "photo": "photos/r3_k4_buyutme.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.rider",
+              "x": 160,
+              "y": 160,
+              "r": 36,
+              "kind": "clue",
+              "title": "The rider",
+              "body": "Enlarged: the rider has no helmet; dark, curly hair. Someone young."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Curly hair… No. Let's not rush."
+          },
+          "search": true,
+          "scene": {
+            "eyebrow": "TODAY · EVENING",
+            "title": "A profile",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe calls late at night.",
+                "sfx": "mobile"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I found Cem online. He's a car mechanic in İzmir. Fifty-four, father of two."
+              },
+              {
+                "speaker": "ayse",
+                "text": "There's an old photo of him: standing in front of a red motorcycle. The caption says \"My first love, 1987.\""
+              },
+              {
+                "speaker": "ayse",
+                "text": "I'm not going to say anything. Not yet."
+              }
+            ]
+          }
+        },
+        {
+          "number": 5,
+          "title": "Lost in thought",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "...####...",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "..##..##..",
+            "...####...",
+            "..######..",
+            ".########.",
+            "##########"
+          ],
+          "photo": "photos/r3_k5_dalgin.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.distracted",
+              "x": 170,
+              "y": 192,
+              "r": 36,
+              "kind": "clue",
+              "title": "Lost in thought",
+              "body": "Around 12:40. Haluk has put down his rod and is staring at the road."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He isn't fishing. He's watching the road. He must have seen something."
+          },
+          "search": false
+        },
+        {
+          "number": 6,
+          "title": "Radio",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "#########.",
+            "#.##.#...#",
+            "#.##.#.#.#",
+            "#########.",
+            "........#.",
+            "........#.",
+            ".......###",
+            ".......###",
+            ".......###"
+          ],
+          "photo": "photos/r3_k6_telsiz.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.radio",
+              "x": 110,
+              "y": 240,
+              "r": 40,
+              "kind": "clue",
+              "title": "Police radio",
+              "body": "Haluk is listening to the police radio in the car. The robbery call must have come over this channel."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He heard about the robbery right here, on the radio. And he didn't say a word to my father."
+          },
+          "search": true
+        },
+        {
+          "number": 7,
+          "title": "Unaware",
+          "date": "3 March 1989",
+          "puzzle": [
+            "...####...",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "...####...",
+            "..........",
+            "..#####.#.",
+            ".########.",
+            "..#####.#.",
+            ".........."
+          ],
+          "photo": "photos/r3_k7_habersiz.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.unaware",
+              "x": 150,
+              "y": 175,
+              "r": 40,
+              "kind": "clue",
+              "title": "Unaware",
+              "body": "Necati poses with his fish; he has no idea what's happening in town."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "At that moment my father looks like the happiest man in the world. Two days later he'll lose everything."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · AT THE SHOP",
+            "title": "Master Rıza's daughter",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe comes to the shop with a notebook, half of it scribbled over.",
+                "sfx": "doorbell"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I reached Master Rıza's daughter. Her father is still alive, in a care home in İzmir."
+              },
+              {
+                "speaker": "ayse",
+                "text": "His daughter said: \"After that robbery my father never opened a shop again. He didn't get a penny from the insurance.\""
+              },
+              {
+                "speaker": "ayse",
+                "text": "Not a penny? But there was an insurance sign in the window…"
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "In a hurry",
+          "date": "3 March 1989",
+          "puzzle": [
+            "...#......",
+            "....####..",
+            "...#....#.",
+            "..#......#",
+            "#########.",
+            "##########",
+            "##########",
+            ".##....##.",
+            ".##....##.",
+            ".........."
+          ],
+          "photo": "photos/r3_k8_apar_topar.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.t1310",
+              "x": 260,
+              "y": 90,
+              "r": 30,
+              "kind": "time",
+              "title": "To headquarters",
+              "body": "Haluk packs up, saying \"I have to get to headquarters.\" It's 13:10.",
+              "tag": "13:10"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Half an hour after hearing the radio. Why didn't he go straight away? What was he thinking about for that half hour?"
+          },
+          "search": false
+        },
+        {
+          "number": 9,
+          "title": "A fresh track",
+          "date": "3 March 1989",
+          "puzzle": [
+            "#.#.#.#.##",
+            ".......###",
+            "......###.",
+            ".....###..",
+            "....###...",
+            "...###....",
+            "..###.....",
+            ".###......",
+            "###.......",
+            "#.#.#.#.#."
+          ],
+          "photo": "photos/r3_k9_taze_iz.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.track",
+              "x": 170,
+              "y": 162,
+              "r": 36,
+              "kind": "clue",
+              "title": "A fresh track",
+              "body": "In the mud by the roadside, a thin, fresh tyre track. A motorcycle track."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He photographed this too. Did my father suspect something?"
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "Back to town",
+          "date": "3 March 1989",
+          "puzzle": [
+            "....##....",
+            "...####...",
+            "...#..#...",
+            "...####...",
+            "###....###",
+            "#.#....#.#",
+            "##########",
+            "..........",
+            ".##....##.",
+            ".##....##."
+          ],
+          "photo": "photos/r3_k10_kasabaya_donus.svg",
+          "hotspots": [
+            {
+              "id": "wm.r3.t1340",
+              "x": 150,
+              "y": 84,
+              "r": 30,
+              "kind": "time",
+              "title": "They returned to town",
+              "body": "The tower: 13:40. Police cars at the edge of town. Haluk dropped Necati here and drove to headquarters.",
+              "tag": "13:40"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "This must be where my father first heard about the robbery. It never even crossed his mind that he'd be the suspect."
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Late afternoon",
+      "intro": "On the label: \"Shop, late afternoon.\" A few hours after the robbery.",
+      "question": {
+        "text": "The robber was limping. Why is Cem limping?",
+        "options": [
+          {
+            "id": "window",
+            "text": "He hurt himself jumping out of the window",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Master Rıza said \"the one who jumped fell.\" The same day, Cem's wrist is bandaged and he's dragging a foot…"
+            }
+          },
+          {
+            "id": "bike",
+            "text": "He fell off his motorcycle, as he said",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Maybe. But the motorcycle doesn't have a scratch. It's just muddy."
+            }
+          },
+          {
+            "id": "always",
+            "text": "He always limped",
+            "reply": {
+              "speaker": "ayse",
+              "text": "In the photos from the day before, he was running about. No, this is new."
+            }
+          }
+        ],
+        "truth": "window",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "The label on the fifth roll: \"Night light.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "Night photos my father took for a competition. My mother used to talk about them; she never got to see them."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "The return",
+          "date": "3 March 1989",
+          "puzzle": [
+            "#.######..",
+            ".#......#.",
+            "#....#..##",
+            "#....#...#",
+            "#....#...#",
+            "#....####.",
+            "#........#",
+            "#........#",
+            ".#......#.",
+            "..#######."
+          ],
+          "photo": "photos/r4_k1_donus.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.t1600",
+              "x": 196,
+              "y": 62,
+              "r": 30,
+              "kind": "time",
+              "title": "Back at the shop",
+              "body": "The clocks on the wall show 16:00. Necati has reopened the shop.",
+              "tag": "16:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Three and a half hours after the robbery, my father calmly opens his shop. Is that how a guilty man behaves?"
+          },
+          "search": true
+        },
+        {
+          "number": 2,
+          "title": "In front of the door",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "....##....",
+            "..#####.##",
+            ".######.#.",
+            "..####....",
+            ".##..###..",
+            "#..#.#..#.",
+            "#..#.#..#.",
+            ".##...##..",
+            ".........."
+          ],
+          "photo": "photos/r4_k2_kapinin_onunde.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.mud",
+              "x": 108,
+              "y": 338,
+              "r": 34,
+              "kind": "clue",
+              "title": "Mud",
+              "body": "Cem's red motorcycle outside the shop. The wheels are muddy; the town's roads are paved."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Mud… Is that mud from the lake road?"
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "Bandaged wrist",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            ".######...",
+            "#.#.#.##..",
+            "#.#.#.#.##",
+            "######..##",
+            "#.#.#.#.##",
+            ".######...",
+            "..........",
+            ".........."
+          ],
+          "photo": "photos/r4_k3_sargili_bilek.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.bandage",
+              "x": 142,
+              "y": 260,
+              "r": 30,
+              "kind": "clue",
+              "title": "Bandaged wrist",
+              "body": "Cem's left wrist is bandaged. He told Necati, \"I fell off my motorcycle.\""
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He fell… Could the robber have fallen too, jumping out of the window?"
+          },
+          "search": true,
+          "scene": {
+            "eyebrow": "TODAY · AFTER SCHOOL",
+            "title": "The case file",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe pulls a thick file out of her school bag.",
+                "sfx": "folder"
+              },
+              {
+                "speaker": null,
+                "text": "STATEMENT · RIZA KARACA · 3 March 1989. \"The person who jumped out of the back window fell, got up and ran off limping. I did not see his face.\"",
+                "style": "paper",
+                "sfx": "newspaper"
+              },
+              {
+                "speaker": "ayse",
+                "text": "My father had an old leg injury. Everyone looked at him."
+              },
+              {
+                "speaker": "ayse",
+                "text": "Nobody went looking for anyone else with a limp."
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "title": "Limping",
+          "date": "3 March 1989",
+          "puzzle": [
+            "...##.....",
+            "..####....",
+            "...##.....",
+            ".######...",
+            ".######...",
+            "..####....",
+            "..#..##...",
+            "..#...#...",
+            "..#....#..",
+            ".##....##."
+          ],
+          "photo": "photos/r4_k4_topalliyor.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.limp",
+              "x": 168,
+              "y": 306,
+              "r": 32,
+              "kind": "clue",
+              "title": "Limping",
+              "body": "Cem drags his left foot as he carries a box."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My father teases him and laughs. He didn't suspect a thing."
+          },
+          "search": false
+        },
+        {
+          "number": 5,
+          "title": "The shop across the street",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "##########",
+            "#........#",
+            "##########",
+            "#..####..#",
+            "#..#..#..#",
+            "#..####..#",
+            "##########",
+            "#........#"
+          ],
+          "photo": "photos/r4_k5_karsi_dukkan.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.seal",
+              "x": 150,
+              "y": 210,
+              "r": 34,
+              "kind": "clue",
+              "title": "The seal",
+              "body": "Master Rıza's shop is closed; a police seal on the shutter."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Half the town must have been there. And my father was across the street, mending a watch."
+          },
+          "search": false
+        },
+        {
+          "number": 6,
+          "title": "The note on the glass",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#........#",
+            "#.#####..#",
+            "#........#",
+            "#.######.#",
+            "#........#",
+            "#....###.#",
+            "##########"
+          ],
+          "photo": "photos/r4_k6_camdaki_not.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.uninsured",
+              "x": 150,
+              "y": 160,
+              "r": 44,
+              "kind": "clue",
+              "title": "Uninsured",
+              "body": "Rıza's handwriting: the policy was due to start on 1 April. The insurer had put up the \"Insured\" sign. On the day of the robbery, the shop was uninsured."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I suspected Master Rıza. That sign was just the insurer's advert. The man lost everything."
+          },
+          "search": true
+        },
+        {
+          "number": 7,
+          "title": "Master Rıza",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "...####...",
+            "..######..",
+            "#.#.##.#.#",
+            "#.######.#",
+            "##.####.##",
+            ".##....##.",
+            "..######..",
+            ".########.",
+            "##########"
+          ],
+          "photo": "photos/r4_k7_riza_usta.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.riza",
+              "x": 150,
+              "y": 205,
+              "r": 40,
+              "kind": "person",
+              "title": "Master Rıza",
+              "body": "In front of his shop, head in his hands. A man who has lost everything.",
+              "person": "riza"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "For thirty years I blamed this man in my heart. I owe him an apology."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · PHONE",
+            "title": "Master Rıza",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe's phone rings. It's the care home.",
+                "sfx": "mobile"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I spoke to Master Rıza. He's nearly ninety, but he remembers everything."
+              },
+              {
+                "speaker": "ayse",
+                "text": "\"I never blamed Necati,\" he said. \"The one who ran was light, quick on his feet. He was a boy.\""
+              },
+              {
+                "speaker": "ayse",
+                "text": "A boy. In thirty-seven years, nobody ever asked him."
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "Eye to eye",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..##...##.",
+            ".####.####",
+            ".#..#.####",
+            ".####.####",
+            "..##...##.",
+            ".####.####",
+            "######.###",
+            "######.###",
+            "######.###",
+            ".........."
+          ],
+          "photo": "photos/r4_k8_goz_goze.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.eyes",
+              "x": 215,
+              "y": 200,
+              "r": 34,
+              "kind": "clue",
+              "title": "He looks away",
+              "body": "Necati looks at the bandage and laughs. Cem has lowered his head and won't meet his eyes."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He won't meet his eyes. I'm only noticing it now."
+          },
+          "search": false
+        },
+        {
+          "number": 9,
+          "title": "Closing time",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..#######.",
+            ".#......#.",
+            "##..#....#",
+            "#...#....#",
+            "#...#....#",
+            "#...#....#",
+            "#...#....#",
+            "#...#....#",
+            ".#..#...#.",
+            "#.######.."
+          ],
+          "photo": "photos/r4_k9_kapanis.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.t1800",
+              "x": 120,
+              "y": 56,
+              "r": 28,
+              "kind": "time",
+              "title": "Closing time",
+              "body": "The clocks show 18:00. Necati is closing the shop; Cem is still inside.",
+              "tag": "18:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Everyone is going home. Why isn't Cem?"
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "A shadow inside",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#...##...#",
+            "#..####..#",
+            "#...##...#",
+            "#..####..#",
+            "#.######.#",
+            "#..#..#..#",
+            "#..#..#..#",
+            "##########"
+          ],
+          "photo": "photos/r4_k10_icerideki_golge.svg",
+          "hotspots": [
+            {
+              "id": "wm.r4.shadow",
+              "x": 110,
+              "y": 222,
+              "r": 36,
+              "kind": "clue",
+              "title": "A shadow inside",
+              "body": "After closing, a shadow behind the window: someone behind the counter. Cem's height."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "What was he doing inside after closing?"
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The drawer",
+      "intro": "On the label: \"Night light.\" Necati photographed his shop at night for a photo competition.",
+      "question": {
+        "text": "Did Haluk know about it?",
+        "options": [
+          {
+            "id": "knew",
+            "text": "He knew, and protected his brother",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Then the lie in court makes sense too. But it means my father's friend did it knowingly."
+            }
+          },
+          {
+            "id": "nothing",
+            "text": "He knew nothing",
+            "reply": {
+              "speaker": "ayse",
+              "text": "If only. But he listened to the radio, he saw the motorcycle. Didn't he think at all?"
+            }
+          },
+          {
+            "id": "believed",
+            "text": "He really believed Necati was guilty",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Then why did he say \"I didn't see him\"? They were at the lake, together."
+            }
+          }
+        ],
+        "truth": "knew",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "The label on the sixth roll: \"4 March, morning.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "The morning after the robbery. One day before my father was arrested."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "The window at night",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#.#....#.#",
+            "#.#.#..#.#",
+            "#.#.###..#",
+            "#.#....#.#",
+            "#.######.#",
+            "#........#",
+            "##########"
+          ],
+          "photo": "photos/r5_k1_gece_vitrini.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.t2000",
+              "x": 100,
+              "y": 210,
+              "r": 36,
+              "kind": "time",
+              "title": "Night shot",
+              "body": "The clock in the window shows 20:00. Necati is photographing his shop in the night light for the competition.",
+              "tag": "20:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My father really wanted to win this competition. My mother used to say, \"He would have taken first prize.\""
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "Counter lamp",
+          "date": "3 March 1989",
+          "puzzle": [
+            "....##....",
+            "...####...",
+            "..######..",
+            ".########.",
+            "....##....",
+            "....##....",
+            "....##....",
+            "...####...",
+            "..######..",
+            "##########"
+          ],
+          "photo": "photos/r5_k2_tezgah_lambasi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.lamp",
+              "x": 150,
+              "y": 146,
+              "r": 34,
+              "kind": "clue",
+              "title": "Long exposure",
+              "body": "The lamp is on and everything is sharp. Necati has set the camera on a tripod and is letting the light in for a long time."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A long exposure… Anything that moves comes out blurred. My father knew that."
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "A blurred shadow",
+          "date": "3 March 1989",
+          "puzzle": [
+            "......##..",
+            ".....####.",
+            "......##..",
+            "....#####.",
+            "...######.",
+            "....####..",
+            "..#.#####.",
+            "...#.##.#.",
+            "..########",
+            "..#......#"
+          ],
+          "photo": "photos/r5_k3_bulanik_golge.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.blur",
+              "x": 222,
+              "y": 250,
+              "r": 40,
+              "kind": "clue",
+              "title": "A blurred shadow",
+              "body": "In a long exposure, anyone who moves comes out blurred: Cem, bent over the back drawer."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Why is he blurred? He was moving. Putting something into the drawer, or taking something out."
+          },
+          "search": true,
+          "scene": {
+            "eyebrow": "TODAY · AYŞE'S HOUSE",
+            "title": "Exhibit 4",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Ayşe takes a single page out of the case file; its edges are dark with fingerprints.",
+                "sfx": "folder"
+              },
+              {
+                "speaker": null,
+                "text": "EXHIBIT 4 · Navy velvet necklace box. Found in the back drawer of the defendant's shop. 5 March 1989.",
+                "style": "paper",
+                "sfx": "newspaper"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I learned this photo by heart over the years. The box that convicted my father."
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "title": "The drawer is ajar",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#...##...#",
+            "#........#",
+            "##########",
+            ".#......#.",
+            ".#.####.#.",
+            ".#.####.#.",
+            ".########.",
+            ".........."
+          ],
+          "photo": "photos/r5_k4_cekmece_aralik.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.box",
+              "x": 182,
+              "y": 266,
+              "r": 32,
+              "kind": "clue",
+              "title": "Navy velvet",
+              "body": "The back drawer has been left ajar. Inside, the corner of a navy velvet box."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "The same box. The box from the case file. At 20:00 it was sitting in my father's drawer."
+          },
+          "search": true
+        },
+        {
+          "number": 5,
+          "title": "Necati in the mirror",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#.#....#.#",
+            "#.#.##.#.#",
+            "#.#.##.#.#",
+            "#.#....#.#",
+            "#.######.#",
+            "#........#",
+            "##########"
+          ],
+          "photo": "photos/r5_k5_aynadaki_necati.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.mirror",
+              "x": 115,
+              "y": 154,
+              "r": 34,
+              "kind": "clue",
+              "title": "Necati in the mirror",
+              "body": "Necati in the mirror: his eye at the viewfinder. He can't see the back drawer."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "My father is right in front of it, but he can't see. His eye is only on the light."
+          },
+          "search": false
+        },
+        {
+          "number": 6,
+          "title": "Cem leaves",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..######..",
+            "##......#.",
+            "#....#..##",
+            "#......#.#",
+            "#....##..#",
+            "#....#...#",
+            "#........#",
+            "#........#",
+            ".#......##",
+            "..######.."
+          ],
+          "photo": "photos/r5_k6_cem_cikiyor.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.t2020",
+              "x": 196,
+              "y": 62,
+              "r": 30,
+              "kind": "time",
+              "title": "Cem left",
+              "body": "20:20. Cem picks up his helmet and leaves. His hands are empty.",
+              "tag": "20:20"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He leaves with empty hands. The box stayed in the drawer."
+          },
+          "search": false
+        },
+        {
+          "number": 7,
+          "title": "The key",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            ".###......",
+            "#.#.#.....",
+            "#...######",
+            "#...#..#.#",
+            ".###...#.#",
+            "..........",
+            "..........",
+            ".........."
+          ],
+          "photo": "photos/r5_k7_anahtar.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.t2045",
+              "x": 250,
+              "y": 60,
+              "r": 28,
+              "kind": "time",
+              "title": "The shop is locked",
+              "body": "20:45. Necati locks the door. Only he and Cem have a key.",
+              "tag": "20:45"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "They both had a key. Nobody else could have got in."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · NIGHT",
+            "title": "Seen",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "Close to midnight, a message from Ayşe.",
+                "sfx": "message"
+              },
+              {
+                "speaker": "ayse",
+                "text": "I messaged Cem. \"I found my father's photos from 1989,\" I said. Nothing else."
+              },
+              {
+                "speaker": "ayse",
+                "text": "It's been on \"seen\" for three hours. No reply."
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "The competition frame",
+          "date": "3 March 1989",
+          "puzzle": [
+            "##.#..##.#",
+            ".#.#..#.#.",
+            "..#....#..",
+            "...####...",
+            "##.####.##",
+            "...####...",
+            "#.#....##.",
+            ".#.#..#.#.",
+            "#..#..#..#",
+            ".........."
+          ],
+          "photo": "photos/r5_k8_yarisma_karesi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.contest",
+              "x": 150,
+              "y": 172,
+              "r": 38,
+              "kind": "clue",
+              "title": "Competition photo",
+              "body": "The frame Necati picked for the competition. It was never sent in."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "What a beautiful photo. I'm going to frame it and hang it up, whatever happens."
+          },
+          "search": false
+        },
+        {
+          "number": 9,
+          "title": "Unlocked",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "##########",
+            "#........#",
+            "#...##...#",
+            "#..#..#..#",
+            "#..####..#",
+            "#..####..#",
+            "#........#",
+            "##########",
+            ".........."
+          ],
+          "photo": "photos/r5_k9_kilitsiz.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.nolock",
+              "x": 150,
+              "y": 214,
+              "r": 30,
+              "kind": "clue",
+              "title": "Unlocked",
+              "body": "The back drawer has no lock. Anyone in the shop could open it."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Did the lawyer never ask about this? Anyone could have opened it."
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "The stamp",
+          "date": "3 March 1989",
+          "puzzle": [
+            "..........",
+            "##########",
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#.#....#.#",
+            "#.######.#",
+            "#........#",
+            "##########",
+            ".........."
+          ],
+          "photo": "photos/r5_k10_damga.svg",
+          "hotspots": [
+            {
+              "id": "wm.r5.stamp",
+              "x": 150,
+              "y": 232,
+              "r": 40,
+              "kind": "clue",
+              "title": "Rıza's stamp",
+              "body": "On the lid of the box, in gold leaf: \"Rıza Kuyumculuk\". The stolen box, here seven and a half hours after the robbery."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "There's no doubt now. Cem put the box there. Not my father."
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Haluk",
+      "intro": "On the label: \"4 March, morning.\" The day after the robbery, one day before the arrest.",
+      "question": {
+        "text": "Why were these films never developed in 37 years?",
+        "options": [
+          {
+            "id": "nermin",
+            "text": "Mrs Nermin hid them",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Uncle Haluk said, \"They always told me no.\" Someone hid these films on purpose."
+            }
+          },
+          {
+            "id": "forgot",
+            "text": "Necati forgot them",
+            "reply": {
+              "speaker": "ayse",
+              "text": "He was arrested the next day. Served six years. Maybe… but would a man who lived for photography forget?"
+            }
+          },
+          {
+            "id": "haluk",
+            "text": "Haluk seized them",
+            "reply": {
+              "speaker": "ayse",
+              "text": "Then why is he still looking for them? He doesn't have the films. He never did."
+            }
+          }
+        ],
+        "truth": "nermin",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "One last roll is left in the bag. On its label: \"4 March, home.\"",
+            "sfx": "bag"
+          },
+          {
+            "speaker": "ayse",
+            "text": "The last photos my father took at home. The next morning they took him away."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "An early visit",
+          "date": "4 March 1989",
+          "puzzle": [
+            "...####...",
+            "..######..",
+            ".########.",
+            "..#.##.#..",
+            "..######..",
+            "...####...",
+            "..######..",
+            ".#.####.#.",
+            ".########.",
+            ".########."
+          ],
+          "photo": "photos/r6_k1_erken_ziyaret.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.t0800",
+              "x": 250,
+              "y": 52,
+              "r": 30,
+              "kind": "time",
+              "title": "Haluk came",
+              "body": "4 March, 08:00. Haluk arrives in uniform, before the shop opens.",
+              "tag": "08:00"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A Sunday morning, in uniform. If he wasn't on duty, why the uniform?"
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "Outside",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..#.......",
+            ".###....#.",
+            "..#....###",
+            ".###....#.",
+            "#####..###",
+            ".###..####",
+            ".#.#...###",
+            ".#.#...#.#",
+            ".#.#...#..",
+            "##.##.##.."
+          ],
+          "photo": "photos/r6_k2_disari.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.call",
+              "x": 148,
+              "y": 174,
+              "r": 30,
+              "kind": "clue",
+              "title": "Outside",
+              "body": "Haluk waves Cem outside. Necati photographs them through the glass."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "Why did my father take this through the glass? He must have been curious."
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "An argument",
+          "date": "4 March 1989",
+          "puzzle": [
+            ".##.......",
+            "####......",
+            ".##.......",
+            "####....#.",
+            "#####..###",
+            "####.#..#.",
+            "####..####",
+            "####...###",
+            "####...###",
+            "####...###"
+          ],
+          "photo": "photos/r6_k3_tartisma.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.argue",
+              "x": 188,
+              "y": 214,
+              "r": 30,
+              "kind": "clue",
+              "title": "An argument",
+              "body": "Haluk is jabbing a finger at Cem. You can't hear them, but their faces say everything."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "The older brother is scolding the younger one. Haluk knows."
+          },
+          "search": true,
+          "scene": {
+            "eyebrow": "TODAY · AT THE SHOP",
+            "title": "A visitor",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "The shop bell rings. At the door, a tall old man; he takes off his hat.",
+                "sfx": "doorbell"
+              },
+              {
+                "speaker": "haluk",
+                "text": "Is this Mrs Nermin's shop? I left a film here, a long time ago."
+              },
+              {
+                "speaker": "haluk",
+                "text": "I've asked now and then, for thirty years. They always said \"no\"."
+              },
+              {
+                "speaker": null,
+                "text": "His eyes are on the cabinet at the back. He looks at it for a while. Then he leaves without asking for anything."
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "title": "Tears",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..#.##.#..",
+            ".########.",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "..##..##..",
+            "...####...",
+            "....##....",
+            "..######..",
+            ".########."
+          ],
+          "photo": "photos/r6_k4_gozyasi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.tears",
+              "x": 142,
+              "y": 196,
+              "r": 32,
+              "kind": "clue",
+              "title": "Tears",
+              "body": "Cem is crying. Haluk has a hand on his shoulder."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "A seventeen-year-old boy. I can't even be angry; how strange."
+          },
+          "search": false
+        },
+        {
+          "number": 5,
+          "title": "He looks in the drawer",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..........",
+            ".##.......",
+            "####......",
+            ".##.......",
+            "######....",
+            "####.#####",
+            "####.#...#",
+            "####.#.#.#",
+            "####.#####",
+            ".........."
+          ],
+          "photo": "photos/r6_k5_cekmeceye_bakiyor.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.look",
+              "x": 212,
+              "y": 290,
+              "r": 34,
+              "kind": "clue",
+              "title": "He looks in the drawer",
+              "body": "Haluk opens the back drawer and looks inside. Nobody told him where to look."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He knows where to look. Without anyone telling him."
+          },
+          "search": true
+        },
+        {
+          "number": 6,
+          "title": "Without touching",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            "....######",
+            "....#....#",
+            "##..#.##.#",
+            "##..#....#",
+            "....######",
+            "..........",
+            "##########",
+            "#........#"
+          ],
+          "photo": "photos/r6_k6_dokunmadan.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.closed",
+              "x": 180,
+              "y": 236,
+              "r": 36,
+              "kind": "clue",
+              "title": "He took nothing",
+              "body": "Haluk closes the drawer. Without touching the box."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He could have taken it and thrown it away. But he left it there. In my father's drawer."
+          },
+          "search": false
+        },
+        {
+          "number": 7,
+          "title": "A hand on the shoulder",
+          "date": "4 March 1989",
+          "puzzle": [
+            "......##..",
+            "..##.####.",
+            ".####.##..",
+            ".#..#####.",
+            ".####.##..",
+            "..##......",
+            ".#####.###",
+            "##########",
+            "##########",
+            "####..####"
+          ],
+          "photo": "photos/r6_k7_omuz.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.smile",
+              "x": 210,
+              "y": 190,
+              "r": 34,
+              "kind": "clue",
+              "title": "A smile",
+              "body": "On his way out, Haluk touches Necati's shoulder and smiles. Cem took the photo."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I will never forget that smile."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · NIGHT",
+            "title": "The search report",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "At midnight Ayşe photographs the last pages of the case file and sends them.",
+                "sfx": "message"
+              },
+              {
+                "speaker": null,
+                "text": "SEARCH REPORT · 5 March 1989. Head of search team: Deputy Inspector H. Demir. A navy velvet necklace box was found in the back drawer.",
+                "style": "paper",
+                "sfx": "newspaper"
+              },
+              {
+                "speaker": "ayse",
+                "text": "He led the search himself. Knowing exactly where the box was."
+              },
+              {
+                "speaker": "ayse",
+                "text": "The man who came to the shop today… That was Uncle Haluk, wasn't it?"
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "An ordinary morning",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..######..",
+            "##......##",
+            "#....#...#",
+            "#....#...#",
+            "#....#...#",
+            "#....#...#",
+            "#...#....#",
+            "#..#.#.#.#",
+            ".#......#.",
+            "..######.."
+          ],
+          "photo": "photos/r6_k8_siradan_bir_sabah.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.t0930",
+              "x": 196,
+              "y": 62,
+              "r": 30,
+              "kind": "time",
+              "title": "An ordinary morning",
+              "body": "09:30. Necati is mending a watch, like every morning.",
+              "tag": "09:30"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He has no idea. The next morning they'll take him from this very bench."
+          },
+          "search": false
+        },
+        {
+          "number": 9,
+          "title": "An empty stool",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..........",
+            "..........",
+            "..######..",
+            "..######..",
+            "...#..#...",
+            "...#..#...",
+            "...#..#...",
+            "..#....#..",
+            "..#....#..",
+            "##########"
+          ],
+          "photo": "photos/r6_k9_bos_tabure.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.stool",
+              "x": 150,
+              "y": 254,
+              "r": 34,
+              "kind": "clue",
+              "title": "Cem is gone",
+              "body": "Cem's stool is empty. After that morning he never came back to the shop."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He never gave a single statement during the whole trial. Nobody even asked him."
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "The car driving away",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..........",
+            "...#####..",
+            "..#.#.#.#.",
+            ".#..#.#..#",
+            "##########",
+            "##########",
+            "##########",
+            ".##....##.",
+            ".##....##.",
+            ".........."
+          ],
+          "photo": "photos/r6_k10_uzaklasan_araba.svg",
+          "hotspots": [
+            {
+              "id": "wm.r6.passenger",
+              "x": 122,
+              "y": 210,
+              "r": 28,
+              "kind": "clue",
+              "title": "Cem in the front seat",
+              "body": "Haluk's car drives away; Cem is in the front seat."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He took his brother away. And the next day, my father."
+          },
+          "search": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The last day",
+      "intro": "On the label: \"4 March, home.\" The last roll in the bag.",
+      "question": {
+        "text": "The evidence table: who put the box in the drawer, and who covered it up?",
+        "options": [
+          {
+            "id": "cem_haluk",
+            "text": "Cem put it there, Haluk covered it up",
+            "reply": {
+              "speaker": "ayse",
+              "text": "The motorcycle at 12:18. The bandaged wrist. The blurred shadow bending over the drawer at night. Haluk checking that drawer the next morning without touching it. Everything points to the same place."
+            }
+          },
+          {
+            "id": "cem_alone",
+            "text": "Cem put it there, nobody knew",
+            "reply": {
+              "speaker": "ayse",
+              "text": "The next morning Haluk went straight to that drawer. He led the search himself. He knew."
+            }
+          },
+          {
+            "id": "haluk_alone",
+            "text": "Haluk put it there and blamed Cem",
+            "reply": {
+              "speaker": "ayse",
+              "text": "At 12:30 Haluk was at the lake with my father. He couldn't have stolen the box or planted it. But he covered it up."
+            }
+          }
+        ],
+        "truth": "cem_haluk",
+        "outro": [
+          {
+            "speaker": null,
+            "text": "Ayşe lays the photos out on the table. One by one, in order. This is the story that finally emerges:"
+          },
+          {
+            "speaker": null,
+            "text": "3 March, lunchtime. Cem, who has gambling debts, gets into the jeweller's through the back window. Jumping out, he hurts his wrist."
+          },
+          {
+            "speaker": null,
+            "text": "He hides one of the stolen boxes in the back drawer of his master's shop, to collect it later."
+          },
+          {
+            "speaker": null,
+            "text": "At that time Haluk was at the lake with Necati. He heard about the robbery on the radio; on the road he had seen his brother's motorcycle. The next morning he learned the truth."
+          },
+          {
+            "speaker": null,
+            "text": "To protect his brother, he left the box where it was, led the search himself, and told the court he hadn't seen his friend."
+          },
+          {
+            "speaker": null,
+            "text": "Necati never found out who did it, to the day he died. You are the first to learn the truth."
+          }
+        ]
+      },
+      "frames": [
+        {
+          "number": 1,
+          "title": "Home",
+          "date": "4 March 1989",
+          "puzzle": [
+            "....##....",
+            "...####...",
+            "..######..",
+            ".########.",
+            "##########",
+            ".#......#.",
+            ".#.##.#.#.",
+            ".#.##.#.#.",
+            ".#....#.#.",
+            ".########."
+          ],
+          "photo": "photos/r7_k1_ev.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.home",
+              "x": 150,
+              "y": 176,
+              "r": 44,
+              "kind": "clue",
+              "title": "The Aydın family home",
+              "body": "4 March, afternoon. Necati's house."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "This house… We sold it while my father was in prison. I don't even remember living here."
+          },
+          "search": false
+        },
+        {
+          "number": 2,
+          "title": "The repair table",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..........",
+            ".#.####...",
+            "..#....##.",
+            ".#......#.",
+            ".#......#.",
+            ".##.....#.",
+            "..#....#..",
+            "...####...",
+            "..........",
+            "##########"
+          ],
+          "photo": "photos/r7_k2_tamir_masasi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.loupe",
+              "x": 120,
+              "y": 214,
+              "r": 32,
+              "kind": "clue",
+              "title": "Watchmaker's loupe",
+              "body": "Necati's repair table at home; a watchmaker's loupe on top."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I have this loupe. The only thing I have left from my father."
+          },
+          "search": false
+        },
+        {
+          "number": 3,
+          "title": "First step",
+          "date": "4 March 1989",
+          "puzzle": [
+            "...####...",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "...####...",
+            "#.######.#",
+            ".########.",
+            "..######..",
+            "..##..##..",
+            "..##..##.."
+          ],
+          "photo": "photos/r7_k3_ilk_adim.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.firststep",
+              "x": 150,
+              "y": 200,
+              "r": 40,
+              "kind": "person",
+              "title": "Baby Ayşe",
+              "body": "Ayşe's first steps. 4 March 1989.",
+              "person": "ayse"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "That's me. My first step. I never knew."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · AT THE SHOP",
+            "title": "First step",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "For a long time Ayşe says nothing. She holds the photo in both hands.",
+                "sfx": "clock"
+              },
+              {
+                "speaker": "ayse",
+                "text": "My mother used to say, \"You took your first step towards your father's arms.\" I always thought she made it up."
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "title": "In his arms",
+          "date": "4 March 1989",
+          "puzzle": [
+            "..####....",
+            ".######...",
+            ".#.##.#...",
+            ".######...",
+            "..####.##.",
+            ".#####.##.",
+            "########..",
+            "#########.",
+            "#########.",
+            ".########."
+          ],
+          "photo": "photos/r7_k4_kucakta.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.hug",
+              "x": 170,
+              "y": 250,
+              "r": 40,
+              "kind": "clue",
+              "title": "Her father",
+              "body": "Necati holds Ayşe in his arms at the repair table."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "The next morning they took him away. A father's last happy day."
+          },
+          "search": false
+        },
+        {
+          "number": 5,
+          "title": "Wall clock",
+          "date": "4 March 1989",
+          "puzzle": [
+            "########..",
+            ".#......#.",
+            ".#..#...#.",
+            ".#..#...#.",
+            ".#..##..#.",
+            ".#......#.",
+            "..######..",
+            "....##....",
+            "...####...",
+            "...####..."
+          ],
+          "photo": "photos/r7_k5_duvar_saati.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.t1630",
+              "x": 150,
+              "y": 110,
+              "r": 36,
+              "kind": "time",
+              "title": "The clock at home",
+              "body": "16:30. Necati is about to leave the house to drop off the films.",
+              "tag": "16:30"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "His clocks are always right. Even at home."
+          },
+          "search": true
+        },
+        {
+          "number": 6,
+          "title": "Karanlık Oda",
+          "date": "4 March 1989",
+          "puzzle": [
+            "##########",
+            "#.#.##.#.#",
+            "##########",
+            "..........",
+            "####..####",
+            "#..#..#..#",
+            "#..#..#..#",
+            "####..#.##",
+            "#..#..#..#",
+            "####..####"
+          ],
+          "photo": "photos/r7_k6_karanlik_oda.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.darkroom",
+              "x": 150,
+              "y": 86,
+              "r": 40,
+              "kind": "clue",
+              "title": "Your shop",
+              "body": "The sign reads \"Karanlık Oda\": the darkroom. Your shop, in 1989."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "This is… this is your shop! My father brought the films here."
+          },
+          "search": true
+        },
+        {
+          "number": 7,
+          "title": "Mrs Nermin",
+          "date": "4 March 1989",
+          "puzzle": [
+            "...####...",
+            "..######..",
+            "..#.##.#..",
+            "..######..",
+            "...####...",
+            "..######..",
+            ".########.",
+            "..........",
+            "#.#.#.#.#.",
+            "#.#.#.#.#."
+          ],
+          "photo": "photos/r7_k7_nermin_hanim.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.nermin",
+              "x": 150,
+              "y": 296,
+              "r": 40,
+              "kind": "clue",
+              "title": "Seven rolls",
+              "body": "At the counter, a young Mrs Nermin takes in the seven rolls: \"N. Aydın, 4 March 1989.\""
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "I've never seen Mrs Nermin this young. My father trusted her."
+          },
+          "search": false,
+          "scene": {
+            "eyebrow": "TODAY · THE BOTTOM OF THE BAG",
+            "title": "A note",
+            "lines": [
+              {
+                "speaker": null,
+                "text": "At the bottom of the bag there's a folded, yellowed piece of paper. Mrs Nermin's handwriting.",
+                "sfx": "bag"
+              },
+              {
+                "speaker": null,
+                "text": "On 6 March Mr Haluk came and asked for the films. I said \"they came out ruined\" and didn't give them to him. I couldn't take them to the court either; I was afraid. Every film in this cabinet is a debt.",
+                "style": "letter",
+                "sfx": "letter"
+              },
+              {
+                "speaker": "ayse",
+                "text": "Mrs Nermin knew too. And she kept quiet for thirty-seven years."
+              },
+              {
+                "speaker": "ayse",
+                "text": "She left the shop to you. Maybe so that you would pay the debt."
+              }
+            ]
+          }
+        },
+        {
+          "number": 8,
+          "title": "The receipt",
+          "date": "4 March 1989",
+          "puzzle": [
+            "##########",
+            "#........#",
+            "#.######.#",
+            "#........#",
+            "#.####...#",
+            "#........#",
+            "#.#####..#",
+            "#........#",
+            "#.###....#",
+            "##########"
+          ],
+          "photo": "photos/r7_k8_teslim_fisi.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.t1710",
+              "x": 130,
+              "y": 222,
+              "r": 36,
+              "kind": "time",
+              "title": "The films were handed in",
+              "body": "Receipt No. 1147: N. Aydın, 7 rolls, 4 March 1989, 17:10. Ready for collection: 11 March.",
+              "tag": "17:10"
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He was going to pick them up on 11 March. He was arrested on 5 March. He never came back."
+          },
+          "search": true
+        },
+        {
+          "number": 9,
+          "title": "Reflection",
+          "date": "4 March 1989",
+          "puzzle": [
+            "##########",
+            "#...##...#",
+            "#..####..#",
+            "#..#..#..#",
+            "#..####..#",
+            "#...##...#",
+            "#.######.#",
+            "#########.",
+            "##########",
+            "##########"
+          ],
+          "photo": "photos/r7_k9_yansima.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.selfie",
+              "x": 150,
+              "y": 178,
+              "r": 40,
+              "kind": "clue",
+              "title": "The last photo",
+              "body": "The only frame Necati took of himself: reflected in Karanlık Oda's window, camera in hand."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "He's smiling. He has no idea what tomorrow will bring."
+          },
+          "search": false
+        },
+        {
+          "number": 10,
+          "title": "The last frame",
+          "date": "4 March 1989",
+          "puzzle": [
+            "#.....####",
+            ".......###",
+            "........##",
+            ".........#",
+            "..........",
+            "..........",
+            "#.........",
+            "##........",
+            "###.......",
+            "####......"
+          ],
+          "photo": "photos/r7_k10_son_kare.svg",
+          "hotspots": [
+            {
+              "id": "wm.r7.lastframe",
+              "x": 236,
+              "y": 130,
+              "r": 44,
+              "kind": "clue",
+              "title": "The last frame",
+              "body": "Light has leaked into the last frame of the roll. The rest isn't in the photos any more."
+            }
+          ],
+          "reaction": {
+            "speaker": "ayse",
+            "text": "That's all of it. Now we know everything… don't we?"
+          },
+          "search": false
+        }
+      ]
+    }
+  ],
+  "finale": {
+    "eyebrow": "FINAL DECISION",
+    "intro": [
+      {
+        "speaker": "ayse",
+        "text": "What should I do now?"
+      },
+      {
+        "speaker": "ayse",
+        "text": "Uncle Haluk is seventy-one and retired. Cem is fifty-four, father of two. My father is gone."
+      }
+    ],
+    "question": "Who will you give the photos to?",
+    "hint": "There is no right answer. Ayşe will go with your decision.",
+    "options": [
+      {
+        "id": "lawyer",
+        "text": "Give them to a lawyer",
+        "detail": "Apply to reopen the case, so that Necati's name is officially cleared.",
+        "ending": [
+          {
+            "speaker": null,
+            "text": "A week later, the town's only law office. The lawyer lays the photos out on the desk one by one.",
+            "sfx": "folder"
+          },
+          {
+            "speaker": "ayse",
+            "text": "Reopening the case could take months, she said. But my father's name will be officially cleared."
+          },
+          {
+            "speaker": null,
+            "text": "Two months later, a courthouse corridor. On the bench across from Ayşe sits a tall old man, hat on his knees."
+          },
+          {
+            "speaker": "haluk",
+            "text": "For thirty-seven years, every morning, I thought about that drawer. He was my brother. I thought I had saved him."
+          },
+          {
+            "speaker": "haluk",
+            "text": "Not Necati… I was saving myself. And not even that, really."
+          },
+          {
+            "speaker": "ayse",
+            "text": "My father never blamed you, you know. Until he died he said, \"Haluk must know something.\""
+          },
+          {
+            "speaker": null,
+            "text": "Haluk bows his head. He seems about to say something, but can't."
+          },
+          {
+            "speaker": null,
+            "text": "At the end of the corridor, Cem appears. He came from İzmir on the first bus, of his own accord. He sits down next to his brother and, for the first time, looks Ayşe in the face."
+          },
+          {
+            "speaker": null,
+            "style": "photo",
+            "image": "assets/case_files/wrong_man/photos/end_court.svg",
+            "text": "A courthouse corridor. The case of Necati Aydın has been reopened."
+          },
+          {
+            "speaker": "ayse",
+            "text": "If my father could see this… Maybe he does."
+          }
+        ]
+      },
+      {
+        "id": "ayse",
+        "text": "Give them only to Ayşe",
+        "detail": "Let her know her father was innocent; let no one else know.",
+        "ending": [
+          {
+            "speaker": null,
+            "text": "Ayşe has the competition photo framed. She hangs it on her wall, next to her father's portrait."
+          },
+          {
+            "speaker": "ayse",
+            "text": "No one will know. But I know. My father didn't do it."
+          },
+          {
+            "speaker": null,
+            "text": "One evening the shop bell rings. At the door, that old man again. This time he doesn't ask about the films.",
+            "sfx": "doorbell"
+          },
+          {
+            "speaker": "haluk",
+            "text": "Necati's daughter… does she know?"
+          },
+          {
+            "speaker": null,
+            "text": "You nod. Haluk is silent for a long time. Then he takes a worn photo from his pocket and lays it on the counter: the lakeshore, two young men, arm in arm."
+          },
+          {
+            "speaker": "haluk",
+            "text": "Give it to her. I have no right to keep it."
+          },
+          {
+            "speaker": null,
+            "text": "A week later, an envelope has been slipped under Ayşe's door. Inside, a single line.",
+            "sfx": "letter"
+          },
+          {
+            "speaker": null,
+            "text": "I'm sorry. — C.",
+            "style": "letter"
+          },
+          {
+            "speaker": null,
+            "style": "photo",
+            "image": "assets/case_files/wrong_man/photos/end_wall.svg",
+            "text": "Ayşe's house. Two photos on the wall: the competition frame, and the two friends at the lake."
+          },
+          {
+            "speaker": "ayse",
+            "text": "Sometimes knowing the truth is enough. Sometimes it isn't. Today it is."
+          }
+        ]
+      }
+    ],
+    "epilogue": [
+      {
+        "speaker": null,
+        "text": "That night you're alone in the shop. No sound but the ticking of the clocks.",
+        "sfx": "clock"
+      },
+      {
+        "speaker": null,
+        "text": "Mrs Nermin's note is still in your pocket: \"Every film in this cabinet is a debt.\""
+      },
+      {
+        "speaker": null,
+        "text": "Where the bag used to be, you stick a small label in your own handwriting: \"N. Aydın · collected.\""
+      },
+      {
+        "speaker": null,
+        "text": "There are dozens more bags on the shelf; each one is someone else's story. One label catches your eye: \"Room 214, July 1979.\"",
+        "sfx": "bag"
+      },
+      {
+        "speaker": null,
+        "style": "photo",
+        "image": "assets/case_files/wrong_man/photos/end_shelf.svg",
+        "text": "Never collected. One debt paid."
+      }
+    ]
+  }
+}

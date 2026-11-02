@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
+
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../../domain/entities/rewarded_ad_result.dart';
@@ -27,11 +29,14 @@ class AdmobRewardedAds implements RewardedAds {
       request: const AdRequest(),
       rewardedAdLoadCallback: RewardedAdLoadCallback(
         onAdLoaded: (ad) {
+          debugPrint('[Reklam] Ödüllü reklam yüklendi');
           _ad = ad;
           _loading = null;
           loading.complete(ad);
         },
-        onAdFailedToLoad: (_) {
+        onAdFailedToLoad: (error) {
+          debugPrint('[Reklam] Ödüllü reklam yüklenemedi: '
+              '${error.code} ${error.message}');
           _loading = null;
           loading.complete(null);
         },
@@ -43,7 +48,10 @@ class AdmobRewardedAds implements RewardedAds {
   @override
   Future<RewardedAdResult> show() async {
     final ad = await _load().timeout(_waitForLoad, onTimeout: () => null);
-    if (ad == null) return RewardedAdResult.unavailable;
+    if (ad == null) {
+      debugPrint('[Reklam] Ödüllü reklam hazır değil → reklam yok');
+      return RewardedAdResult.unavailable;
+    }
     _ad = null;
 
     final result = Completer<RewardedAdResult>();

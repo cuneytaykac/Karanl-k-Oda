@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/dev_flags.dart';
@@ -28,16 +29,21 @@ class AdsCoordinator {
 
   /// Reklam ağı hazır ve oyuncu reklama izin veriyor: ilk reklamlar yüklensin.
   void enable() {
+    debugPrint('[Reklam] Reklamlar açıldı, ilk reklamlar yükleniyor');
     _enabled = true;
     _rewarded.preload();
     _interstitial.preload();
   }
 
   /// İpucu için ödüllü reklam.
-  /// Reklam yoksa (onay yok, ağ başlamadı) sonuç "reklam yok" olur: oyuncu
-  /// cezalandırılmaz, ipucu yine verilir.
+  /// Reklam yoksa (onay yok, ağ başlamadı, reklam yüklenmedi) sonuç "reklam yok"
+  /// olur; ipucu verilmez.
   Future<RewardedAdResult> showRewarded() async {
-    if (!_enabled) return RewardedAdResult.unavailable;
+    if (!_enabled) {
+      debugPrint('[Reklam] Reklam sistemi başlamadı (onay yok ya da '
+          'AdMob başlatılmadı) → reklam yok');
+      return RewardedAdResult.unavailable;
+    }
     final result = await _rewarded.show();
     if (result != RewardedAdResult.unavailable) _lastRewarded = _now();
     return result;
