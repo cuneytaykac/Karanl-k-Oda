@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
@@ -7,7 +9,7 @@ plugins {
 // Mağaza imzası (upload key). Anahtar ve şifreler android/key.properties'te durur;
 // bu dosya git'e girmez. Dosya yoksa (örn. başka bir bilgisayar) release,
 // hata ayıklama anahtarıyla imzalanır: telefonda çalışır ama Play kabul etmez.
-val keystoreProperties = java.util.Properties().apply {
+val keystoreProperties = Properties().apply {
     val file = rootProject.file("key.properties")
     if (file.exists()) file.inputStream().use { load(it) }
 }
