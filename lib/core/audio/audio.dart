@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../log.dart';
 
 /// Oyundaki kısa efektler. Dosyalar: `assets/audio/<ad>.wav` (koddan sentezlendi, telifsiz).
 enum Sfx {
@@ -100,7 +101,7 @@ class AudioplayersAudio implements GameAudio {
       await amb.setSource(AssetSource('audio/ambience.wav'));
       audio._ambience = amb;
     } catch (e, st) {
-      debugPrint('Ses yüklenemedi, sessiz devam: $e\n$st');
+      devLog('Ses yüklenemedi, sessiz devam: $e\n$st');
     }
     return audio;
   }
@@ -164,7 +165,7 @@ class AudioplayersAudio implements GameAudio {
     try {
       await action();
     } catch (e) {
-      debugPrint('$what: $e');
+      devLog('$what: $e');
     }
   }
 }

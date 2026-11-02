@@ -1,8 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/dev_flags.dart';
 import '../../../../core/di/providers.dart';
+import '../../../../core/log.dart';
 import '../../domain/entities/rewarded_ad_result.dart';
 import '../../domain/usecases/ad_break_policy.dart';
 
@@ -29,7 +29,7 @@ class AdsCoordinator {
 
   /// Reklam ağı hazır ve oyuncu reklama izin veriyor: ilk reklamlar yüklensin.
   void enable() {
-    debugPrint('[Reklam] Reklamlar açıldı, ilk reklamlar yükleniyor');
+    devLog('[Reklam] Reklamlar açıldı, ilk reklamlar yükleniyor');
     _enabled = true;
     _rewarded.preload();
     _interstitial.preload();
@@ -40,7 +40,7 @@ class AdsCoordinator {
   /// olur; ipucu verilmez.
   Future<RewardedAdResult> showRewarded() async {
     if (!_enabled) {
-      debugPrint('[Reklam] Reklam sistemi başlamadı (onay yok ya da '
+      devLog('[Reklam] Reklam sistemi başlamadı (onay yok ya da '
           'AdMob başlatılmadı) → reklam yok');
       return RewardedAdResult.unavailable;
     }

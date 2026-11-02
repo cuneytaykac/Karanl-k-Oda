@@ -1,3 +1,6 @@
 /* Ana ekranda görünen uygulama adı: her dilde aynı (marka adı). */
 "CFBundleDisplayName" = "Karanlık Oda";
 "CFBundleName" = "Karanlık Oda";
+
+/* Reklam takibi izni (App Tracking Transparency) metni. */
+"NSUserTrackingUsageDescription" = "Bu izin, sana daha ilgili reklamlar göstermek için kullanılır. İzin vermesen de oyun aynı şekilde çalışır.";

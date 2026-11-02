@@ -86,7 +86,7 @@ flutter:
 # Telefonun kendi açılış ekranı (uygulama yüklenirken). Değiştirince:
 #   dart run flutter_native_splash:create
 # Düz koyu: açılış sahnesi karanlıktan kesintisiz başlasın.
-# Android 12+ bir simgeyi zorunlu kılar; orada piksel makine görünür.
+# Android 12+ bir simgeyi zorunlu kılar; orada uygulama simgesindeki lamba görünür.
 flutter_native_splash:
   color: "#0A0807"
   android_12:

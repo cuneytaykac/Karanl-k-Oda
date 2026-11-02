@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import '../../../../core/log.dart';
 import '../../domain/repositories/ads_platform.dart';
 
 /// Google AdMob + Google'ın onay aracı (UMP). Onay formunun içeriği (metinler,
@@ -20,10 +20,10 @@ class AdmobPlatform implements AdsPlatform {
     await _showFormIfRequired();
     final allowed = await ConsentInformation.instance.canRequestAds();
     final status = await ConsentInformation.instance.getConsentStatus();
-    debugPrint('[Reklam] Onay durumu: $status · reklam istenebilir: $allowed');
+    devLog('[Reklam] Onay durumu: $status · reklam istenebilir: $allowed');
     if (allowed) {
       await MobileAds.instance.initialize();
-      debugPrint('[Reklam] AdMob başlatıldı');
+      devLog('[Reklam] AdMob başlatıldı');
     }
     return allowed;
   }
@@ -40,7 +40,7 @@ class AdmobPlatform implements AdsPlatform {
       done.complete,
       (error) {
         // Bilgi alınamazsa (örn. internet yok) eski onay durumuyla devam edilir.
-        debugPrint('Onay bilgisi alınamadı: ${error.message}');
+        devLog('Onay bilgisi alınamadı: ${error.message}');
         done.complete();
       },
     );
@@ -50,7 +50,7 @@ class AdmobPlatform implements AdsPlatform {
   Future<void> _showFormIfRequired() {
     final done = Completer<void>();
     ConsentForm.loadAndShowConsentFormIfRequired((error) {
-      if (error != null) debugPrint('Onay formu: ${error.message}');
+      if (error != null) devLog('Onay formu: ${error.message}');
       done.complete();
     });
     return done.future;
@@ -65,7 +65,7 @@ class AdmobPlatform implements AdsPlatform {
   Future<void> showPrivacyOptions() {
     final done = Completer<void>();
     ConsentForm.showPrivacyOptionsForm((error) {
-      if (error != null) debugPrint('Gizlilik seçenekleri: ${error.message}');
+      if (error != null) devLog('Gizlilik seçenekleri: ${error.message}');
       done.complete();
     });
     return done.future;

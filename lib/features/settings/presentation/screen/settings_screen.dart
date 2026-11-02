@@ -121,11 +121,10 @@ class _Group extends StatelessWidget {
 }
 
 class _SwitchRow extends StatelessWidget {
-  const _SwitchRow(this.title, this.value, this.onChanged, {this.subtitle});
+  const _SwitchRow(this.title, this.value, this.onChanged);
   final String title;
   final bool value;
   final ValueChanged<bool> onChanged;
-  final String? subtitle;
 
   @override
   Widget build(BuildContext context) => SwitchListTile(
@@ -133,8 +132,5 @@ class _SwitchRow extends StatelessWidget {
         onChanged: onChanged,
         title: Text(title,
             style: KoText.body.copyWith(color: KoColor.text, fontSize: 14.5)),
-        subtitle: subtitle == null
-            ? null
-            : Text(subtitle!, style: KoText.bodySmall.copyWith(fontSize: 12)),
       );
 }
