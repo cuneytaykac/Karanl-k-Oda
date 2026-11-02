@@ -35,6 +35,15 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
+            // TEŞHİS: release çökmesinin kod küçültücüden (R8) olup olmadığını
+            // anlamak için geçici olarak kapalı. Sebep bulununca geri açılacak.
+            isMinifyEnabled = false
+            isShrinkResources = false
+            // JNI ile çağrılan sınıflar küçültücüden korunur (bkz. proguard-rules.pro).
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
         }
     }
 }
