@@ -119,7 +119,7 @@ class TutorialViewModel extends Notifier<TutorialState> {
   }
 
   void _feedback() {
-    if (ref.read(settingsProvider).vibration) HapticFeedback.selectionClick();
+    if (ref.read(settingsProvider).vibration) HapticFeedback.lightImpact();
     _audio.play(_session.tool == Tool.cross ? Sfx.cross : Sfx.tap);
   }
 

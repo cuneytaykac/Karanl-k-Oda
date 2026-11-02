@@ -41,18 +41,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get back => 'Geri';
 
   @override
-  String get sectionGame => 'OYUN';
-
-  @override
   String hintsPerReel(int count) {
     return 'Her rulo başında $count ipucu.';
   }
-
-  @override
-  String get stuckHelp => 'Takılma yardımı';
-
-  @override
-  String get stuckHelpSubtitle => '2 dk ilerleme yoksa ücretsiz ipucu';
 
   @override
   String get sectionSound => 'SES VE TİTREŞİM';
@@ -65,16 +56,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get vibration => 'Titreşim';
-
-  @override
-  String get sectionNotifications => 'BİLDİRİM';
-
-  @override
-  String get newCaseNotification => 'Yeni dosya bildirimi';
-
-  @override
-  String get newCaseNotificationSubtitle =>
-      'Dolaba yeni film gelince haber ver';
 
   @override
   String get puzzleBackLabel => 'Banyoya dön';

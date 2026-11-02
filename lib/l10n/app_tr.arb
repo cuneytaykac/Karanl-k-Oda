@@ -17,7 +17,6 @@
   "caseFilesPlaceholder": "Dosya listesi burada olacak.",
   "settingsTitle": "Ayarlar",
   "back": "Geri",
-  "sectionGame": "OYUN",
   "hintsPerReel": "Her rulo başında {count} ipucu.",
   "@hintsPerReel": {
     "placeholders": {
@@ -26,15 +25,10 @@
       }
     }
   },
-  "stuckHelp": "Takılma yardımı",
-  "stuckHelpSubtitle": "2 dk ilerleme yoksa ücretsiz ipucu",
   "sectionSound": "SES VE TİTREŞİM",
   "music": "Müzik",
   "sfx": "Efekt sesleri",
   "vibration": "Titreşim",
-  "sectionNotifications": "BİLDİRİM",
-  "newCaseNotification": "Yeni dosya bildirimi",
-  "newCaseNotificationSubtitle": "Dolaba yeni film gelince haber ver",
   "puzzleBackLabel": "Banyoya dön",
   "puzzleTitle": "Rulo {reel} · Kare {frame}",
   "@puzzleTitle": {

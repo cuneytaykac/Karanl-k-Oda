@@ -41,9 +41,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get back => 'Back';
 
   @override
-  String get sectionGame => 'GAME';
-
-  @override
   String hintsPerReel(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -53,12 +50,6 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get stuckHelp => 'Stuck help';
-
-  @override
-  String get stuckHelpSubtitle => 'Free hint after 2 min without progress';
 
   @override
   String get sectionSound => 'SOUND AND VIBRATION';
@@ -71,16 +62,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get vibration => 'Vibration';
-
-  @override
-  String get sectionNotifications => 'NOTIFICATIONS';
-
-  @override
-  String get newCaseNotification => 'New case notification';
-
-  @override
-  String get newCaseNotificationSubtitle =>
-      'Let me know when a new film arrives in the cabinet';
 
   @override
   String get puzzleBackLabel => 'Back to developing';

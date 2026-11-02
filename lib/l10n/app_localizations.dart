@@ -158,29 +158,11 @@ abstract class AppLocalizations {
   /// **'Geri'**
   String get back;
 
-  /// No description provided for @sectionGame.
-  ///
-  /// In tr, this message translates to:
-  /// **'OYUN'**
-  String get sectionGame;
-
   /// No description provided for @hintsPerReel.
   ///
   /// In tr, this message translates to:
   /// **'Her rulo başında {count} ipucu.'**
   String hintsPerReel(int count);
-
-  /// No description provided for @stuckHelp.
-  ///
-  /// In tr, this message translates to:
-  /// **'Takılma yardımı'**
-  String get stuckHelp;
-
-  /// No description provided for @stuckHelpSubtitle.
-  ///
-  /// In tr, this message translates to:
-  /// **'2 dk ilerleme yoksa ücretsiz ipucu'**
-  String get stuckHelpSubtitle;
 
   /// No description provided for @sectionSound.
   ///
@@ -205,24 +187,6 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Titreşim'**
   String get vibration;
-
-  /// No description provided for @sectionNotifications.
-  ///
-  /// In tr, this message translates to:
-  /// **'BİLDİRİM'**
-  String get sectionNotifications;
-
-  /// No description provided for @newCaseNotification.
-  ///
-  /// In tr, this message translates to:
-  /// **'Yeni dosya bildirimi'**
-  String get newCaseNotification;
-
-  /// No description provided for @newCaseNotificationSubtitle.
-  ///
-  /// In tr, this message translates to:
-  /// **'Dolaba yeni film gelince haber ver'**
-  String get newCaseNotificationSubtitle;
 
   /// No description provided for @puzzleBackLabel.
   ///

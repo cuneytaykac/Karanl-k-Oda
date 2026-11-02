@@ -8,15 +8,11 @@ class Settings {
     this.music = true,
     this.sfx = true,
     this.vibration = false,
-    this.stuckHelp = true,
-    this.newCaseNotification = false,
   });
 
   final bool music;
   final bool sfx;
   final bool vibration;
-  final bool stuckHelp;
-  final bool newCaseNotification;
 
   /// Rulo başına ipucu hakkı (herkes için aynı). Bitince reklamla sınırsız ek ipucu alınır.
   static const hintsPerReel = 3;
@@ -25,23 +21,17 @@ class Settings {
     bool? music,
     bool? sfx,
     bool? vibration,
-    bool? stuckHelp,
-    bool? newCaseNotification,
   }) =>
       Settings(
         music: music ?? this.music,
         sfx: sfx ?? this.sfx,
         vibration: vibration ?? this.vibration,
-        stuckHelp: stuckHelp ?? this.stuckHelp,
-        newCaseNotification: newCaseNotification ?? this.newCaseNotification,
       );
 
   Map<String, dynamic> toJson() => {
         'music': music,
         'sfx': sfx,
         'vibration': vibration,
-        'stuckHelp': stuckHelp,
-        'newCaseNotification': newCaseNotification,
       };
 
   factory Settings.fromJson(Map<String, dynamic> json) {
@@ -56,9 +46,6 @@ class Settings {
       music: readBool('music', defaults.music),
       sfx: readBool('sfx', defaults.sfx),
       vibration: readBool('vibration', defaults.vibration),
-      stuckHelp: readBool('stuckHelp', defaults.stuckHelp),
-      newCaseNotification:
-          readBool('newCaseNotification', defaults.newCaseNotification),
     );
   }
 }
@@ -77,9 +64,6 @@ class SettingsController extends Notifier<Settings> {
   void setMusic(bool enabled) => _save(state.copyWith(music: enabled));
   void setSfx(bool enabled) => _save(state.copyWith(sfx: enabled));
   void setVibration(bool enabled) => _save(state.copyWith(vibration: enabled));
-  void setStuckHelp(bool enabled) => _save(state.copyWith(stuckHelp: enabled));
-  void setNewCaseNotification(bool enabled) =>
-      _save(state.copyWith(newCaseNotification: enabled));
 }
 
 final settingsProvider =

@@ -49,7 +49,8 @@ class PuzzleScreen extends ConsumerWidget {
 
     void tick(bool changed) {
       if (!changed) return;
-      if (vibrate) HapticFeedback.selectionClick();
+      // selectionClick Android'de çoğu telefonda hissedilmiyor; hafif vuruş her yerde çalışır.
+      if (vibrate) HapticFeedback.lightImpact();
       audio.play(view.tool == Tool.cross ? Sfx.cross : Sfx.tap);
     }
 

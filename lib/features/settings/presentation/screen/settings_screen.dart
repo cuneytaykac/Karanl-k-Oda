@@ -40,12 +40,6 @@ class SettingsScreen extends ConsumerWidget {
                     style: KoText.screenTitle.copyWith(fontSize: 24)),
               ],
             ),
-            _SectionHeader(context.l10n.sectionGame),
-            _Group(children: [
-              _SwitchRow(context.l10n.stuckHelp, settings.stuckHelp,
-                  controller.setStuckHelp,
-                  subtitle: context.l10n.stuckHelpSubtitle),
-            ]),
             _SectionHeader(context.l10n.sectionSound),
             _Group(children: [
               _SwitchRow(
@@ -53,14 +47,6 @@ class SettingsScreen extends ConsumerWidget {
               _SwitchRow(context.l10n.sfx, settings.sfx, controller.setSfx),
               _SwitchRow(context.l10n.vibration, settings.vibration,
                   controller.setVibration),
-            ]),
-            _SectionHeader(context.l10n.sectionNotifications),
-            _Group(children: [
-              _SwitchRow(
-                  context.l10n.newCaseNotification,
-                  settings.newCaseNotification,
-                  controller.setNewCaseNotification,
-                  subtitle: context.l10n.newCaseNotificationSubtitle),
             ]),
             if (privacyRequired) ...[
               _SectionHeader(context.l10n.sectionPrivacy),
