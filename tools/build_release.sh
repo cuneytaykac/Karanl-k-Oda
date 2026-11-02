@@ -29,6 +29,18 @@ build_apk() {
 }
 
 build_aab() {
+  if [ ! -f android/key.properties ]; then
+    echo "UYARI: android/key.properties yok -> AAB hata ayıklama anahtarıyla imzalanacak; Play bunu KABUL ETMEZ."
+  else
+    # Yalnızca anahtar dosyasının yolu okunur; şifrelere dokunulmaz.
+    store="$(sed -n 's/^storeFile=//p' android/key.properties | sed 's/[[:space:]]*$//')"
+    if [ -z "$store" ] || [ ! -f "$store" ]; then
+      echo "HATA: key.properties içindeki storeFile bulunamadı: '$store'"
+      echo "      Anahtar dosyasının TAM yolunu yazın (örn. /Users/.../upload-keystore.jks)."
+      exit 1
+    fi
+    echo "İmza anahtarı: $store"
+  fi
   echo "== AAB (Google Play) · sürüm $version"
   flutter build appbundle "${common[@]}"
 }

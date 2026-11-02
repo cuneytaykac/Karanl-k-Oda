@@ -1,0 +1,6 @@
+# Bu dosyayı "key.properties" adıyla kopyalayıp doldurun. key.properties git'e girmez.
+# storeFile: anahtar dosyasının TAM yolu (proje dışında, yedekli bir yerde tutun).
+storeFile=/Users/KULLANICI/keys/karanlik_oda/upload-keystore.jks
+storePassword=ANAHTAR_DOSYASI_SIFRESI
+keyAlias=upload
+keyPassword=ANAHTAR_SIFRESI

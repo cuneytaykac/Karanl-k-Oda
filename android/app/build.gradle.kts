@@ -4,6 +4,15 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+// Mağaza imzası (upload key). Anahtar ve şifreler android/key.properties'te durur;
+// bu dosya git'e girmez. Dosya yoksa (örn. başka bir bilgisayar) release,
+// hata ayıklama anahtarıyla imzalanır: telefonda çalışır ama Play kabul etmez.
+val keystoreProperties = java.util.Properties().apply {
+    val file = rootProject.file("key.properties")
+    if (file.exists()) file.inputStream().use { load(it) }
+}
+val hasReleaseKey = keystoreProperties.getProperty("storeFile") != null
+
 android {
     namespace = "com.karanlikoda.karanlik_oda"
     compileSdk = flutter.compileSdkVersion
@@ -30,11 +39,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (hasReleaseKey) {
+            create("release") {
+                storeFile = file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName(if (hasReleaseKey) "release" else "debug")
             // Kod küçültme (R8) kapalı: açıkken release APK açılışta çöküyordu.
             isMinifyEnabled = false
             isShrinkResources = false
