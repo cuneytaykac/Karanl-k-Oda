@@ -242,6 +242,12 @@ abstract class AppLocalizations {
   /// **'Deneme bulmacası'**
   String get debugPuzzle;
 
+  /// Defterde ipucunun bulunduğu yer: rulo ve kare (R = rulo, K = kare).
+  ///
+  /// In tr, this message translates to:
+  /// **'R{reel} · K{frame}'**
+  String clueSource(int reel, int frame);
+
   /// No description provided for @notebookEyebrow.
   ///
   /// In tr, this message translates to:

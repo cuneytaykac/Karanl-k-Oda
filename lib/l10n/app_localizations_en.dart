@@ -94,6 +94,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get debugPuzzle => 'Test puzzle';
 
   @override
+  String clueSource(int reel, int frame) {
+    return 'R$reel · F$frame';
+  }
+
+  @override
   String get notebookEyebrow => 'INVESTIGATION';
 
   @override

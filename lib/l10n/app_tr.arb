@@ -48,6 +48,18 @@
   "developingSubtitle": "Nermin Hanım’ın teslim etmediği filmlerden birini seç.",
   "openCaseFiles": "Dosyalara bak",
   "debugPuzzle": "Deneme bulmacası",
+  "clueSource": "R{reel} · K{frame}",
+  "@clueSource": {
+    "description": "Defterde ipucunun bulunduğu yer: rulo ve kare (R = rulo, K = kare).",
+    "placeholders": {
+      "reel": {
+        "type": "int"
+      },
+      "frame": {
+        "type": "int"
+      }
+    }
+  },
   "notebookEyebrow": "SORUŞTURMA",
   "notebookTitle": "Defter",
   "notebookEmptyTitle": "Defterin boş",

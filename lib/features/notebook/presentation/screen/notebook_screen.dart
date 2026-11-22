@@ -157,7 +157,7 @@ class _PeopleTab extends StatelessWidget {
                           Text(note.body,
                               style: KoText.body.copyWith(fontSize: 13)),
                           const SizedBox(height: KoSpacing.xs),
-                          Text(note.source,
+                          Text(l10n.clueSource(note.reel, note.frame),
                               style: KoText.counter.copyWith(
                                   fontSize: 11, color: KoColor.textDim)),
                         ],
@@ -209,7 +209,7 @@ class _CluesTab extends StatelessWidget {
                       const SizedBox(height: KoSpacing.s),
                       Row(
                         children: [
-                          Text(c.source,
+                          Text(context.l10n.clueSource(c.reel, c.frame),
                               style: KoText.counter.copyWith(
                                   fontSize: 11, color: KoColor.textDim)),
                           const Spacer(),
@@ -255,7 +255,8 @@ class _TimelineTab extends StatelessWidget {
       final day = file.frame(c.reel, c.frame)?.photo.date ?? '';
       days
           .putIfAbsent(day, () => [])
-          .add(_Row(c.tag ?? '?', c.title, c.body, c.source, c));
+          .add(_Row(c.tag ?? '?', c.title, c.body,
+              context.l10n.clueSource(c.reel, c.frame), c));
       final key = c.reel * 100 + c.frame;
       final prev = dayOrder[day];
       dayOrder[day] = prev == null || key < prev ? key : prev;
@@ -545,7 +546,8 @@ void _showPhoto(BuildContext context, NotebookClue clue) {
                   semanticLabel: frame.photo.title),
               const SizedBox(height: KoSpacing.l),
               Text(frame.photo.title, style: KoText.cardTitle),
-              Text('${clue.source} · ${frame.photo.date}',
+              Text(
+                  '${context.l10n.clueSource(clue.reel, clue.frame)} · ${frame.photo.date}',
                   style: KoText.counter),
               const SizedBox(height: KoSpacing.s),
               Text(l10n.notebookTapToClose,
