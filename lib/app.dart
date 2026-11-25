@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/audio/audio_binding.dart';
-import 'core/onboarding/onboarding.dart';
 import 'core/router/router.dart';
 import 'core/theme/theme.dart';
 import 'features/ads/presentation/providers/ads_coordinator.dart';
@@ -41,13 +40,13 @@ class _SplashLayer extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final reduceMotion = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
     final done = ref.watch(splashViewModelProvider(reduceMotion).select((s) => s.done));
-    // Sahne bitti ve ilk açılış (hikâye + öğretici) geride kaldı: gerekiyorsa
-    // onay formu, sonra reklamlar. İlk açılışta beklenir; reklam ağının
-    // açılışı ve ilk reklam yüklemesi öğreticiye geçişi takılmasın, form da
-    // hikâyenin ortasına çıkmasın. İlk açılışta zaten reklam gösterilmez.
-    final onboarded = ref.watch(onboardingProvider);
+    // Sahne biter bitmez, ilk açılışta da: gerekiyorsa onay formu ve iPhone'daki
+    // takip izni (ATT), sonra reklamlar. Apple incelemesi izin penceresinin
+    // temiz kurulumdan hemen sonra görünmesini istiyor; öğreticiden sonraya
+    // bırakınca inceleme sırasında hiç çıkmıyordu. Bu akış bitmeden reklam ağı
+    // başlamaz. İlk rulo yine geçiş reklamsız (AdBreakPolicy).
     if (done) {
-      if (onboarded) ref.watch(adsStartupProvider);
+      ref.watch(adsStartupProvider);
       return const SizedBox.shrink();
     }
     return const Material(

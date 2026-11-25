@@ -1,4 +1,7 @@
 import 'dart:async';
+import 'dart:io' show Platform;
+
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -18,6 +21,7 @@ class AdmobPlatform implements AdsPlatform {
   Future<bool> start() async {
     await _updateConsentInfo();
     await _showFormIfRequired();
+    await _requestTrackingIfStillUndetermined();
     final allowed = await ConsentInformation.instance.canRequestAds();
     final status = await ConsentInformation.instance.getConsentStatus();
     devLog('[Reklam] Onay durumu: $status · reklam istenebilir: $allowed');
@@ -26,6 +30,26 @@ class AdmobPlatform implements AdsPlatform {
       devLog('[Reklam] AdMob başlatıldı');
     }
     return allowed;
+  }
+
+  /// Güvence: UMP takip izni (ATT) penceresini normalde kendisi gösterir; ama
+  /// AdMob'daki "IDFA açıklama" mesajı yayında değilse ya da onay bilgisi
+  /// alınamadıysa (internet yok) pencere hiç çıkmaz ve Apple incelemesi
+  /// reddeder. İzin hâlâ sorulmamışsa burada doğrudan sorulur. Reklam ağı
+  /// bundan sonra başlar.
+  Future<void> _requestTrackingIfStillUndetermined() async {
+    if (!Platform.isIOS) return;
+    try {
+      var status = await AppTrackingTransparency.trackingAuthorizationStatus;
+      if (status != TrackingStatus.notDetermined) return;
+      // Pencere uygulama tam etkinken istenmeli; az önce kapanan onay
+      // formunun ardından kısa bir bekleme, isteğin sessizce düşmesini önler.
+      await Future<void>.delayed(const Duration(milliseconds: 500));
+      status = await AppTrackingTransparency.requestTrackingAuthorization();
+      devLog('[Reklam] Takip izni (ATT): $status');
+    } catch (e) {
+      devLog('[Reklam] Takip izni sorulamadı: $e');
+    }
   }
 
   Future<void> _updateConsentInfo() {
