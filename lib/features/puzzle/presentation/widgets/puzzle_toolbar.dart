@@ -46,8 +46,10 @@ class PuzzleToolbar extends StatelessWidget {
               borderRadius: BorderRadius.circular(KoRadius.button)),
           child: Row(
             children: [
+              // Dolu kare simgesi: "■" karakteri her telefonun fontunda yok.
               _ToolTab(
-                  label: '■  $fillLabel',
+                  icon: Icons.square_rounded,
+                  label: fillLabel,
                   selected: tool == Tool.fill,
                   onTap: () => onTool(Tool.fill)),
               const SizedBox(width: 4),
@@ -83,9 +85,13 @@ class PuzzleToolbar extends StatelessWidget {
 
 class _ToolTab extends StatelessWidget {
   const _ToolTab(
-      {required this.label, required this.selected, required this.onTap});
+      {required this.label,
+      required this.selected,
+      required this.onTap,
+      this.icon});
 
   final String label;
+  final IconData? icon;
   final bool selected;
   final VoidCallback onTap;
 
@@ -104,12 +110,23 @@ class _ToolTab extends StatelessWidget {
             child: SizedBox(
               height: 48,
               child: Center(
-                child: Text(
-                  label,
-                  style: KoText.buttonSmall.copyWith(
-                    fontSize: 15,
-                    color: selected ? KoColor.ink : KoColor.textMuted,
-                  ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (icon != null) ...[
+                      Icon(icon,
+                          size: 14,
+                          color: selected ? KoColor.ink : KoColor.textMuted),
+                      const SizedBox(width: 8),
+                    ],
+                    Text(
+                      label,
+                      style: KoText.buttonSmall.copyWith(
+                        fontSize: 15,
+                        color: selected ? KoColor.ink : KoColor.textMuted,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

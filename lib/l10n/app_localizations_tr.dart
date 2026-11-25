@@ -88,6 +88,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String get debugPuzzle => 'Deneme bulmacası';
 
   @override
+  String clueSource(int reel, int frame) {
+    return 'R$reel · K$frame';
+  }
+
+  @override
   String get notebookEyebrow => 'SORUŞTURMA';
 
   @override

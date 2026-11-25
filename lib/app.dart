@@ -40,8 +40,7 @@ class _SplashLayer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final reduceMotion = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
-    final done =
-        ref.watch(splashViewModelProvider(reduceMotion).select((s) => s.done));
+    final done = ref.watch(splashViewModelProvider(reduceMotion).select((s) => s.done));
     // Sahne bitti ve ilk açılış (hikâye + öğretici) geride kaldı: gerekiyorsa
     // onay formu, sonra reklamlar. İlk açılışta beklenir; reklam ağının
     // açılışı ve ilk reklam yüklemesi öğreticiye geçişi takılmasın, form da

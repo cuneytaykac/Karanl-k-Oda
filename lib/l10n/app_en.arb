@@ -24,6 +24,7 @@
   "developingSubtitle": "Pick one of the films Mrs Nermin never handed in.",
   "openCaseFiles": "Browse case files",
   "debugPuzzle": "Test puzzle",
+  "clueSource": "R{reel} · F{frame}",
   "notebookEyebrow": "INVESTIGATION",
   "notebookTitle": "Notebook",
   "notebookEmptyTitle": "Your notebook is empty",
